@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A92DBE4F-759D-4EBD-A910-E9313F8A0EF8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Hotel_Management</RootNamespace>
+    <AssemblyName>Hotel_Management</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu.Core, Version=1.11.4.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9" />
+    <Reference Include="Bunifu.UI.WinForm.BunifuShadowPanel">
+      <HintPath>..\..\Software\Bunifu UI\Bunifu.UI.WinForm.BunifuShadowPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuButton">
+      <HintPath>..\..\Software\Bunifu UI\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuCircleProgress">
+      <HintPath>..\..\Software\Bunifu UI\Bunifu.UI.WinForms.BunifuCircleProgress.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPages">
+      <HintPath>..\..\Software\Bunifu UI\Bunifu.UI.WinForms.BunifuPages.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuSlider">
+      <HintPath>..\..\Software\Bunifu UI\Bunifu.UI.WinForms.BunifuSlider.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTextbox">
+      <HintPath>..\..\Software\Bunifu UI\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuUserControl">
+      <HintPath>..\..\Software\Bunifu UI\Bunifu.UI.WinForms.BunifuUserControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\Software\Bunifu UI\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_CaiDat\GUI_CauHinhKS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_CaiDat\GUI_CauHinhKS.Designer.cs">
+      <DependentUpon>GUI_CauHinhKS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_CaiDat\GUI_QuanTri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_CaiDat\GUI_QuanTri.Designer.cs">
+      <DependentUpon>GUI_QuanTri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_CaiDat\GUI_TaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_CaiDat\GUI_TaiKhoan.Designer.cs">
+      <DependentUpon>GUI_TaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_DanhSach\GUI_DSDonDatPhong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_DanhSach\GUI_DSDonDatPhong.Designer.cs">
+      <DependentUpon>GUI_DSDonDatPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_DanhSach\GUI_DSHoaDon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_DanhSach\GUI_DSHoaDon.Designer.cs">
+      <DependentUpon>GUI_DSHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_NghiepVuPhong\GUI_ChuyenPhong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_NghiepVuPhong\GUI_ChuyenPhong.Designer.cs">
+      <DependentUpon>GUI_ChuyenPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_NghiepVuPhong\GUI_DatPhong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_NghiepVuPhong\GUI_DatPhong.Designer.cs">
+      <DependentUpon>GUI_DatPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_NghiepVuPhong\GUI_GiaHanPhong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_NghiepVuPhong\GUI_GiaHanPhong.Designer.cs">
+      <DependentUpon>GUI_GiaHanPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_NghiepVuPhong\GUI_HuyPhong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_NghiepVuPhong\GUI_HuyPhong.Designer.cs">
+      <DependentUpon>GUI_HuyPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_SignIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_SignIn.Designer.cs">
+      <DependentUpon>GUI_SignIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_CaiDat\GUI_CauHinhKS.resx">
+      <DependentUpon>GUI_CauHinhKS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_CaiDat\GUI_QuanTri.resx">
+      <DependentUpon>GUI_QuanTri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_CaiDat\GUI_TaiKhoan.resx">
+      <DependentUpon>GUI_TaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DanhSach\GUI_DSDonDatPhong.resx">
+      <DependentUpon>GUI_DSDonDatPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DanhSach\GUI_DSHoaDon.resx">
+      <DependentUpon>GUI_DSHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_NghiepVuPhong\GUI_ChuyenPhong.resx">
+      <DependentUpon>GUI_ChuyenPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_NghiepVuPhong\GUI_DatPhong.resx">
+      <DependentUpon>GUI_DatPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_NghiepVuPhong\GUI_GiaHanPhong.resx">
+      <DependentUpon>GUI_GiaHanPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_NghiepVuPhong\GUI_HuyPhong.resx">
+      <DependentUpon>GUI_HuyPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_SignIn.resx">
+      <DependentUpon>GUI_SignIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="GUI_BaoCao\" />
+    <Folder Include="GUI_SoDoPhong\" />
+    <Folder Include="GUI_ThongKe\" />
+    <Folder Include="GUI_ThongTinChung\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS_Hotel\BUS_Hotel.csproj">
+      <Project>{f8ede780-eee9-4e41-8843-ca0d818d0c2a}</Project>
+      <Name>BUS_Hotel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO_Hotel\DTO_Hotel.csproj">
+      <Project>{291d8102-2d00-42ed-8bae-98d6ca4b86d4}</Project>
+      <Name>DTO_Hotel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
