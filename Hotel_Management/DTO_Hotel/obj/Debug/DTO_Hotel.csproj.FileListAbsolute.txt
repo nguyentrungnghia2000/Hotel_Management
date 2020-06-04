@@ -1,4 +1,0 @@
-D:\Hotel_Management\DTO_Hotel\bin\Debug\DTO_Hotel.dll
-D:\Hotel_Management\DTO_Hotel\bin\Debug\DTO_Hotel.pdb
-D:\Hotel_Management\DTO_Hotel\obj\Debug\DTO_Hotel.dll
-D:\Hotel_Management\DTO_Hotel\obj\Debug\DTO_Hotel.pdb
