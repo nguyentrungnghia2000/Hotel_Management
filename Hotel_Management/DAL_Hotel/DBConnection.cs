@@ -12,18 +12,83 @@ namespace DAL_Hotel
     {
         private string connectionSTR = @"Data Source=LAPTOP-RLAB8F3L\SQLEXPRESS;Initial Catalog=QLKS;Integrated Security=True";
 
-        public DataTable ExecuteQuery(string query)
+        public DataTable ExecuteQuery(string query, object[] parameter=null)
         {
-            SqlConnection connection = new SqlConnection(connectionSTR);
-
-            connection.Open();
-            SqlCommand command = new SqlCommand(query, connection);
             DataTable table = new DataTable();
-            SqlDataAdapter adapter = new SqlDataAdapter(command);
-            adapter.Fill(table);
-            connection.Close();
-            
+            using (SqlConnection connection = new SqlConnection(connectionSTR))
+            {
+                connection.Open();
+                SqlCommand command = new SqlCommand(query, connection);
+                if (parameter != null)
+                {
+                    string[] listpara = query.Split(' ');
+                    int i = 0;
+                    foreach(string item in listpara)
+                    {
+                        if (item.Contains('@'))
+                        {
+                            command.Parameters.AddWithValue(item, parameter[i]);
+                            i++;
+                        }
+                    }
+                }
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                adapter.Fill(table);
+                connection.Close();
+            }
             return table;
+        }
+
+        public int ExecuteNonQuery(string query, object[] parameter = null)
+        {
+            int data = 0;
+            using (SqlConnection connection = new SqlConnection(connectionSTR))
+            {
+                connection.Open();
+                SqlCommand command = new SqlCommand(query, connection);
+                if (parameter != null)
+                {
+                    string[] listpara = query.Split(' ');
+                    int i = 0;
+                    foreach (string item in listpara)
+                    {
+                        if (item.Contains('@'))
+                        {
+                            command.Parameters.AddWithValue(item, parameter[i]);
+                            i++;
+                        }
+                    }
+                }
+                data = command.ExecuteNonQuery();
+                connection.Close();
+            }
+            return data;
+        }
+
+        public object ExecuteScalar(string query, object[] parameter = null)
+        {
+            object data = 0;
+            using (SqlConnection connection = new SqlConnection(connectionSTR))
+            {
+                connection.Open();
+                SqlCommand command = new SqlCommand(query, connection);
+                if (parameter != null)
+                {
+                    string[] listpara = query.Split(' ');
+                    int i = 0;
+                    foreach (string item in listpara)
+                    {
+                        if (item.Contains('@'))
+                        {
+                            command.Parameters.AddWithValue(item, parameter[i]);
+                            i++;
+                        }
+                    }
+                }
+                data = command.ExecuteScalar();
+                connection.Close();
+            }
+            return data;
         }
     }
 }
