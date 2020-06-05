@@ -4,10 +4,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
+using System.Data;
+
 namespace DAL_Hotel
 {
     class DBConnection
     {
-        protected SqlConnection conn = new SqlConnection("Data Source=LAPTOP-4BQDKGPF;Initial Catalog=Library_Manager;Integrated Security=True");
+        private string connectionSTR = @"Data Source=LAPTOP-RLAB8F3L\SQLEXPRESS;Initial Catalog=QLKS;Integrated Security=True";
+
+        public DataTable ExecuteQuery(string query)
+        {
+            SqlConnection connection = new SqlConnection(connectionSTR);
+
+            connection.Open();
+            SqlCommand command = new SqlCommand(query, connection);
+            DataTable table = new DataTable();
+            SqlDataAdapter adapter = new SqlDataAdapter(command);
+            adapter.Fill(table);
+            connection.Close();
+            
+            return table;
+        }
     }
 }
