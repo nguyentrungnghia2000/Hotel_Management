@@ -10,8 +10,14 @@ namespace DAL_Hotel
 {
     class DBConnection
     {
-        private string connectionSTR = @"Data Source=LAPTOP-RLAB8F3L\SQLEXPRESS;Initial Catalog=QLKS;Integrated Security=True";
+        private static DBConnection instance;
+        public static DBConnection Instance { 
+            get { if (instance == null) instance = new DBConnection(); return DBConnection.instance; } 
+            private set {  DBConnection.instance = value; } 
+        }
+        private DBConnection() { }
 
+        private string connectionSTR = @"Data Source=LAPTOP-RLAB8F3L\SQLEXPRESS;Initial Catalog=QLKS;Integrated Security=True";
         public DataTable ExecuteQuery(string query, object[] parameter=null)
         {
             DataTable table = new DataTable();

@@ -72,3 +72,37 @@ C:\Users\Admin\Desktop\Hotel_Management\GUI_Hotel\obj\Debug\GUI_Hotel.csproj.Gen
 C:\Users\Admin\Desktop\Hotel_Management\GUI_Hotel\obj\Debug\GUI_Hotel.csproj.CopyComplete
 C:\Users\Admin\Desktop\Hotel_Management\GUI_Hotel\obj\Debug\Hotel_Management.exe
 C:\Users\Admin\Desktop\Hotel_Management\GUI_Hotel\obj\Debug\Hotel_Management.pdb
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\GUI_Hotel\bin\Debug\Hotel_Management.exe.config
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\GUI_Hotel\bin\Debug\Hotel_Management.exe
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\GUI_Hotel\bin\Debug\Hotel_Management.pdb
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\GUI_Hotel\bin\Debug\BUS_Hotel.dll
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\GUI_Hotel\bin\Debug\DTO_Hotel.dll
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\GUI_Hotel\bin\Debug\BUS_Hotel.pdb
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\GUI_Hotel\bin\Debug\DTO_Hotel.pdb
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\GUI_Hotel\bin\Debug\Bunifu.UI.WinForm.BunifuShadowPanel.xml
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\GUI_Hotel\bin\Debug\Bunifu.UI.WinForms.BunifuButton.xml
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\GUI_Hotel\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.xml
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\GUI_Hotel\bin\Debug\Bunifu.UI.WinForms.BunifuPages.xml
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\GUI_Hotel\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.xml
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\GUI_Hotel\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.xml
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\GUI_Hotel\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.xml
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\GUI_Hotel\bin\Debug\Bunifu_UI_v1.5.3.xml
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\GUI_Hotel\obj\Debug\GUI_Hotel.csprojAssemblyReference.cache
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\GUI_Hotel\obj\Debug\Hotel_Management.exe.config
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\GUI_Hotel\obj\Debug\Hotel_Management.FrmMain.resources
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\GUI_Hotel\obj\Debug\Hotel_Management.GUI_CaiDat.GUI_CauHinhKS.resources
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\GUI_Hotel\obj\Debug\Hotel_Management.GUI_CaiDat.GUI_QuanTri.resources
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\GUI_Hotel\obj\Debug\Hotel_Management.GUI_CaiDat.GUI_TaiKhoan.resources
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\GUI_Hotel\obj\Debug\Hotel_Management.GUI_DanhSach.GUI_DSDonDatPhong.resources
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\GUI_Hotel\obj\Debug\Hotel_Management.GUI_DanhSach.GUI_DSHoaDon.resources
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\GUI_Hotel\obj\Debug\Hotel_Management.GUI_NghiepVuPhong.GUI_ChuyenPhong.resources
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\GUI_Hotel\obj\Debug\Hotel_Management.GUI_NghiepVuPhong.GUI_DatPhong.resources
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\GUI_Hotel\obj\Debug\Hotel_Management.GUI_NghiepVuPhong.GUI_GiaHanPhong.resources
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\GUI_Hotel\obj\Debug\Hotel_Management.GUI_NghiepVuPhong.GUI_HuyPhong.resources
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\GUI_Hotel\obj\Debug\Hotel_Management.GUI_SignIn.resources
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\GUI_Hotel\obj\Debug\Hotel_Management.Properties.Resources.resources
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\GUI_Hotel\obj\Debug\GUI_Hotel.csproj.GenerateResource.cache
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\GUI_Hotel\obj\Debug\GUI_Hotel.csproj.CoreCompileInputs.cache
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\GUI_Hotel\obj\Debug\GUI_Hotel.csproj.CopyComplete
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\GUI_Hotel\obj\Debug\Hotel_Management.exe
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\GUI_Hotel\obj\Debug\Hotel_Management.pdb
