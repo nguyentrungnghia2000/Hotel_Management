@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using BUS_Hotel;
+using DTO_Hotel;
 namespace Hotel_Management
 {
     public partial class GUI_SignIn : Form
     {
+        BUS_SignIn busSignIn = new BUS_SignIn();
         public GUI_SignIn()
         {
             InitializeComponent();
@@ -32,7 +34,7 @@ namespace Hotel_Management
             Application.Exit();
         }
 
-     
+
 
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
@@ -46,9 +48,24 @@ namespace Hotel_Management
 
         private void btnSignIn_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            FrmMain frm = new FrmMain();
-            frm.Show();
+            if ((txtUsername.Text != "") && (txtPassword.Text != ""))
+            {
+                DTO_SignIn account = new DTO_SignIn(txtUsername.Text, txtPassword.Text);
+                if ((busSignIn.SignIn(account) == "1"))
+                {
+                    this.Hide();
+                    FrmMain frm = new FrmMain();
+                    frm.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Sai Mat Khau, Nhap Lai");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Sai Mat Khau, Nhap Lai!!!");
+            }
         }
     }
 }

@@ -8,17 +8,19 @@ using System.Data;
 
 namespace DAL_Hotel
 {
-    class DBConnection
+    public class DBConnection
     {
+       
         private static DBConnection instance;
-        public static DBConnection Instance { 
-            get { if (instance == null) instance = new DBConnection(); return DBConnection.instance; } 
-            private set {  DBConnection.instance = value; } 
+        public static DBConnection Instance
+        {
+            get { if (instance == null) instance = new DBConnection(); return DBConnection.instance; }
+            private set { DBConnection.instance = value; }
         }
-        private DBConnection() { }
-
-        private string connectionSTR = @"Data Source=LAPTOP-RLAB8F3L\SQLEXPRESS;Initial Catalog=QLKS;Integrated Security=True";
-        public DataTable ExecuteQuery(string query, object[] parameter=null)
+        // private DBConnection() { }
+        private static string connectionSTR = @"Data Source=LAPTOP-4BQDKGPF;Initial Catalog=QLKS;Integrated Security=True";
+        protected SqlConnection conn = new SqlConnection(connectionSTR);
+        public DataTable ExecuteQuery(string query, object[] parameter = null)
         {
             DataTable table = new DataTable();
             using (SqlConnection connection = new SqlConnection(connectionSTR))
@@ -29,7 +31,7 @@ namespace DAL_Hotel
                 {
                     string[] listpara = query.Split(' ');
                     int i = 0;
-                    foreach(string item in listpara)
+                    foreach (string item in listpara)
                     {
                         if (item.Contains('@'))
                         {
@@ -97,4 +99,6 @@ namespace DAL_Hotel
             return data;
         }
     }
+
 }
+

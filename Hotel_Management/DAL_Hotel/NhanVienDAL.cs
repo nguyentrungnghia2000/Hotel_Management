@@ -8,5 +8,6 @@ namespace DAL_Hotel
 {
     class NhanVienDAL
     {
+
     }
 }

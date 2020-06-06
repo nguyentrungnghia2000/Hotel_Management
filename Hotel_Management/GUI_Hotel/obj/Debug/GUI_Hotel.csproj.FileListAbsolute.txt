@@ -106,3 +106,38 @@ D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel
 D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\GUI_Hotel\obj\Debug\GUI_Hotel.csproj.CopyComplete
 D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\GUI_Hotel\obj\Debug\Hotel_Management.exe
 D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\GUI_Hotel\obj\Debug\Hotel_Management.pdb
+C:\Users\Admin\Documents\Hotel_Management\Hotel_Management\GUI_Hotel\bin\Debug\Hotel_Management.exe.config
+C:\Users\Admin\Documents\Hotel_Management\Hotel_Management\GUI_Hotel\bin\Debug\Hotel_Management.exe
+C:\Users\Admin\Documents\Hotel_Management\Hotel_Management\GUI_Hotel\bin\Debug\Hotel_Management.pdb
+C:\Users\Admin\Documents\Hotel_Management\Hotel_Management\GUI_Hotel\bin\Debug\BUS_Hotel.dll
+C:\Users\Admin\Documents\Hotel_Management\Hotel_Management\GUI_Hotel\bin\Debug\DTO_Hotel.dll
+C:\Users\Admin\Documents\Hotel_Management\Hotel_Management\GUI_Hotel\bin\Debug\BUS_Hotel.pdb
+C:\Users\Admin\Documents\Hotel_Management\Hotel_Management\GUI_Hotel\bin\Debug\DTO_Hotel.pdb
+C:\Users\Admin\Documents\Hotel_Management\Hotel_Management\GUI_Hotel\bin\Debug\Bunifu.UI.WinForm.BunifuShadowPanel.xml
+C:\Users\Admin\Documents\Hotel_Management\Hotel_Management\GUI_Hotel\bin\Debug\Bunifu.UI.WinForms.BunifuButton.xml
+C:\Users\Admin\Documents\Hotel_Management\Hotel_Management\GUI_Hotel\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.xml
+C:\Users\Admin\Documents\Hotel_Management\Hotel_Management\GUI_Hotel\bin\Debug\Bunifu.UI.WinForms.BunifuPages.xml
+C:\Users\Admin\Documents\Hotel_Management\Hotel_Management\GUI_Hotel\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.xml
+C:\Users\Admin\Documents\Hotel_Management\Hotel_Management\GUI_Hotel\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.xml
+C:\Users\Admin\Documents\Hotel_Management\Hotel_Management\GUI_Hotel\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.xml
+C:\Users\Admin\Documents\Hotel_Management\Hotel_Management\GUI_Hotel\bin\Debug\Bunifu_UI_v1.5.3.xml
+C:\Users\Admin\Documents\Hotel_Management\Hotel_Management\GUI_Hotel\obj\Debug\GUI_Hotel.csprojAssemblyReference.cache
+C:\Users\Admin\Documents\Hotel_Management\Hotel_Management\GUI_Hotel\obj\Debug\Hotel_Management.exe.config
+C:\Users\Admin\Documents\Hotel_Management\Hotel_Management\GUI_Hotel\obj\Debug\Hotel_Management.FrmMain.resources
+C:\Users\Admin\Documents\Hotel_Management\Hotel_Management\GUI_Hotel\obj\Debug\Hotel_Management.GUI_CaiDat.GUI_CauHinhKS.resources
+C:\Users\Admin\Documents\Hotel_Management\Hotel_Management\GUI_Hotel\obj\Debug\Hotel_Management.GUI_CaiDat.GUI_QuanTri.resources
+C:\Users\Admin\Documents\Hotel_Management\Hotel_Management\GUI_Hotel\obj\Debug\Hotel_Management.GUI_CaiDat.GUI_TaiKhoan.resources
+C:\Users\Admin\Documents\Hotel_Management\Hotel_Management\GUI_Hotel\obj\Debug\Hotel_Management.GUI_DanhSach.GUI_DSDonDatPhong.resources
+C:\Users\Admin\Documents\Hotel_Management\Hotel_Management\GUI_Hotel\obj\Debug\Hotel_Management.GUI_DanhSach.GUI_DSHoaDon.resources
+C:\Users\Admin\Documents\Hotel_Management\Hotel_Management\GUI_Hotel\obj\Debug\Hotel_Management.GUI_NghiepVuPhong.GUI_ChuyenPhong.resources
+C:\Users\Admin\Documents\Hotel_Management\Hotel_Management\GUI_Hotel\obj\Debug\Hotel_Management.GUI_NghiepVuPhong.GUI_DatPhong.resources
+C:\Users\Admin\Documents\Hotel_Management\Hotel_Management\GUI_Hotel\obj\Debug\Hotel_Management.GUI_NghiepVuPhong.GUI_GiaHanPhong.resources
+C:\Users\Admin\Documents\Hotel_Management\Hotel_Management\GUI_Hotel\obj\Debug\Hotel_Management.GUI_NghiepVuPhong.GUI_HuyPhong.resources
+C:\Users\Admin\Documents\Hotel_Management\Hotel_Management\GUI_Hotel\obj\Debug\Hotel_Management.GUI_SignIn.resources
+C:\Users\Admin\Documents\Hotel_Management\Hotel_Management\GUI_Hotel\obj\Debug\Hotel_Management.Properties.Resources.resources
+C:\Users\Admin\Documents\Hotel_Management\Hotel_Management\GUI_Hotel\obj\Debug\GUI_Hotel.csproj.GenerateResource.cache
+C:\Users\Admin\Documents\Hotel_Management\Hotel_Management\GUI_Hotel\obj\Debug\GUI_Hotel.csproj.CopyComplete
+C:\Users\Admin\Documents\Hotel_Management\Hotel_Management\GUI_Hotel\obj\Debug\Hotel_Management.exe
+C:\Users\Admin\Documents\Hotel_Management\Hotel_Management\GUI_Hotel\obj\Debug\Hotel_Management.pdb
+C:\Users\Admin\Documents\Hotel_Management\Hotel_Management\GUI_Hotel\bin\Debug\DAL_Hotel.dll
+C:\Users\Admin\Documents\Hotel_Management\Hotel_Management\GUI_Hotel\bin\Debug\DAL_Hotel.pdb

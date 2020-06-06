@@ -19,3 +19,13 @@ D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel
 D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\BUS_Hotel\obj\Debug\BUS_Hotel.csproj.CopyComplete
 D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\BUS_Hotel\obj\Debug\BUS_Hotel.dll
 D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\BUS_Hotel\obj\Debug\BUS_Hotel.pdb
+C:\Users\Admin\Documents\Hotel_Management\Hotel_Management\BUS_Hotel\bin\Debug\BUS_Hotel.dll
+C:\Users\Admin\Documents\Hotel_Management\Hotel_Management\BUS_Hotel\bin\Debug\BUS_Hotel.pdb
+C:\Users\Admin\Documents\Hotel_Management\Hotel_Management\BUS_Hotel\bin\Debug\DAL_Hotel.dll
+C:\Users\Admin\Documents\Hotel_Management\Hotel_Management\BUS_Hotel\bin\Debug\DTO_Hotel.dll
+C:\Users\Admin\Documents\Hotel_Management\Hotel_Management\BUS_Hotel\bin\Debug\DAL_Hotel.pdb
+C:\Users\Admin\Documents\Hotel_Management\Hotel_Management\BUS_Hotel\bin\Debug\DTO_Hotel.pdb
+C:\Users\Admin\Documents\Hotel_Management\Hotel_Management\BUS_Hotel\obj\Debug\BUS_Hotel.csprojAssemblyReference.cache
+C:\Users\Admin\Documents\Hotel_Management\Hotel_Management\BUS_Hotel\obj\Debug\BUS_Hotel.csproj.CopyComplete
+C:\Users\Admin\Documents\Hotel_Management\Hotel_Management\BUS_Hotel\obj\Debug\BUS_Hotel.dll
+C:\Users\Admin\Documents\Hotel_Management\Hotel_Management\BUS_Hotel\obj\Debug\BUS_Hotel.pdb
