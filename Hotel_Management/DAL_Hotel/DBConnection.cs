@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 namespace DAL_Hotel
 {
-    class DBConnection
+    public class DBConnection
     {
-        protected SqlConnection conn = new SqlConnection("Data Source=LAPTOP-4BQDKGPF;Initial Catalog=Library_Manager;Integrated Security=True");
+        protected SqlConnection conn = new SqlConnection("Data Source=LAPTOP-4BQDKGPF;Initial Catalog=QLKS;Integrated Security=True");
     }
 }
