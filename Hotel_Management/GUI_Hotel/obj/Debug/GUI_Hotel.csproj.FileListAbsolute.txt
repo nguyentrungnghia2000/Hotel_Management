@@ -186,3 +186,7 @@ C:\Users\Admin\Desktop\Hotel_Management\Hotel_Management\GUI_Hotel\obj\Debug\Hot
 C:\Users\Admin\Desktop\Hotel_Management\Hotel_Management\GUI_Hotel\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.dll
 C:\Users\Admin\Desktop\Hotel_Management\Hotel_Management\GUI_Hotel\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.xml
 >>>>>>> 37e1ee0ddd17e9d0d4e859fff5fa990b9245cc18
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\GUI_Hotel\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.xml
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\GUI_Hotel\obj\Debug\Hotel_Management.GUI_CaiDat.GUI_ListDichVu.resources
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\GUI_Hotel\obj\Debug\Hotel_Management.GUI_CaiDat.GUI_ListLoaiPhong.resources
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\GUI_Hotel\obj\Debug\Hotel_Management.GUI_CaiDat.GUI_ListPhong.resources
