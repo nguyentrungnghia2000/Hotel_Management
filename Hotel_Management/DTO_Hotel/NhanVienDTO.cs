@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DTO_Hotel
 {
-    class NhanVienDTO
+    public class NhanVienDTO
     {
         private string manv;
 
