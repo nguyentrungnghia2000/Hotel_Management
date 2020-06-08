@@ -46,6 +46,9 @@
     <Reference Include="Bunifu.UI.WinForms.BunifuPages">
       <HintPath>..\..\Software\Bunifu UI\Bunifu.UI.WinForms.BunifuPages.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPictureBox">
+      <HintPath>D:\Software\Bunifu UI\Bunifu.UI.WinForms.BunifuPictureBox.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuSlider">
       <HintPath>..\..\Software\Bunifu UI\Bunifu.UI.WinForms.BunifuSlider.dll</HintPath>
     </Reference>
@@ -85,6 +88,24 @@
     </Compile>
     <Compile Include="GUI_CaiDat\GUI_CauHinhKS.Designer.cs">
       <DependentUpon>GUI_CauHinhKS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_CaiDat\GUI_ListDichVu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_CaiDat\GUI_ListDichVu.Designer.cs">
+      <DependentUpon>GUI_ListDichVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_CaiDat\GUI_ListLoaiPhong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_CaiDat\GUI_ListLoaiPhong.Designer.cs">
+      <DependentUpon>GUI_ListLoaiPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_CaiDat\GUI_ListPhong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_CaiDat\GUI_ListPhong.Designer.cs">
+      <DependentUpon>GUI_ListPhong.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI_CaiDat\GUI_QuanTri.cs">
       <SubType>Form</SubType>
@@ -147,6 +168,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_CaiDat\GUI_CauHinhKS.resx">
       <DependentUpon>GUI_CauHinhKS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_CaiDat\GUI_ListDichVu.resx">
+      <DependentUpon>GUI_ListDichVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_CaiDat\GUI_ListLoaiPhong.resx">
+      <DependentUpon>GUI_ListLoaiPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_CaiDat\GUI_ListPhong.resx">
+      <DependentUpon>GUI_ListPhong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_CaiDat\GUI_QuanTri.resx">
       <DependentUpon>GUI_QuanTri.cs</DependentUpon>
