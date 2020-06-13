@@ -14,4 +14,6 @@ Thành viên
   - Quản lý nhân viên
   - Quản lý phòng
   - Quản lý đặt phòng
+  - Báo cáo
+  - Thống kê
   ....
