@@ -16,7 +16,7 @@ namespace Hotel_Management
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GUI_CaiDat.GUI_TaiKhoan());
+            Application.Run(new GUI_SignIn());
         }
     }
 }

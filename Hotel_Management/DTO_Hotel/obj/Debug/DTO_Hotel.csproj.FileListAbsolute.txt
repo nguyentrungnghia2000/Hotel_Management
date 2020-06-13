@@ -13,3 +13,8 @@ C:\Users\Admin\Documents\Hotel_Management\Hotel_Management\DTO_Hotel\bin\Debug\D
 C:\Users\Admin\Documents\Hotel_Management\Hotel_Management\DTO_Hotel\obj\Debug\DTO_Hotel.csprojAssemblyReference.cache
 C:\Users\Admin\Documents\Hotel_Management\Hotel_Management\DTO_Hotel\obj\Debug\DTO_Hotel.dll
 C:\Users\Admin\Documents\Hotel_Management\Hotel_Management\DTO_Hotel\obj\Debug\DTO_Hotel.pdb
+C:\Users\Admin\Desktop\Hotel_Management\Hotel_Management\DTO_Hotel\bin\Debug\DTO_Hotel.dll
+C:\Users\Admin\Desktop\Hotel_Management\Hotel_Management\DTO_Hotel\bin\Debug\DTO_Hotel.pdb
+C:\Users\Admin\Desktop\Hotel_Management\Hotel_Management\DTO_Hotel\obj\Debug\DTO_Hotel.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\Hotel_Management\Hotel_Management\DTO_Hotel\obj\Debug\DTO_Hotel.dll
+C:\Users\Admin\Desktop\Hotel_Management\Hotel_Management\DTO_Hotel\obj\Debug\DTO_Hotel.pdb
