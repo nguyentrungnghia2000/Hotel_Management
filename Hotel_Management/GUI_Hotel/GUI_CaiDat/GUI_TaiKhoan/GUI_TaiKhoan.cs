@@ -19,24 +19,42 @@ namespace Hotel_Management.GUI_CaiDat
 
         private void pictureBox7_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
 
+        private void HideButton()
+        {
+            btnHuy.Visible = false;
+            btnLuu.Visible = false;
+        }
+
+        private void ShowButton()
+        {
+            btnHuy.Visible = true;
+            btnLuu.Visible = true;
+        }
         private void btnSuaThongTin_Click(object sender, EventArgs e)
         {
             if (btnHuy.Visible == false)
             {
-                btnHuy.Visible = true;
-                btnLuu.Visible = true;
+                ShowButton();
              
             }
             else
             {
-                btnHuy.Visible = false;
-                btnLuu.Visible = false;
+                HideButton();
              
             }
         }
-        
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            HideButton();
+        }
+
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+            HideButton();
+        }
     }
 }
