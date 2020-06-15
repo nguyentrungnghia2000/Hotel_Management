@@ -125,7 +125,7 @@
         RU5ErkJggg==
 </value>
   </data>
-  <data name="bunifuTextBox2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="txb_makh.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAJQAAAAkCAYAAABv9hOhAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACXSURBVHhe7dKxDcMwAANB7T+VDI2RMTJADAFq0tpf3gFs
@@ -161,16 +161,7 @@
         4LGAxwIeC3gs4LGAxwIeC3gs4LGAxwIe6w/8eZ7vPuzebePDrU5jvMORARHP3DMWAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="ghichu.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAUsAAAAhCAYAAABQr4kWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACsSURBVHhe7dTBCcMwAARB9V+VjcpIGSkgRqCPCAlbwAzc
-        5wrYAUA053xd1/UxM7Nzq487lWOsA4Bvq487lWIJ8ItYAgRiCRCIJUAglgCBWAIEYgkQiCVAIJYAgVgC
-        BGIJEIglQCCWAIFYAgRiCRCIJUAglgCBWAIEYgkQiCVAIJYAgVgCBGIJEIglQCCWAIFYAgRiCRCIJUBw
-        xPK+7/c6zMzs3OrjTiUA/43xAGIptOVom7UcAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="diachi.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="txb_diachi.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAM0AAAAhCAYAAAB6Oi+QAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACXSURBVHhe7dOxCcNAAATB778qPV+Gy3ABNg9KHMhoFc/A
@@ -179,7 +170,7 @@
         oHWrr/tQAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="email.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="txb_email.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAALMAAAAhCAYAAACSupq7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACTSURBVHhe7dKxCQMxAARB9V+VHpXhMlyAH4ESl6BlBi65
@@ -188,7 +179,7 @@
         bZMAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="didong.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="txb_sdt.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAJUAAAAhCAYAAADQ+eksAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACPSURBVHhe7dKxDQIxAARB91+VXy6DMigAZMkJsZdsRrrk
@@ -197,7 +188,7 @@
         AABJRU5ErkJggg==
 </value>
   </data>
-  <data name="scmnt.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="txb_cmnd.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAM0AAAAkCAYAAAAq974jAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACfSURBVHhe7dOxCcNAAATB778qPV+Gy3ABNg9KHMhoFc/A
@@ -206,7 +197,7 @@
         JgPcN8YXwqoXGeOsmKkAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="tenkhach.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="txb_tenkh.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAPsAAAAhCAYAAAAf193vAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACcSURBVHhe7dOxCQMxAARB9V+VHpXhMlyAH4ESt6CdgUsu
