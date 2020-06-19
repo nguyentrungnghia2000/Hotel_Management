@@ -294,7 +294,7 @@
         FCoVjFOoBOQpVCoYp1AJyHuDtQF5b7xtbZpXQxzHoibORvgAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="btnSoDoPhong.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="bt_SoDoPhong.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAU5JREFUSEvt
         krEuBGEUhSdUJItSodFQKVbibdhSq/ACXsEDaLwCne0U2McQolGQqBTGOb+Pu/w3DJnSl3zJzrln7mT+
@@ -305,7 +305,7 @@
         FCoVjFOoBOQpVCoYp1AJyHuDtQF5b7xtbZpXQxzHoibORvgAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="btnThongTinChung.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="bt_ThongTinChung.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAU5JREFUSEvt
         krEuBGEUhSdUJItSodFQKVbibdhSq/ACXsEDaLwCne0U2McQolGQqBTGOb+Pu/w3DJnSl3zJzrln7mT+

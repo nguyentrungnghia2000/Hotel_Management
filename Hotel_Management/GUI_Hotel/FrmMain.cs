@@ -21,7 +21,8 @@ namespace Hotel_Management
         GUI_NghiepVuPhong.GUI_HuyPhong gui_HP = new GUI_NghiepVuPhong.GUI_HuyPhong();
         GUI_DanhSach.GUI_DSDonDatPhong gui_DDP = new GUI_DanhSach.GUI_DSDonDatPhong();
         GUI_DanhSach.GUI_DSHoaDon gui_HD = new GUI_DanhSach.GUI_DSHoaDon();
-
+        GUI_ThongTinChung.GUI_ThongTinChung gui_TTC = new GUI_ThongTinChung.GUI_ThongTinChung();
+        GUI_SoDoPhong.GUI_SoDoPhong gui_SDP = new GUI_SoDoPhong.GUI_SoDoPhong();
         public FrmMain()
         {
             InitializeComponent();
@@ -33,12 +34,15 @@ namespace Hotel_Management
             {
                 Invoke(new Action(() =>
                 {
+                    panelChinh.Controls.Add(gui_TTC);
+                    panelChinh.Controls.Add(gui_SDP);
                     panelChinh.Controls.Add(gui_DP);
                     panelChinh.Controls.Add(gui_CP);
                     panelChinh.Controls.Add(gui_GHP);
                     panelChinh.Controls.Add(gui_HP);
                     panelChinh.Controls.Add(gui_HD);
                     panelChinh.Controls.Add(gui_DDP);
+                   
                 }));
             });
             newThread.Start();
@@ -65,14 +69,16 @@ namespace Hotel_Management
         }
         private void btnThongTinChung_Click(object sender, EventArgs e)
         {
-            SidePanel.Height = btnThongTinChung.Height;
-            SidePanel.Top = btnThongTinChung.Top;
+            gui_TTC.BringToFront();
+            SidePanel.Height = bt_ThongTinChung.Height;
+            SidePanel.Top = bt_ThongTinChung.Top;
         }
 
-        private void btnSoDoPhong_Click(object sender, EventArgs e)
+        private void bt_SoDoPhong_Click(object sender, EventArgs e)
         {
-            SidePanel.Height = btnSoDoPhong.Height;
-            SidePanel.Top = btnSoDoPhong.Top;
+            gui_SDP.BringToFront();
+            SidePanel.Height = bt_SoDoPhong.Height;
+            SidePanel.Top = bt_SoDoPhong.Top;
         }
         private void btnNghiepVu_Click(object sender, EventArgs e)
         {
@@ -117,7 +123,7 @@ namespace Hotel_Management
 
         private void btnHoaDon_Click(object sender, EventArgs e)
         {
-            gui_HD.BringToFront();
+           gui_HD.BringToFront();
         }
 
         private void btnBaoCao_Click(object sender, EventArgs e)
@@ -162,8 +168,9 @@ namespace Hotel_Management
         private void btnQuanTri_Click(object sender, EventArgs e)
         {
             HidePanel();
-            GUI_CaiDat.GUI_QuanTri gui_quantri = new GUI_CaiDat.GUI_QuanTri();
-            gui_quantri.ShowDialog();
+            GUI_CaiDat.GUI_QuanTri gui_qt = new GUI_CaiDat.GUI_QuanTri();
+            gui_qt.ShowDialog();
+            
         }
     }
 }

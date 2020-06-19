@@ -48,8 +48,8 @@
             this.btnChuyenPhong = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnDatPhong = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnNghiepVu = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnSoDoPhong = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnThongTinChung = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bt_SoDoPhong = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bt_ThongTinChung = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel4 = new System.Windows.Forms.Panel();
             this.SidePanel = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -112,8 +112,8 @@
             this.panel2.Controls.Add(this.btnDanhSach);
             this.panel2.Controls.Add(this.panelSubMenuNVP);
             this.panel2.Controls.Add(this.btnNghiepVu);
-            this.panel2.Controls.Add(this.btnSoDoPhong);
-            this.panel2.Controls.Add(this.btnThongTinChung);
+            this.panel2.Controls.Add(this.bt_SoDoPhong);
+            this.panel2.Controls.Add(this.bt_ThongTinChung);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 147);
@@ -619,81 +619,81 @@
             this.btnNghiepVu.TextFont = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNghiepVu.Click += new System.EventHandler(this.btnNghiepVu_Click);
             // 
-            // btnSoDoPhong
+            // bt_SoDoPhong
             // 
-            this.btnSoDoPhong.Active = false;
-            this.btnSoDoPhong.Activecolor = System.Drawing.Color.Transparent;
-            this.btnSoDoPhong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnSoDoPhong.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSoDoPhong.BorderRadius = 0;
-            this.btnSoDoPhong.ButtonText = "      Sơ đồ phòng";
-            this.btnSoDoPhong.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSoDoPhong.DisabledColor = System.Drawing.Color.Gray;
-            this.btnSoDoPhong.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnSoDoPhong.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnSoDoPhong.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnSoDoPhong.Iconimage")));
-            this.btnSoDoPhong.Iconimage_right = null;
-            this.btnSoDoPhong.Iconimage_right_Selected = null;
-            this.btnSoDoPhong.Iconimage_Selected = null;
-            this.btnSoDoPhong.IconMarginLeft = 0;
-            this.btnSoDoPhong.IconMarginRight = 0;
-            this.btnSoDoPhong.IconRightVisible = true;
-            this.btnSoDoPhong.IconRightZoom = 0D;
-            this.btnSoDoPhong.IconVisible = true;
-            this.btnSoDoPhong.IconZoom = 35D;
-            this.btnSoDoPhong.IsTab = false;
-            this.btnSoDoPhong.Location = new System.Drawing.Point(10, 70);
-            this.btnSoDoPhong.Margin = new System.Windows.Forms.Padding(4);
-            this.btnSoDoPhong.Name = "btnSoDoPhong";
-            this.btnSoDoPhong.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnSoDoPhong.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnSoDoPhong.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(107)))), ((int)(((byte)(89)))));
-            this.btnSoDoPhong.selected = false;
-            this.btnSoDoPhong.Size = new System.Drawing.Size(211, 70);
-            this.btnSoDoPhong.TabIndex = 4;
-            this.btnSoDoPhong.Text = "      Sơ đồ phòng";
-            this.btnSoDoPhong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSoDoPhong.Textcolor = System.Drawing.Color.White;
-            this.btnSoDoPhong.TextFont = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSoDoPhong.Click += new System.EventHandler(this.btnSoDoPhong_Click);
+            this.bt_SoDoPhong.Active = false;
+            this.bt_SoDoPhong.Activecolor = System.Drawing.Color.Transparent;
+            this.bt_SoDoPhong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.bt_SoDoPhong.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bt_SoDoPhong.BorderRadius = 0;
+            this.bt_SoDoPhong.ButtonText = "      Sơ đồ phòng";
+            this.bt_SoDoPhong.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_SoDoPhong.DisabledColor = System.Drawing.Color.Gray;
+            this.bt_SoDoPhong.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bt_SoDoPhong.Iconcolor = System.Drawing.Color.Transparent;
+            this.bt_SoDoPhong.Iconimage = ((System.Drawing.Image)(resources.GetObject("bt_SoDoPhong.Iconimage")));
+            this.bt_SoDoPhong.Iconimage_right = null;
+            this.bt_SoDoPhong.Iconimage_right_Selected = null;
+            this.bt_SoDoPhong.Iconimage_Selected = null;
+            this.bt_SoDoPhong.IconMarginLeft = 0;
+            this.bt_SoDoPhong.IconMarginRight = 0;
+            this.bt_SoDoPhong.IconRightVisible = true;
+            this.bt_SoDoPhong.IconRightZoom = 0D;
+            this.bt_SoDoPhong.IconVisible = true;
+            this.bt_SoDoPhong.IconZoom = 35D;
+            this.bt_SoDoPhong.IsTab = false;
+            this.bt_SoDoPhong.Location = new System.Drawing.Point(10, 70);
+            this.bt_SoDoPhong.Margin = new System.Windows.Forms.Padding(4);
+            this.bt_SoDoPhong.Name = "bt_SoDoPhong";
+            this.bt_SoDoPhong.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.bt_SoDoPhong.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.bt_SoDoPhong.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(107)))), ((int)(((byte)(89)))));
+            this.bt_SoDoPhong.selected = false;
+            this.bt_SoDoPhong.Size = new System.Drawing.Size(211, 70);
+            this.bt_SoDoPhong.TabIndex = 4;
+            this.bt_SoDoPhong.Text = "      Sơ đồ phòng";
+            this.bt_SoDoPhong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_SoDoPhong.Textcolor = System.Drawing.Color.White;
+            this.bt_SoDoPhong.TextFont = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_SoDoPhong.Click += new System.EventHandler(this.bt_SoDoPhong_Click);
             // 
-            // btnThongTinChung
+            // bt_ThongTinChung
             // 
-            this.btnThongTinChung.Active = false;
-            this.btnThongTinChung.Activecolor = System.Drawing.Color.Transparent;
-            this.btnThongTinChung.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnThongTinChung.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnThongTinChung.BorderRadius = 0;
-            this.btnThongTinChung.ButtonText = "      Thông tin chung";
-            this.btnThongTinChung.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnThongTinChung.DisabledColor = System.Drawing.Color.Gray;
-            this.btnThongTinChung.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnThongTinChung.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnThongTinChung.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnThongTinChung.Iconimage")));
-            this.btnThongTinChung.Iconimage_right = null;
-            this.btnThongTinChung.Iconimage_right_Selected = null;
-            this.btnThongTinChung.Iconimage_Selected = null;
-            this.btnThongTinChung.IconMarginLeft = 0;
-            this.btnThongTinChung.IconMarginRight = 0;
-            this.btnThongTinChung.IconRightVisible = true;
-            this.btnThongTinChung.IconRightZoom = 0D;
-            this.btnThongTinChung.IconVisible = true;
-            this.btnThongTinChung.IconZoom = 35D;
-            this.btnThongTinChung.IsTab = false;
-            this.btnThongTinChung.Location = new System.Drawing.Point(10, 0);
-            this.btnThongTinChung.Margin = new System.Windows.Forms.Padding(4);
-            this.btnThongTinChung.Name = "btnThongTinChung";
-            this.btnThongTinChung.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnThongTinChung.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnThongTinChung.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(107)))), ((int)(((byte)(89)))));
-            this.btnThongTinChung.selected = false;
-            this.btnThongTinChung.Size = new System.Drawing.Size(211, 70);
-            this.btnThongTinChung.TabIndex = 3;
-            this.btnThongTinChung.Text = "      Thông tin chung";
-            this.btnThongTinChung.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThongTinChung.Textcolor = System.Drawing.Color.White;
-            this.btnThongTinChung.TextFont = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThongTinChung.Click += new System.EventHandler(this.btnThongTinChung_Click);
+            this.bt_ThongTinChung.Active = false;
+            this.bt_ThongTinChung.Activecolor = System.Drawing.Color.Transparent;
+            this.bt_ThongTinChung.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.bt_ThongTinChung.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bt_ThongTinChung.BorderRadius = 0;
+            this.bt_ThongTinChung.ButtonText = "      Thông tin chung";
+            this.bt_ThongTinChung.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_ThongTinChung.DisabledColor = System.Drawing.Color.Gray;
+            this.bt_ThongTinChung.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bt_ThongTinChung.Iconcolor = System.Drawing.Color.Transparent;
+            this.bt_ThongTinChung.Iconimage = ((System.Drawing.Image)(resources.GetObject("bt_ThongTinChung.Iconimage")));
+            this.bt_ThongTinChung.Iconimage_right = null;
+            this.bt_ThongTinChung.Iconimage_right_Selected = null;
+            this.bt_ThongTinChung.Iconimage_Selected = null;
+            this.bt_ThongTinChung.IconMarginLeft = 0;
+            this.bt_ThongTinChung.IconMarginRight = 0;
+            this.bt_ThongTinChung.IconRightVisible = true;
+            this.bt_ThongTinChung.IconRightZoom = 0D;
+            this.bt_ThongTinChung.IconVisible = true;
+            this.bt_ThongTinChung.IconZoom = 35D;
+            this.bt_ThongTinChung.IsTab = false;
+            this.bt_ThongTinChung.Location = new System.Drawing.Point(10, 0);
+            this.bt_ThongTinChung.Margin = new System.Windows.Forms.Padding(4);
+            this.bt_ThongTinChung.Name = "bt_ThongTinChung";
+            this.bt_ThongTinChung.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.bt_ThongTinChung.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.bt_ThongTinChung.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(107)))), ((int)(((byte)(89)))));
+            this.bt_ThongTinChung.selected = false;
+            this.bt_ThongTinChung.Size = new System.Drawing.Size(211, 70);
+            this.bt_ThongTinChung.TabIndex = 3;
+            this.bt_ThongTinChung.Text = "      Thông tin chung";
+            this.bt_ThongTinChung.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bt_ThongTinChung.Textcolor = System.Drawing.Color.White;
+            this.bt_ThongTinChung.TextFont = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_ThongTinChung.Click += new System.EventHandler(this.btnThongTinChung_Click);
             // 
             // panel4
             // 
@@ -804,6 +804,7 @@
             // 
             // panelChinh
             // 
+            this.panelChinh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelChinh.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelChinh.Location = new System.Drawing.Point(238, 86);
             this.panelChinh.Name = "panelChinh";
@@ -992,9 +993,9 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private Bunifu.Framework.UI.BunifuDragControl KeoTha;
         private System.Windows.Forms.Panel SidePanel;
-        private Bunifu.Framework.UI.BunifuFlatButton btnThongTinChung;
+        private Bunifu.Framework.UI.BunifuFlatButton bt_ThongTinChung;
         private Bunifu.Framework.UI.BunifuFlatButton btnNghiepVu;
-        private Bunifu.Framework.UI.BunifuFlatButton btnSoDoPhong;
+        private Bunifu.Framework.UI.BunifuFlatButton bt_SoDoPhong;
         private System.Windows.Forms.Panel panelSubMenuNVP;
         private Bunifu.Framework.UI.BunifuFlatButton btnGiaHanPhong;
         private Bunifu.Framework.UI.BunifuFlatButton btnChuyenPhong;

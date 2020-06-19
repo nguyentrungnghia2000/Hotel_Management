@@ -18,7 +18,7 @@ namespace DAL_Hotel
             private set { DBConnection.instance = value; }
         }
         // private DBConnection() { }
-        private static string connectionSTR = @"Data Source=LAPTOP-RLAB8F3L\SQLEXPRESS;Initial Catalog=QLKS;Integrated Security=True";
+        private static string connectionSTR = @"Data Source=LAPTOP-4BQDKGPF;Initial Catalog=QLKS;Integrated Security=True";
         protected SqlConnection conn = new SqlConnection(connectionSTR);
         public DataTable ExecuteQuery(string query, object[] parameter = null)
         {

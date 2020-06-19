@@ -33,39 +33,87 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Bunifu.Core, Version=1.11.4.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9" />
+    <Reference Include="Bunifu.Core, Version=1.11.4.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9">
+      <HintPath>D:\Software\Bunifu UI\Bunifu.Core.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForm.BunifuShadowPanel">
-      <HintPath>..\..\Software\Bunifu UI\Bunifu.UI.WinForm.BunifuShadowPanel.dll</HintPath>
+      <HintPath>D:\Software\Bunifu UI\Bunifu.UI.WinForm.BunifuShadowPanel.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuButton">
-      <HintPath>..\..\Software\Bunifu UI\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
+      <HintPath>D:\Software\Bunifu UI\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuCheckBox">
+      <HintPath>D:\Software\Bunifu UI\Bunifu.UI.WinForms.BunifuCheckBox.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuCircleProgress">
-      <HintPath>..\..\Software\Bunifu UI\Bunifu.UI.WinForms.BunifuCircleProgress.dll</HintPath>
+      <HintPath>D:\Software\Bunifu UI\Bunifu.UI.WinForms.BunifuCircleProgress.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuColorTransition">
+      <HintPath>D:\Software\Bunifu UI\Bunifu.UI.WinForms.BunifuColorTransition.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView">
+      <HintPath>D:\Software\Bunifu UI\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDatePicker">
+      <HintPath>D:\Software\Bunifu UI\Bunifu.UI.WinForms.BunifuDatePicker.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDropdown">
+      <HintPath>D:\Software\Bunifu UI\Bunifu.UI.WinForms.BunifuDropdown.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuFormDock">
+      <HintPath>D:\Software\Bunifu UI\Bunifu.UI.WinForms.BunifuFormDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuGauge">
+      <HintPath>D:\Software\Bunifu UI\Bunifu.UI.WinForms.BunifuGauge.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuImageButton">
+      <HintPath>D:\Software\Bunifu UI\Bunifu.UI.WinForms.BunifuImageButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuLabel">
+      <HintPath>D:\Software\Bunifu UI\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuPages">
-      <HintPath>..\..\Software\Bunifu UI\Bunifu.UI.WinForms.BunifuPages.dll</HintPath>
+      <HintPath>D:\Software\Bunifu UI\Bunifu.UI.WinForms.BunifuPages.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuPictureBox">
       <HintPath>D:\Software\Bunifu UI\Bunifu.UI.WinForms.BunifuPictureBox.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuProgressBar">
+      <HintPath>D:\Software\Bunifu UI\Bunifu.UI.WinForms.BunifuProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuRadioButton">
+      <HintPath>D:\Software\Bunifu UI\Bunifu.UI.WinForms.BunifuRadioButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuScrollBar">
+      <HintPath>D:\Software\Bunifu UI\Bunifu.UI.WinForms.BunifuScrollBar.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuSlider">
-      <HintPath>..\..\Software\Bunifu UI\Bunifu.UI.WinForms.BunifuSlider.dll</HintPath>
+      <HintPath>D:\Software\Bunifu UI\Bunifu.UI.WinForms.BunifuSlider.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuTextbox">
-      <HintPath>..\..\Software\Bunifu UI\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
+      <HintPath>D:\Software\Bunifu UI\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuToolTip">
+      <HintPath>D:\Software\Bunifu UI\Bunifu.UI.WinForms.BunifuToolTip.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTransition">
+      <HintPath>D:\Software\Bunifu UI\Bunifu.UI.WinForms.BunifuTransition.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuUserControl">
-      <HintPath>..\..\Software\Bunifu UI\Bunifu.UI.WinForms.BunifuUserControl.dll</HintPath>
+      <HintPath>D:\Software\Bunifu UI\Bunifu.UI.WinForms.BunifuUserControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.ToggleSwitch">
+      <HintPath>D:\Software\Bunifu UI\Bunifu.UI.WinForms.ToggleSwitch.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu_UI_v1.5.3">
-      <HintPath>..\..\Software\Bunifu UI\Bunifu_UI_v1.5.3.dll</HintPath>
+      <HintPath>D:\Software\Bunifu UI\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.Management" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -107,6 +155,18 @@
     <Compile Include="GUI_CaiDat\GUI_CauHinh\GUI_ListPhong.Designer.cs">
       <DependentUpon>GUI_ListPhong.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI_CaiDat\GUI_ListNhanSu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_CaiDat\GUI_ListNhanSu.Designer.cs">
+      <DependentUpon>GUI_ListNhanSu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_CaiDat\GUI_QuanTri\GUI_ListQuyen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_CaiDat\GUI_QuanTri\GUI_ListQuyen.Designer.cs">
+      <DependentUpon>GUI_ListQuyen.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI_CaiDat\GUI_QuanTri\GUI_QuanTri.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +190,18 @@
     </Compile>
     <Compile Include="GUI_DanhSach\GUI_DSHoaDon.Designer.cs">
       <DependentUpon>GUI_DSHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_DanhSach\x1DonDatPhong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_DanhSach\x1DonDatPhong.Designer.cs">
+      <DependentUpon>x1DonDatPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_DanhSach\x1HoaDon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_DanhSach\x1HoaDon.Designer.cs">
+      <DependentUpon>x1HoaDon.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI_NghiepVuPhong\GUI_ChuyenPhong.cs">
       <SubType>UserControl</SubType>
@@ -161,6 +233,24 @@
     <Compile Include="GUI_SignIn.Designer.cs">
       <DependentUpon>GUI_SignIn.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI_SoDoPhong\GUI_SoDoPhong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_SoDoPhong\GUI_SoDoPhong.Designer.cs">
+      <DependentUpon>GUI_SoDoPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_SoDoPhong\GUI_x1Phong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_SoDoPhong\GUI_x1Phong.Designer.cs">
+      <DependentUpon>GUI_x1Phong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_ThongTinChung\GUI_ThongTinChung.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_ThongTinChung\GUI_ThongTinChung.Designer.cs">
+      <DependentUpon>GUI_ThongTinChung.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmMain.resx">
@@ -178,6 +268,12 @@
     <EmbeddedResource Include="GUI_CaiDat\GUI_CauHinh\GUI_ListPhong.resx">
       <DependentUpon>GUI_ListPhong.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI_CaiDat\GUI_ListNhanSu.resx">
+      <DependentUpon>GUI_ListNhanSu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_CaiDat\GUI_QuanTri\GUI_ListQuyen.resx">
+      <DependentUpon>GUI_ListQuyen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI_CaiDat\GUI_QuanTri\GUI_QuanTri.resx">
       <DependentUpon>GUI_QuanTri.cs</DependentUpon>
     </EmbeddedResource>
@@ -189,6 +285,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_DanhSach\GUI_DSHoaDon.resx">
       <DependentUpon>GUI_DSHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DanhSach\x1DonDatPhong.resx">
+      <DependentUpon>x1DonDatPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_DanhSach\x1HoaDon.resx">
+      <DependentUpon>x1HoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_NghiepVuPhong\GUI_ChuyenPhong.resx">
       <DependentUpon>GUI_ChuyenPhong.cs</DependentUpon>
@@ -204,6 +306,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_SignIn.resx">
       <DependentUpon>GUI_SignIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_SoDoPhong\GUI_SoDoPhong.resx">
+      <DependentUpon>GUI_SoDoPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_SoDoPhong\GUI_x1Phong.resx">
+      <DependentUpon>GUI_x1Phong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_ThongTinChung\GUI_ThongTinChung.resx">
+      <DependentUpon>GUI_ThongTinChung.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -229,9 +340,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="GUI_BaoCao\" />
-    <Folder Include="GUI_SoDoPhong\" />
-    <Folder Include="GUI_ThongKe\" />
-    <Folder Include="GUI_ThongTinChung\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BUS_Hotel\BUS_Hotel.csproj">
