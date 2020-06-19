@@ -20,6 +20,7 @@ namespace DAL_Hotel
         // private DBConnection() { }
         private static string connectionSTR = @"Data Source=LAPTOP-4BQDKGPF;Initial Catalog=QLKS;Integrated Security=True";
         protected SqlConnection conn = new SqlConnection(connectionSTR);
+
         public DataTable ExecuteQuery(string query, object[] parameter = null)
         {
             DataTable table = new DataTable();
