@@ -60,7 +60,7 @@
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
             this.pageDichVu = new System.Windows.Forms.TabPage();
             this.btnAddDV = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.panelListDV = new System.Windows.Forms.Panel();
+            this.pnl_listdv = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -76,6 +76,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.KeoTha = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.btn_load = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.pageCauHinh.SuspendLayout();
             this.pageLoaiPhong.SuspendLayout();
@@ -437,8 +438,9 @@
             // 
             // pageDichVu
             // 
+            this.pageDichVu.Controls.Add(this.btn_load);
             this.pageDichVu.Controls.Add(this.btnAddDV);
-            this.pageDichVu.Controls.Add(this.panelListDV);
+            this.pageDichVu.Controls.Add(this.pnl_listdv);
             this.pageDichVu.Controls.Add(this.panel6);
             this.pageDichVu.Controls.Add(this.label7);
             this.pageDichVu.Location = new System.Drawing.Point(4, 4);
@@ -515,14 +517,14 @@
             this.btnAddDV.UseDefaultRadiusAndThickness = true;
             this.btnAddDV.Click += new System.EventHandler(this.btnAddDV_Click);
             // 
-            // panelListDV
+            // pnl_listdv
             // 
-            this.panelListDV.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelListDV.Location = new System.Drawing.Point(4, 119);
-            this.panelListDV.Margin = new System.Windows.Forms.Padding(4);
-            this.panelListDV.Name = "panelListDV";
-            this.panelListDV.Size = new System.Drawing.Size(1215, 494);
-            this.panelListDV.TabIndex = 9;
+            this.pnl_listdv.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnl_listdv.Location = new System.Drawing.Point(4, 119);
+            this.pnl_listdv.Margin = new System.Windows.Forms.Padding(4);
+            this.pnl_listdv.Name = "pnl_listdv";
+            this.pnl_listdv.Size = new System.Drawing.Size(1215, 494);
+            this.pnl_listdv.TabIndex = 9;
             // 
             // panel6
             // 
@@ -783,6 +785,16 @@
             this.KeoTha.TargetControl = this.panel2;
             this.KeoTha.Vertical = true;
             // 
+            // btn_load
+            // 
+            this.btn_load.Location = new System.Drawing.Point(960, 14);
+            this.btn_load.Name = "btn_load";
+            this.btn_load.Size = new System.Drawing.Size(107, 47);
+            this.btn_load.TabIndex = 12;
+            this.btn_load.Text = "Load";
+            this.btn_load.UseVisualStyleBackColor = true;
+            this.btn_load.Click += new System.EventHandler(this.btn_load_Click);
+            // 
             // GUI_CauHinhKS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -840,7 +852,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Panel panelListLP;
-        private System.Windows.Forms.Panel panelListDV;
+        private System.Windows.Forms.Panel pnl_listdv;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
@@ -857,5 +869,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.LinkLabel linkLabel3;
+        private System.Windows.Forms.Button btn_load;
     }
 }

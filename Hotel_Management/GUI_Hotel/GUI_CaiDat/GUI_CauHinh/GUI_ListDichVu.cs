@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DTO_Hotel;
+using DAL_Hotel;
 
 namespace Hotel_Management.GUI_CaiDat
 {
@@ -39,6 +41,11 @@ namespace Hotel_Management.GUI_CaiDat
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             ShowPanel();
+        }
+
+        private void GUI_ListDichVu_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

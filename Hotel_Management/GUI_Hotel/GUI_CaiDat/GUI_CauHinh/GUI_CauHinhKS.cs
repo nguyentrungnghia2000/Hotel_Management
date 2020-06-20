@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using DTO_Hotel;
+using DAL_Hotel;
 
 namespace Hotel_Management.GUI_CaiDat
 {
@@ -17,13 +19,13 @@ namespace Hotel_Management.GUI_CaiDat
         {
             InitializeComponent();
         }
+
+        
         private GUI_CaiDat.GUI_ListLoaiPhong guiListLP = new GUI_CaiDat.GUI_ListLoaiPhong();
         private GUI_CaiDat.GUI_ListDichVu guiListDV = new GUI_CaiDat.GUI_ListDichVu();
         private GUI_CaiDat.GUI_ListPhong guiListPhong = new GUI_CaiDat.GUI_ListPhong();
         private void GUI_CauHinhKS_Load(object sender, EventArgs e)
         {
-
-
             Thread newThread = new Thread(() =>
             {
                 Invoke(new Action(() =>
@@ -31,7 +33,7 @@ namespace Hotel_Management.GUI_CaiDat
 
                     panelListLP.Controls.Add(guiListLP);
                     guiListLP.Dock = DockStyle.Top;
-                    panelListDV.Controls.Add(guiListDV);
+                    pnl_listdv.Controls.Add(guiListDV);
                     guiListDV.Dock = DockStyle.Top;
                     panelListPhong.Controls.Add(guiListPhong);
                     guiListPhong.Dock = DockStyle.Top;
@@ -79,8 +81,21 @@ namespace Hotel_Management.GUI_CaiDat
         private void btnAddDV_Click(object sender, EventArgs e)
         {
             GUI_CaiDat.GUI_ListDichVu guiListDV = new GUI_CaiDat.GUI_ListDichVu();
-            panelListDV.Controls.Add(guiListDV);
+            pnl_listdv.Controls.Add(guiListDV);
             guiListDV.Dock = DockStyle.Top;
+        }
+
+        private void btn_load_Click(object sender, EventArgs e)
+        {
+            List<DTO_DichVu> list = DAL_DichVu.Instance.LoadDichVu();
+            foreach (DTO_DichVu item in list)
+            {
+                GUI_ListDichVu dichvu = new GUI_ListDichVu();
+
+                dichvu.txb_madv.Text = item.Madv.ToString();
+                dichvu.txb_tendv.Text = item.Tendv.ToString();
+                dichvu.txb_giadv.Text = item.Giadv.ToString();
+            }
         }
     }       
     
