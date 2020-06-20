@@ -16,5 +16,42 @@ namespace Hotel_Management.GUI_NghiepVuPhong
         {
             InitializeComponent();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void bunifuCustomLabel5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bt_ToDichVu_Click(object sender, EventArgs e)
+        {
+            page_DatPhong.SetPage(1);
+        }
+
+        private void tabPage3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bt_Tiep2_Click(object sender, EventArgs e)
+        {
+            page_DatPhong.SetPage(2);
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            page_DatPhong.SetPage(1);
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            page_DatPhong.SetPage(0);
+        }
+
+        
     }
 }

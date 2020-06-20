@@ -16,5 +16,12 @@ namespace Hotel_Management.GUI_DanhSach
         {
             InitializeComponent();
         }
+
+        private void GUI_DSHoaDon_Load(object sender, EventArgs e)
+        {
+            GUI_DanhSach.x1HoaDon gui_HD = new GUI_DanhSach.x1HoaDon();
+            panel_HoaDon.Controls.Add(gui_HD);
+            gui_HD.Dock = DockStyle.Top;
+        }
     }
 }
