@@ -21,10 +21,10 @@ namespace BUS_Hotel
         public void LoadDichVu(DbDataReader data)
         {
             
-            List<DTO_DichVu> list = DAL_DichVu.Instance.LoadDichVu();
-            foreach(DTO_DichVu item in list)
-            {
-            }
+            //List<DTO_DichVu> list = DAL_DichVu.Instance.LoadDichVu();
+            //foreach(DTO_DichVu item in list)
+            //{
+            //}
         }
     }
 }

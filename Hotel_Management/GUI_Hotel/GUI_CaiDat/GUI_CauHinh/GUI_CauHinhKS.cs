@@ -85,18 +85,6 @@ namespace Hotel_Management.GUI_CaiDat
             guiListDV.Dock = DockStyle.Top;
         }
 
-        private void btn_load_Click(object sender, EventArgs e)
-        {
-            List<DTO_DichVu> list = DAL_DichVu.Instance.LoadDichVu();
-            foreach (DTO_DichVu item in list)
-            {
-                GUI_ListDichVu dichvu = new GUI_ListDichVu();
-
-                dichvu.txb_madv.Text = item.Madv.ToString();
-                dichvu.txb_tendv.Text = item.Tendv.ToString();
-                dichvu.txb_giadv.Text = item.Giadv.ToString();
-            }
-        }
     }       
     
 }

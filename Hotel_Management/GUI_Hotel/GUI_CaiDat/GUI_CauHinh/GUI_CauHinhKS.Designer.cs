@@ -76,7 +76,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.KeoTha = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.btn_load = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.pageCauHinh.SuspendLayout();
             this.pageLoaiPhong.SuspendLayout();
@@ -438,7 +437,6 @@
             // 
             // pageDichVu
             // 
-            this.pageDichVu.Controls.Add(this.btn_load);
             this.pageDichVu.Controls.Add(this.btnAddDV);
             this.pageDichVu.Controls.Add(this.pnl_listdv);
             this.pageDichVu.Controls.Add(this.panel6);
@@ -785,16 +783,6 @@
             this.KeoTha.TargetControl = this.panel2;
             this.KeoTha.Vertical = true;
             // 
-            // btn_load
-            // 
-            this.btn_load.Location = new System.Drawing.Point(960, 14);
-            this.btn_load.Name = "btn_load";
-            this.btn_load.Size = new System.Drawing.Size(107, 47);
-            this.btn_load.TabIndex = 12;
-            this.btn_load.Text = "Load";
-            this.btn_load.UseVisualStyleBackColor = true;
-            this.btn_load.Click += new System.EventHandler(this.btn_load_Click);
-            // 
             // GUI_CauHinhKS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -869,6 +857,5 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.LinkLabel linkLabel3;
-        private System.Windows.Forms.Button btn_load;
     }
 }

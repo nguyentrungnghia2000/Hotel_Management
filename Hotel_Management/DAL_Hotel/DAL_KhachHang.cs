@@ -15,18 +15,18 @@ namespace DAL_Hotel
 
         public static DAL_KhachHang Instance { get => instance; set => instance = value; }
 
-        public List<DTO_KhachHang> LoadKhachHang(DTO_KhachHang obj)
-        {
-            string query = string.Empty;
-            List<DTO_KhachHang> list = new List<DTO_KhachHang>();
-            query += "";
-            DataTable data = DBConnection.Instance.ExecuteQuery(query);
-            foreach(DataRow item in data.Rows)
-            {
-                DTO_KhachHang khachhang = new DTO_KhachHang(item);
-                list.Add(khachhang);
-            }
-            return list;
-        }
+        //public List<DTO_KhachHang> LoadKhachHang()
+        //{
+        //    string query = string.Empty;
+        //    List<DTO_KhachHang> list = new List<DTO_KhachHang>();
+        //    query += "";
+        //    DataTable data = DBConnection.Instance.ExecuteQuery(query);
+        //    foreach(DataRow item in data.Rows)
+        //    {
+        //        DTO_KhachHang khachhang = new DTO_KhachHang(item);
+        //        list.Add(khachhang);
+        //    }
+        //    return list;
+        //}
     }
 }

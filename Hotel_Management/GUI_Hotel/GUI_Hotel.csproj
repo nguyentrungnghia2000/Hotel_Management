@@ -245,6 +245,12 @@
     <Compile Include="GUI_SoDoPhong\GUI_x1Phong.Designer.cs">
       <DependentUpon>GUI_x1Phong.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI_SoDoPhong\SodophongChild.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI_SoDoPhong\SodophongChild.Designer.cs">
+      <DependentUpon>SodophongChild.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI_ThongTinChung\GUI_ThongTinChung.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -312,6 +318,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_SoDoPhong\GUI_x1Phong.resx">
       <DependentUpon>GUI_x1Phong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_SoDoPhong\SodophongChild.resx">
+      <DependentUpon>SodophongChild.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_ThongTinChung\GUI_ThongTinChung.resx">
       <DependentUpon>GUI_ThongTinChung.cs</DependentUpon>

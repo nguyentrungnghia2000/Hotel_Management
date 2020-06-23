@@ -14,9 +14,5 @@ namespace BUS_Hotel
 
         public static BUS_KhachHang Instance { get => instance; set => instance = value; }
 
-        public List<DTO_KhachHang> insert(DTO_KhachHang obj)
-        {
-            return DAL_KhachHang.Instance.LoadKhachHang(obj);
-        }
     }
 }

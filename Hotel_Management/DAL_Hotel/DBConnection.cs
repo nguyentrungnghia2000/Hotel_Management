@@ -5,12 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
+using DTO_Hotel;
 
 namespace DAL_Hotel
 {
     public class DBConnection
     {
-       
+
         private static DBConnection instance;
         public static DBConnection Instance
         {
@@ -18,7 +19,7 @@ namespace DAL_Hotel
             private set { DBConnection.instance = value; }
         }
         // private DBConnection() { }
-        private static string connectionSTR = @"Data Source=LAPTOP-4BQDKGPF;Initial Catalog=QLKS;Integrated Security=True";
+        private static string connectionSTR = @"Data Source=LAPTOP-RLAB8F3L\SQLEXPRESS;Initial Catalog=QLKS;Integrated Security=True";
         protected SqlConnection conn = new SqlConnection(connectionSTR);
 
         public DataTable ExecuteQuery(string query, object[] parameter = null)
@@ -26,6 +27,12 @@ namespace DAL_Hotel
             DataTable table = new DataTable();
             using (SqlConnection connection = new SqlConnection(connectionSTR))
             {
+
+                if (connection.State == ConnectionState.Open)
+                {
+                    connection.Close();
+                }
+
                 connection.Open();
                 SqlCommand command = new SqlCommand(query, connection);
                 if (parameter != null)
@@ -46,6 +53,7 @@ namespace DAL_Hotel
                 connection.Close();
             }
             return table;
+
         }
 
         public int ExecuteNonQuery(string query, object[] parameter = null)
@@ -99,6 +107,8 @@ namespace DAL_Hotel
             }
             return data;
         }
+
+
     }
 
 }
