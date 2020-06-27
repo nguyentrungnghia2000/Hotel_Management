@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GUI_GiaHanPhong));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bunifuMaterialTextbox13 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuMaterialTextbox12 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -49,7 +49,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuMaterialTextbox10 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -62,6 +61,7 @@
             this.bt_Tiep = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuMaterialTextbox10 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -366,30 +366,6 @@
             this.bunifuCustomLabel2.TabIndex = 131;
             this.bunifuCustomLabel2.Text = "Thông tin chung";
             // 
-            // bunifuMaterialTextbox10
-            // 
-            this.bunifuMaterialTextbox10.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.bunifuMaterialTextbox10.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.bunifuMaterialTextbox10.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.bunifuMaterialTextbox10.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox10.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuMaterialTextbox10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(107)))), ((int)(((byte)(89)))));
-            this.bunifuMaterialTextbox10.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(107)))), ((int)(((byte)(89)))));
-            this.bunifuMaterialTextbox10.HintText = "Mã KH";
-            this.bunifuMaterialTextbox10.isPassword = false;
-            this.bunifuMaterialTextbox10.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(107)))), ((int)(((byte)(89)))));
-            this.bunifuMaterialTextbox10.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(107)))), ((int)(((byte)(89)))));
-            this.bunifuMaterialTextbox10.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(107)))), ((int)(((byte)(89)))));
-            this.bunifuMaterialTextbox10.LineThickness = 1;
-            this.bunifuMaterialTextbox10.Location = new System.Drawing.Point(85, 78);
-            this.bunifuMaterialTextbox10.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox10.MaxLength = 32767;
-            this.bunifuMaterialTextbox10.Name = "bunifuMaterialTextbox10";
-            this.bunifuMaterialTextbox10.Padding = new System.Windows.Forms.Padding(0, 0, 0, 3);
-            this.bunifuMaterialTextbox10.Size = new System.Drawing.Size(87, 34);
-            this.bunifuMaterialTextbox10.TabIndex = 130;
-            this.bunifuMaterialTextbox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
             // label14
             // 
             this.label14.AutoSize = true;
@@ -565,11 +541,11 @@
             this.bt_Tiep.ColorContrastOnClick = 45;
             this.bt_Tiep.ColorContrastOnHover = 45;
             this.bt_Tiep.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.bt_Tiep.CustomizableEdges = borderEdges2;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.bt_Tiep.CustomizableEdges = borderEdges3;
             this.bt_Tiep.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bt_Tiep.DisabledBorderColor = System.Drawing.Color.Empty;
             this.bt_Tiep.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -591,24 +567,24 @@
             this.bt_Tiep.Location = new System.Drawing.Point(897, 540);
             this.bt_Tiep.Margin = new System.Windows.Forms.Padding(2);
             this.bt_Tiep.Name = "bt_Tiep";
-            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties3.BorderRadius = 3;
-            stateProperties3.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties3.BorderThickness = 1;
-            stateProperties3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties3.ForeColor = System.Drawing.Color.White;
-            stateProperties3.IconLeftImage = null;
-            stateProperties3.IconRightImage = null;
-            this.bt_Tiep.onHoverState = stateProperties3;
-            stateProperties4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties4.BorderRadius = 3;
-            stateProperties4.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties4.BorderThickness = 1;
-            stateProperties4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties4.ForeColor = System.Drawing.Color.White;
-            stateProperties4.IconLeftImage = null;
-            stateProperties4.IconRightImage = null;
-            this.bt_Tiep.OnPressedState = stateProperties4;
+            stateProperties5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties5.BorderRadius = 3;
+            stateProperties5.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties5.BorderThickness = 1;
+            stateProperties5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties5.ForeColor = System.Drawing.Color.White;
+            stateProperties5.IconLeftImage = null;
+            stateProperties5.IconRightImage = null;
+            this.bt_Tiep.onHoverState = stateProperties5;
+            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties6.BorderRadius = 3;
+            stateProperties6.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties6.BorderThickness = 1;
+            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties6.ForeColor = System.Drawing.Color.White;
+            stateProperties6.IconLeftImage = null;
+            stateProperties6.IconRightImage = null;
+            this.bt_Tiep.OnPressedState = stateProperties6;
             this.bt_Tiep.Size = new System.Drawing.Size(123, 37);
             this.bt_Tiep.TabIndex = 109;
             this.bt_Tiep.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -637,6 +613,30 @@
             this.bunifuCustomLabel1.Size = new System.Drawing.Size(140, 25);
             this.bunifuCustomLabel1.TabIndex = 4;
             this.bunifuCustomLabel1.Text = "Gia hạn phòng";
+            // 
+            // bunifuMaterialTextbox10
+            // 
+            this.bunifuMaterialTextbox10.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.bunifuMaterialTextbox10.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.bunifuMaterialTextbox10.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.bunifuMaterialTextbox10.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuMaterialTextbox10.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuMaterialTextbox10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(107)))), ((int)(((byte)(89)))));
+            this.bunifuMaterialTextbox10.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(107)))), ((int)(((byte)(89)))));
+            this.bunifuMaterialTextbox10.HintText = "Mã KH";
+            this.bunifuMaterialTextbox10.isPassword = false;
+            this.bunifuMaterialTextbox10.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(107)))), ((int)(((byte)(89)))));
+            this.bunifuMaterialTextbox10.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(107)))), ((int)(((byte)(89)))));
+            this.bunifuMaterialTextbox10.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(107)))), ((int)(((byte)(89)))));
+            this.bunifuMaterialTextbox10.LineThickness = 1;
+            this.bunifuMaterialTextbox10.Location = new System.Drawing.Point(85, 78);
+            this.bunifuMaterialTextbox10.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuMaterialTextbox10.MaxLength = 32767;
+            this.bunifuMaterialTextbox10.Name = "bunifuMaterialTextbox10";
+            this.bunifuMaterialTextbox10.Padding = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.bunifuMaterialTextbox10.Size = new System.Drawing.Size(87, 34);
+            this.bunifuMaterialTextbox10.TabIndex = 130;
+            this.bunifuMaterialTextbox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // GUI_GiaHanPhong
             // 
@@ -672,7 +672,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox10;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
@@ -685,5 +684,6 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bt_Tiep;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox10;
     }
 }

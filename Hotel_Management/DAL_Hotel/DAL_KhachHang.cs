@@ -11,7 +11,7 @@ namespace DAL_Hotel
     {
         public bool AddKhachHang(DTO_KhachHang kh)
         {
-            string query = ""
+            string query = "";
             return false;
         }
     }

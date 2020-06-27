@@ -14,20 +14,13 @@ namespace Hotel_Management
     public partial class GUI_SignIn : Form
     {
         BUS_SignIn busSignIn = new BUS_SignIn();
+        private FrmMain frm = new FrmMain();
+        private FormLoading frmload = new FormLoading();
         public GUI_SignIn()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuGradientPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
@@ -45,17 +38,17 @@ namespace Hotel_Management
         {
             PageSignIn.SetPage(1);
         }
-
-        private void btnSignIn_Click(object sender, EventArgs e)
+        
+        private void KiemTraDangNhap()
         {
             if ((txtUsername.Text != "") && (txtPassword.Text != ""))
             {
                 DTO_SignIn account = new DTO_SignIn(txtUsername.Text, txtPassword.Text);
                 if ((busSignIn.SignIn(account) == "1"))
                 {
-                    this.Hide();
-                    FrmMain frm = new FrmMain();
-                    frm.Show();
+                    frmload.Show();
+                    time_Loading.Enabled = true;
+                    time_Loading.Start();
                 }
                 else
                 {
@@ -66,6 +59,25 @@ namespace Hotel_Management
             {
                 MessageBox.Show("Sai Mat Khau, Nhap Lai!!!");
             }
+        }
+        private void btnSignIn_Click(object sender, EventArgs e)
+        {
+            KiemTraDangNhap();
+        }
+        private void txtPassword_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                KiemTraDangNhap();
+            }
+        }
+
+        private void time_Loading_Tick(object sender, EventArgs e)
+        {
+            this.Hide();
+            frm.Show();
+            frmload.Hide();
+            time_Loading.Stop();
         }
     }
 }

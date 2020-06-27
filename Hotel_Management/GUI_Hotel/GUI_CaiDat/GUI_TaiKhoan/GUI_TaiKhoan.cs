@@ -56,5 +56,15 @@ namespace Hotel_Management.GUI_CaiDat
         {
             HideButton();
         }
+
+        private void bt_HoSo_Click(object sender, EventArgs e)
+        {
+            page.SetPage(0);
+        }
+
+        private void bt_LichLamViec_Click(object sender, EventArgs e)
+        {
+            page.SetPage(1);
+        }
     }
 }

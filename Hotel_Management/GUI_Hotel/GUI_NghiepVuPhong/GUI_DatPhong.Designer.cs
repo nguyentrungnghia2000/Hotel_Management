@@ -75,6 +75,8 @@
             this.bunifuDatepicker2 = new Bunifu.Framework.UI.BunifuDatepicker();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.bunifuDropdown5 = new Bunifu.Framework.UI.BunifuDropdown();
+            this.label15 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.bt_Tiep2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -83,6 +85,8 @@
             this.bunifuDropdown4 = new Bunifu.Framework.UI.BunifuDropdown();
             this.bunifuCustomLabel9 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.bunifuDropdown6 = new Bunifu.Framework.UI.BunifuDropdown();
+            this.label16 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -127,10 +131,10 @@
             this.page_DatPhong.Location = new System.Drawing.Point(0, 70);
             this.page_DatPhong.Multiline = true;
             this.page_DatPhong.Name = "page_DatPhong";
-            this.page_DatPhong.Page = this.tabPage1;
-            this.page_DatPhong.PageIndex = 0;
-            this.page_DatPhong.PageName = "tabPage1";
-            this.page_DatPhong.PageTitle = "tabPage1";
+            this.page_DatPhong.Page = this.tabPage3;
+            this.page_DatPhong.PageIndex = 2;
+            this.page_DatPhong.PageName = "tabPage3";
+            this.page_DatPhong.PageTitle = "tabPage3";
             this.page_DatPhong.SelectedIndex = 0;
             this.page_DatPhong.Size = new System.Drawing.Size(1038, 605);
             this.page_DatPhong.TabIndex = 2;
@@ -678,6 +682,8 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPage2.Controls.Add(this.bunifuDropdown5);
+            this.tabPage2.Controls.Add(this.label15);
             this.tabPage2.Controls.Add(this.label6);
             this.tabPage2.Controls.Add(this.pictureBox2);
             this.tabPage2.Controls.Add(this.bt_Tiep2);
@@ -692,11 +698,36 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             // 
+            // bunifuDropdown5
+            // 
+            this.bunifuDropdown5.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuDropdown5.BorderRadius = 0;
+            this.bunifuDropdown5.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuDropdown5.ForeColor = System.Drawing.Color.White;
+            this.bunifuDropdown5.items = new string[0];
+            this.bunifuDropdown5.Location = new System.Drawing.Point(152, 79);
+            this.bunifuDropdown5.Name = "bunifuDropdown5";
+            this.bunifuDropdown5.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(107)))), ((int)(((byte)(89)))));
+            this.bunifuDropdown5.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(107)))), ((int)(((byte)(89)))));
+            this.bunifuDropdown5.selectedIndex = -1;
+            this.bunifuDropdown5.Size = new System.Drawing.Size(202, 34);
+            this.bunifuDropdown5.TabIndex = 94;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(23, 93);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(123, 20);
+            this.label15.TabIndex = 93;
+            this.label15.Text = "Mã khách hàng: ";
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(17, 90);
+            this.label6.Location = new System.Drawing.Point(507, 93);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(95, 20);
             this.label6.TabIndex = 92;
@@ -823,7 +854,7 @@
             this.bt_Them.IdleIconLeftImage = null;
             this.bt_Them.IdleIconRightImage = null;
             this.bt_Them.IndicateFocus = false;
-            this.bt_Them.Location = new System.Drawing.Point(438, 76);
+            this.bt_Them.Location = new System.Drawing.Point(928, 79);
             this.bt_Them.Margin = new System.Windows.Forms.Padding(2);
             this.bt_Them.Name = "bt_Them";
             stateProperties9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
@@ -857,7 +888,7 @@
             this.bunifuDropdown4.DisabledColor = System.Drawing.Color.Gray;
             this.bunifuDropdown4.ForeColor = System.Drawing.Color.White;
             this.bunifuDropdown4.items = new string[0];
-            this.bunifuDropdown4.Location = new System.Drawing.Point(118, 76);
+            this.bunifuDropdown4.Location = new System.Drawing.Point(608, 79);
             this.bunifuDropdown4.Name = "bunifuDropdown4";
             this.bunifuDropdown4.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(107)))), ((int)(((byte)(89)))));
             this.bunifuDropdown4.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(107)))), ((int)(((byte)(89)))));
@@ -879,6 +910,8 @@
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPage3.Controls.Add(this.bunifuDropdown6);
+            this.tabPage3.Controls.Add(this.label16);
             this.tabPage3.Controls.Add(this.label5);
             this.tabPage3.Controls.Add(this.label4);
             this.tabPage3.Controls.Add(this.label3);
@@ -900,6 +933,31 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "tabPage3";
             this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
+            // 
+            // bunifuDropdown6
+            // 
+            this.bunifuDropdown6.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuDropdown6.BorderRadius = 0;
+            this.bunifuDropdown6.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuDropdown6.ForeColor = System.Drawing.Color.White;
+            this.bunifuDropdown6.items = new string[0];
+            this.bunifuDropdown6.Location = new System.Drawing.Point(147, 57);
+            this.bunifuDropdown6.Name = "bunifuDropdown6";
+            this.bunifuDropdown6.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(107)))), ((int)(((byte)(89)))));
+            this.bunifuDropdown6.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(107)))), ((int)(((byte)(89)))));
+            this.bunifuDropdown6.selectedIndex = -1;
+            this.bunifuDropdown6.Size = new System.Drawing.Size(202, 34);
+            this.bunifuDropdown6.TabIndex = 96;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(18, 71);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(123, 20);
+            this.label16.TabIndex = 95;
+            this.label16.Text = "Mã khách hàng: ";
             // 
             // label5
             // 
@@ -935,7 +993,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(18, 71);
+            this.label2.Location = new System.Drawing.Point(417, 71);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(94, 20);
             this.label2.TabIndex = 91;
@@ -1062,7 +1120,7 @@
             this.bunifuMaterialTextbox7.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(107)))), ((int)(((byte)(89)))));
             this.bunifuMaterialTextbox7.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(107)))), ((int)(((byte)(89)))));
             this.bunifuMaterialTextbox7.LineThickness = 1;
-            this.bunifuMaterialTextbox7.Location = new System.Drawing.Point(118, 57);
+            this.bunifuMaterialTextbox7.Location = new System.Drawing.Point(517, 57);
             this.bunifuMaterialTextbox7.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuMaterialTextbox7.MaxLength = 32767;
             this.bunifuMaterialTextbox7.Name = "bunifuMaterialTextbox7";
@@ -1086,7 +1144,7 @@
             this.bunifuMaterialTextbox8.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(107)))), ((int)(((byte)(89)))));
             this.bunifuMaterialTextbox8.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(107)))), ((int)(((byte)(89)))));
             this.bunifuMaterialTextbox8.LineThickness = 1;
-            this.bunifuMaterialTextbox8.Location = new System.Drawing.Point(400, 57);
+            this.bunifuMaterialTextbox8.Location = new System.Drawing.Point(799, 57);
             this.bunifuMaterialTextbox8.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuMaterialTextbox8.MaxLength = 32767;
             this.bunifuMaterialTextbox8.Name = "bunifuMaterialTextbox8";
@@ -1099,7 +1157,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(354, 71);
+            this.label1.Location = new System.Drawing.Point(753, 71);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(39, 20);
             this.label1.TabIndex = 83;
@@ -1230,5 +1288,9 @@
         private System.Windows.Forms.Label label12;
         private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox10;
         private System.Windows.Forms.Label label14;
+        private Bunifu.Framework.UI.BunifuDropdown bunifuDropdown5;
+        private System.Windows.Forms.Label label15;
+        private Bunifu.Framework.UI.BunifuDropdown bunifuDropdown6;
+        private System.Windows.Forms.Label label16;
     }
 }
