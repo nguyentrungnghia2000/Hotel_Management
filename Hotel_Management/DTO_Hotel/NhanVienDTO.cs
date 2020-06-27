@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -34,6 +35,17 @@ namespace DTO_Hotel
             this.sex = sex;
             this.sdt = sdt;
             this.address = address;
+        }
+
+        public NhanVienDTO(DataRow row)
+        {
+            this.Manv = row["MANV"].ToString();
+            this.Name = row["TENNV"].ToString();
+            this.Malnv = row["MALNV"].ToString();
+            this.Date = (string)(row["NGSINH"].ToString());
+            this.Sex = (bool)Convert.ToBoolean(row["GIOITINH"].ToString());
+            this.Sdt = row["SDT"].ToString();
+            this.Address = row["DIACHI"].ToString();
         }
     }
 }

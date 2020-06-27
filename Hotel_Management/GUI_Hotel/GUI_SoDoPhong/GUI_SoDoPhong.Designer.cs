@@ -28,75 +28,60 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.btn_load = new System.Windows.Forms.Button();
+            this.dgv_load = new System.Windows.Forms.DataGridView();
+            this.flpnlSODOPHONG = new System.Windows.Forms.FlowLayoutPanel();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_load)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // btn_load
             // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Location = new System.Drawing.Point(14, 16);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(171, 210);
-            this.panel1.TabIndex = 0;
+            this.btn_load.Location = new System.Drawing.Point(589, 40);
+            this.btn_load.Name = "btn_load";
+            this.btn_load.Size = new System.Drawing.Size(150, 45);
+            this.btn_load.TabIndex = 1;
+            this.btn_load.Text = "LOAD";
+            this.btn_load.UseVisualStyleBackColor = true;
+            this.btn_load.Click += new System.EventHandler(this.btn_load_Click);
             // 
-            // panel2
+            // dgv_load
             // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Location = new System.Drawing.Point(225, 16);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(171, 210);
-            this.panel2.TabIndex = 1;
+            this.dgv_load.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_load.Location = new System.Drawing.Point(3, 128);
+            this.dgv_load.Name = "dgv_load";
+            this.dgv_load.RowHeadersWidth = 51;
+            this.dgv_load.RowTemplate.Height = 24;
+            this.dgv_load.Size = new System.Drawing.Size(577, 538);
+            this.dgv_load.TabIndex = 2;
             // 
-            // panel3
+            // flpnlSODOPHONG
             // 
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Location = new System.Drawing.Point(438, 16);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(171, 210);
-            this.panel3.TabIndex = 2;
-            // 
-            // panel4
-            // 
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Location = new System.Drawing.Point(653, 16);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(171, 210);
-            this.panel4.TabIndex = 3;
-            // 
-            // panel5
-            // 
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Location = new System.Drawing.Point(864, 16);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(171, 210);
-            this.panel5.TabIndex = 4;
+            this.flpnlSODOPHONG.Location = new System.Drawing.Point(816, 128);
+            this.flpnlSODOPHONG.Name = "flpnlSODOPHONG";
+            this.flpnlSODOPHONG.Size = new System.Drawing.Size(453, 520);
+            this.flpnlSODOPHONG.TabIndex = 3;
             // 
             // GUI_SoDoPhong
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.flpnlSODOPHONG);
+            this.Controls.Add(this.dgv_load);
+            this.Controls.Add(this.btn_load);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "GUI_SoDoPhong";
-            this.Size = new System.Drawing.Size(1038, 675);
+            this.Size = new System.Drawing.Size(1384, 831);
+            this.Load += new System.EventHandler(this.GUI_SoDoPhong_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_load)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Button btn_load;
+        private System.Windows.Forms.DataGridView dgv_load;
+        private System.Windows.Forms.FlowLayoutPanel flpnlSODOPHONG;
     }
 }
