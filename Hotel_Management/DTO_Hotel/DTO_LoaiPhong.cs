@@ -15,23 +15,23 @@ namespace DTO_Hotel
         private int gia;
         private string donvi;
 
-        public DTO_LoaiPhong(string malp, string tenlp, string trangthietbi, int gia, string donvi)
-        {
-            this.Malp = malp;
-            this.Tenlp = tenlp;
-            this.Trangthietbi = trangthietbi;
-            this.Gia = gia;
-            this.Donvi = donvi;
-        }
+        //public DTO_LoaiPhong(string malp, string tenlp, string trangthietbi, int gia, string donvi)
+        //{
+        //    this.Malp = malp;
+        //    this.Tenlp = tenlp;
+        //    this.Trangthietbi = trangthietbi;
+        //    this.Gia = gia;
+        //    this.Donvi = donvi;
+        //}
 
-        public DTO_LoaiPhong(DataRow row)
-        {
-            this.Malp = row["MAKH"].ToString();
-            this.Tenlp = row["TENKH"].ToString();
-            this.Trangthietbi = row["DIACHI"].ToString();
-            this.Gia = (int)Convert.ToInt32(row["CMND"].ToString());
-            this.Donvi = row["QUOCTICH"].ToString();
-        }
+        //public DTO_LoaiPhong(DataRow row)
+        //{
+        //    this.Malp = row["MAKH"].ToString();
+        //    this.Tenlp = row["TENKH"].ToString();
+        //    this.Trangthietbi = row["DIACHI"].ToString();
+        //    this.Gia = (int)Convert.ToInt32(row["CMND"].ToString());
+        //    this.Donvi = row["QUOCTICH"].ToString();
+        //}
 
         public string Malp { get => malp; set => malp = value; }
         public string Tenlp { get => tenlp; set => tenlp = value; }

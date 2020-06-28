@@ -10,27 +10,20 @@ using System.Threading.Tasks;
 
 namespace DAL_Hotel
 {
-    public class DAL_KhachHang
+    public class DAL_NhanVien
     {
-        private static DAL_KhachHang instance;
-        public static DAL_KhachHang Instance
-        {
-            get { if (instance == null) instance = new DAL_KhachHang(); return DAL_KhachHang.instance; }
-            private set { DAL_KhachHang.instance = value; }
-        }
-
         private string connectionSTR = null;
 
-        public DAL_KhachHang()
+        public DAL_NhanVien()
         {
             connectionSTR = ConfigurationManager.AppSettings["ConnectionSTR"];
         }
 
-        public string Insert(DTO_KhachHang obj)
+        public string Insert(DTO_NhanVien obj)
         {
             string query = string.Empty;
-            query += "INSERT INTO [TBL_PHONG] ( [MAKH], [TENKH], [DIACHI], [GIOITINH], [CMND], [QUOCTICH], [SDT] )";
-            query += "VALUES (@MAKH, @TENKH, @DIACHI, @GIOITINH, @CMND, @QUOCTICH, @SDT)";
+            query += "INSERT INTO [TBL_NHANVIEN] ( [MANV], [TENNV], [MALNV], [NGSINH], [GIOITINH], [SDT], [DIACHI] )";
+            query += "VALUES (@MANV, @TENNV, @MALNV, @NGSINH, @GIOITINH, @SDT, @DIACHI)";
             using (SqlConnection conn = new SqlConnection(connectionSTR))
             {
                 using (SqlCommand comm = new SqlCommand())
@@ -39,13 +32,13 @@ namespace DAL_Hotel
                     comm.CommandType = CommandType.Text;
                     comm.CommandText = query;
 
-                    comm.Parameters.AddWithValue("@MAKH", obj.Makh);
-                    comm.Parameters.AddWithValue("@TENKH", obj.Tenkh);
-                    comm.Parameters.AddWithValue("@DIACHI", obj.Diachi);
-                    comm.Parameters.AddWithValue("@GIOITINH", obj.Gioitinh);
-                    comm.Parameters.AddWithValue("@CMND", obj.Cmnd);
-                    comm.Parameters.AddWithValue("@QUOCTICH", obj.Quoctich);
+                    comm.Parameters.AddWithValue("@MANV", obj.Manv);
+                    comm.Parameters.AddWithValue("@TENNV", obj.Name);
+                    comm.Parameters.AddWithValue("@MALNV", obj.Malnv);
+                    comm.Parameters.AddWithValue("@NGSINH", obj.Date);
+                    comm.Parameters.AddWithValue("@GIOITINH", obj.Sex);
                     comm.Parameters.AddWithValue("@SDT", obj.Sdt);
+                    comm.Parameters.AddWithValue("@DIACHI", obj.Address);
 
                     try
                     {
@@ -62,12 +55,12 @@ namespace DAL_Hotel
             return "0";
         }
 
-        public string selectAll(List<DTO_KhachHang> lsObj)
+        public string SelectAll(List<DTO_NhanVien> lsObj)
         {
 
             string query = string.Empty;
-            query += " SELECT [MAKH], [TENKH], [DIACHI], [GIOITINH], [CMND], [QUOCTICH], [SDT] ";
-            query += " FROM [TBL_KHACHHANG]";
+            query += " SELECT [MANV], [TENNV], [MALNV], [NGSINH], [GIOITINH], [SDT], [DIACHI]";
+            query += " FROM [TBL_NHANVIEN]";
 
             using (SqlConnection conn = new SqlConnection(connectionSTR))
             {
@@ -87,14 +80,14 @@ namespace DAL_Hotel
                             lsObj.Clear();
                             while (reader.Read())
                             {
-                                DTO_KhachHang obj = new DTO_KhachHang();
-                                obj.Makh = reader["MAKH"].ToString();
-                                obj.Tenkh = reader["TINHTRANG"].ToString();
-                                obj.Diachi = reader["MALP"].ToString();
-                                obj.Gioitinh = reader["SOPHONG"].ToString();
-                                obj.Cmnd = (int)Convert.ToInt32(reader["SOPHONG"].ToString());
-                                obj.Quoctich = reader["SOPHONG"].ToString();
-                                obj.Sdt = reader["SOPHONG"].ToString();
+                                DTO_NhanVien obj = new DTO_NhanVien();
+                                obj.Manv = reader["MANV"].ToString();
+                                obj.Name = reader["TENNV"].ToString();
+                                obj.Malnv = reader["GIADV"].ToString();
+                                obj.Date = reader["NGSINH"].ToString();
+                                obj.Sex = reader["GIOITINH"].ToString();
+                                obj.Sdt = reader["SDT"].ToString();
+                                obj.Address = reader["DIACHI"].ToString();
                                 lsObj.Add(obj);
                             }
                         }
@@ -109,14 +102,14 @@ namespace DAL_Hotel
             return "0";
         }
 
-        public string selectAllByMakh(List<DTO_KhachHang> lsObj, int makh)
+        public string SelectAllBySophong(List<DTO_NhanVien> lsObj, int manv)
         {
 
             string query = string.Empty;
-            query += " SELECT [MAKH], [TENKH], [DIACHI], [GIOITINH], [CMND], [QUOCTICH], [SDT] ";
-            query += " FROM [TBL_KHACHHANG]";
+            query += " SELECT [MANV], [TENNV], [MALNV], [NGSINH], [GIOITINH], [SDT], [DIACHI]";
+            query += " FROM [TBL_NHANVIEN]";
             query += " WHERE ";
-            query += " [MAKH] = @MAKH ";
+            query += " [MANV] = @MANV ";
 
             using (SqlConnection conn = new SqlConnection(connectionSTR))
             {
@@ -125,7 +118,7 @@ namespace DAL_Hotel
                     comm.Connection = conn;
                     comm.CommandType = CommandType.Text;
                     comm.CommandText = query;
-                    comm.Parameters.AddWithValue("@MAKH", makh);
+                    comm.Parameters.AddWithValue("@MANV", manv);
 
                     try
                     {
@@ -137,14 +130,14 @@ namespace DAL_Hotel
                             lsObj.Clear();
                             while (reader.Read())
                             {
-                                DTO_KhachHang obj = new DTO_KhachHang();
-                                obj.Makh = reader["MAKH"].ToString();
-                                obj.Tenkh = reader["TINHTRANG"].ToString();
-                                obj.Diachi = reader["MALP"].ToString();
-                                obj.Gioitinh = reader["SOPHONG"].ToString();
-                                obj.Cmnd = (int)Convert.ToInt32(reader["SOPHONG"].ToString());
-                                obj.Quoctich = reader["SOPHONG"].ToString();
-                                obj.Sdt = reader["SOPHONG"].ToString();
+                                DTO_NhanVien obj = new DTO_NhanVien();
+                                obj.Manv = reader["MANV"].ToString();
+                                obj.Name = reader["TENNV"].ToString();
+                                obj.Malnv = reader["GIADV"].ToString();
+                                obj.Date = reader["NGSINH"].ToString();
+                                obj.Sex = reader["GIOITINH"].ToString();
+                                obj.Sdt = reader["SDT"].ToString();
+                                obj.Address = reader["DIACHI"].ToString();
                                 lsObj.Add(obj);
                             }
                         }
@@ -159,15 +152,14 @@ namespace DAL_Hotel
             return "0";
         }
 
-        public string search(string kq,List<DTO_KhachHang> lsObj)
+        public string Search(string kq, List<DTO_NhanVien> lsObj)
         {
 
             string query = string.Empty;
-            query += " SELECT [MAKH], [TENKH], [DIACHI], [GIOITINH], [CMND], [QUOCTICH], [SDT] ";
-            query += " FROM [TBL_KHACHHANG]";
-            query += " WHERE ";
-            query += " [MAKH] LIKE @MAKH ";
-            query += "  OR [TENKH] LIKE @TENKH ";
+            query += " SELECT [MANV], [TENNV], [MALNV], [NGSINH], [GIOITINH], [SDT], [DIACHI]";
+            query += " FROM [TBL_NHANVIEN]";
+            query += " WHERE";
+            query += " [MANV] = @MANV ";
 
             using (SqlConnection conn = new SqlConnection(connectionSTR))
             {
@@ -176,8 +168,8 @@ namespace DAL_Hotel
                     comm.Connection = conn;
                     comm.CommandType = CommandType.Text;
                     comm.CommandText = query;
-                    comm.Parameters.AddWithValue("@MAKH", "%" + kq.ToString() + "%");
-                    comm.Parameters.AddWithValue("@TENKH", "%" + kq.ToString() + "%");
+                    comm.Parameters.AddWithValue("@MANV", "%" + kq.ToString() + "%");
+                    comm.Parameters.AddWithValue("@TENNV", "%" + kq.ToString() + "%");
 
                     try
                     {
@@ -189,14 +181,14 @@ namespace DAL_Hotel
                             lsObj.Clear();
                             while (reader.Read())
                             {
-                                DTO_KhachHang obj = new DTO_KhachHang();
-                                obj.Makh = reader["MAKH"].ToString();
-                                obj.Tenkh = reader["TINHTRANG"].ToString();
-                                obj.Diachi = reader["MALP"].ToString();
-                                obj.Gioitinh = reader["SOPHONG"].ToString();
-                                obj.Cmnd = (int)Convert.ToInt32(reader["SOPHONG"].ToString());
-                                obj.Quoctich = reader["SOPHONG"].ToString();
-                                obj.Sdt = reader["SOPHONG"].ToString();
+                                DTO_NhanVien obj = new DTO_NhanVien();
+                                obj.Manv = reader["MANV"].ToString();
+                                obj.Name = reader["TENNV"].ToString();
+                                obj.Malnv = reader["GIADV"].ToString();
+                                obj.Date = reader["NGSINH"].ToString();
+                                obj.Sex = reader["GIOITINH"].ToString();
+                                obj.Sdt = reader["SDT"].ToString();
+                                obj.Address = reader["DIACHI"].ToString();
                                 lsObj.Add(obj);
                             }
                         }
@@ -211,12 +203,12 @@ namespace DAL_Hotel
             return "0";
         }
 
-        public string delete(DTO_KhachHang obj)
+        public string Delete(DTO_NhanVien obj)
         {
             string query = string.Empty;
-            query += " DELETE FROM [TBL_KHACHHANG] ";
+            query += " DELETE FROM [TBL_NHANVIEN] ";
             query += " WHERE ";
-            query += " [MAKH] = @MAKH ";
+            query += " [MANV] = @MANV ";
 
             using (SqlConnection conn = new SqlConnection(connectionSTR))
             {
@@ -225,7 +217,7 @@ namespace DAL_Hotel
                     comm.Connection = conn;
                     comm.CommandType = CommandType.Text;
                     comm.CommandText = query;
-                    comm.Parameters.AddWithValue("@MAKH", obj.Makh);
+                    comm.Parameters.AddWithValue("@MANV", obj.Manv);
                     try
                     {
                         conn.Open();
@@ -241,18 +233,18 @@ namespace DAL_Hotel
             return "0";
         }
 
-        public string update(DTO_KhachHang obj)
+        public string Update(DTO_NhanVien obj)
         {
             string query = string.Empty;
-            query += " UPDATE [TBL_KHACHHANG] SET";
-            query += " [TENKH] = @TENKH";
-            query += ", [DIACHI] = @DIACHI";
-            query += ", [GIOITINH] = @GIOITINH";
-            query += ", [CMND] = @CMND";
-            query += ", [QUOCTICH] = @QUOCTICH";
-            query += ", [SDT] = @SDT";
+            query += " UPDATE [TBL_NHANVIEN] SET";
+            query += " [TENNV] = @TENNV";
+            query += " [MALNV] = @MALNV";
+            query += " [NGSINH] = @NGSINH";
+            query += " [GIOITINH] = @GIOITINH";
+            query += " [SDT] = @SDT";
+            query += " [DIACHI] = @DIACHI";
             query += " WHERE ";
-            query += " [MAKH] = @MAKH ";
+            query += " [MADV] = @MADV ";
 
             using (SqlConnection conn = new SqlConnection(connectionSTR))
             {
@@ -261,13 +253,14 @@ namespace DAL_Hotel
                     comm.Connection = conn;
                     comm.CommandType = CommandType.Text;
                     comm.CommandText = query;
-                    comm.Parameters.AddWithValue("@MAKH", obj.Makh);
-                    comm.Parameters.AddWithValue("@TENKH", obj.Tenkh);
-                    comm.Parameters.AddWithValue("@DIACHI", obj.Diachi);
-                    comm.Parameters.AddWithValue("@GIOITINH", obj.Gioitinh);
-                    comm.Parameters.AddWithValue("@CMND", obj.Cmnd);
-                    comm.Parameters.AddWithValue("@QUOCTICH", obj.Quoctich);
+                    comm.Parameters.AddWithValue("@MANV", obj.Manv);
+                    comm.Parameters.AddWithValue("@TENNV", obj.Name);
+                    comm.Parameters.AddWithValue("@MALNV", obj.Malnv);
+                    comm.Parameters.AddWithValue("@NGSINH", obj.Date);
+                    comm.Parameters.AddWithValue("@GIOITINH", obj.Sex);
                     comm.Parameters.AddWithValue("@SDT", obj.Sdt);
+                    comm.Parameters.AddWithValue("@DIACHI", obj.Address);
+
                     try
                     {
                         conn.Open();
@@ -276,26 +269,11 @@ namespace DAL_Hotel
                     catch (Exception ex)
                     {
                         conn.Close();
-                        //' Cập nhật that bai!!!
                         return "Updating fails\n" + ex.Message + "\n" + ex.StackTrace;
                     }
                 }
             }
             return "0";
         }
-
-        //public List<DTO_KhachHang> LoadKhachHang()
-        //{
-        //    string query = string.Empty;
-        //    List<DTO_KhachHang> list = new List<DTO_KhachHang>();
-        //    query += "";
-        //    DataTable data = DBConnection.Instance.ExecuteQuery(query);
-        //    foreach(DataRow item in data.Rows)
-        //    {
-        //        DTO_KhachHang khachhang = new DTO_KhachHang(item);
-        //        list.Add(khachhang);
-        //    }
-        //    return list;
-        //}
     }
 }

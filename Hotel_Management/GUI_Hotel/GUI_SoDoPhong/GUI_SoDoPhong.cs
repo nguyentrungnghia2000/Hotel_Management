@@ -48,37 +48,34 @@ namespace Hotel_Management.GUI_SoDoPhong
                 this.flpnlSODOPHONG.Controls.Add(sodophongChild);
             }
 
+            //dgv_load.Columns.Clear();
+            //dgv_load.DataSource = null;
 
-            ///
+            //dgv_load.AutoGenerateColumns = false;
+            //dgv_load.AllowUserToAddRows = false;
+            //dgv_load.DataSource = lsobj;
 
-            dgv_load.Columns.Clear();
-            dgv_load.DataSource = null;
+            //DataGridViewTextBoxColumn cSophong = new DataGridViewTextBoxColumn();
+            //cSophong.Name = "Sophong";
+            //cSophong.HeaderText = "Số phòng";
+            //cSophong.DataPropertyName = "Sophong";
 
-            dgv_load.AutoGenerateColumns = false;
-            dgv_load.AllowUserToAddRows = false;
-            dgv_load.DataSource = lsobj;
+            //DataGridViewTextBoxColumn cStatus = new DataGridViewTextBoxColumn();
+            //cStatus.Name = "Status";
+            //cStatus.HeaderText = "Trạng thái";
+            //cStatus.DataPropertyName = "Status";
 
-            DataGridViewTextBoxColumn cSophong = new DataGridViewTextBoxColumn();
-            cSophong.Name = "Sophong";
-            cSophong.HeaderText = "Số phòng";
-            cSophong.DataPropertyName = "Sophong";
-
-            DataGridViewTextBoxColumn cStatus = new DataGridViewTextBoxColumn();
-            cStatus.Name = "Status";
-            cStatus.HeaderText = "Trạng thái";
-            cStatus.DataPropertyName = "Status";
-
-            DataGridViewTextBoxColumn cMalp = new DataGridViewTextBoxColumn();
-            cMalp.Name = "Malp";
-            cMalp.HeaderText = "Mã loại phòng";
-            cMalp.DataPropertyName = "Malp";
+            //DataGridViewTextBoxColumn cMalp = new DataGridViewTextBoxColumn();
+            //cMalp.Name = "Malp";
+            //cMalp.HeaderText = "Mã loại phòng";
+            //cMalp.DataPropertyName = "Malp";
 
 
 
-            dgv_load.Columns.AddRange(new DataGridViewTextBoxColumn[] { cSophong, cStatus,cMalp });
-            CurrencyManager myCurrenManager = (CurrencyManager)this.BindingContext[dgv_load.DataSource];
-            myCurrenManager.Refresh();
-            dgv_load.Refresh();
+            //dgv_load.Columns.AddRange(new DataGridViewTextBoxColumn[] { cSophong, cStatus,cMalp });
+            //CurrencyManager myCurrenManager = (CurrencyManager)this.BindingContext[dgv_load.DataSource];
+            //myCurrenManager.Refresh();
+            //dgv_load.Refresh();
         }
 
         private void btn_load_Click(object sender, EventArgs e)

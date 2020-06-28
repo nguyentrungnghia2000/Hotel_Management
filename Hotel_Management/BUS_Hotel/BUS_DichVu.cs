@@ -18,13 +18,36 @@ namespace BUS_Hotel
 
         public static BUS_DichVu Instance { get => instance; set => instance = value; }
 
-        public void LoadDichVu(DbDataReader data)
+        private DAL_DichVu dal;
+
+        public BUS_DichVu()
         {
-            
-            //List<DTO_DichVu> list = DAL_DichVu.Instance.LoadDichVu();
-            //foreach(DTO_DichVu item in list)
-            //{
-            //}
+            dal = new DAL_DichVu();
+        }
+
+        public string LoadDichVu(List<DTO_DichVu> lsobj)
+        {
+            return dal.SelectAll(lsobj);
+        }
+
+        public string Delete(DTO_DichVu obj)
+        {
+            return dal.Delete(obj);
+        }
+
+        public string Insert(DTO_DichVu obj)
+        {
+            return dal.Insert(obj);
+        }
+
+        public string Update(DTO_DichVu obj)
+        {
+            return dal.Update(obj);
+        }
+
+        public string Search(string kq, List<DTO_DichVu> lsobj)
+        {
+            return dal.Search(kq, lsobj);
         }
     }
 }
