@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GUI_SignIn));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
@@ -83,6 +84,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.bunifuTextBox10 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.time_Loading = new System.Windows.Forms.Timer(this.components);
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.PageSignIn.SuspendLayout();
@@ -111,7 +113,6 @@
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(337, 450);
             this.bunifuGradientPanel1.TabIndex = 0;
-            this.bunifuGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.bunifuGradientPanel1_Paint);
             // 
             // btnDangKy
             // 
@@ -171,7 +172,7 @@
             stateProperties2.IconRightImage = null;
             this.btnDangKy.OnPressedState = stateProperties2;
             this.btnDangKy.Size = new System.Drawing.Size(127, 41);
-            this.btnDangKy.TabIndex = 6;
+            this.btnDangKy.TabIndex = 5;
             this.btnDangKy.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnDangKy.TextMarginLeft = 0;
             this.btnDangKy.UseDefaultRadiusAndThickness = true;
@@ -235,7 +236,7 @@
             stateProperties4.IconRightImage = null;
             this.btnDangNhap.OnPressedState = stateProperties4;
             this.btnDangNhap.Size = new System.Drawing.Size(127, 41);
-            this.btnDangNhap.TabIndex = 5;
+            this.btnDangNhap.TabIndex = 4;
             this.btnDangNhap.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnDangNhap.TextMarginLeft = 0;
             this.btnDangNhap.UseDefaultRadiusAndThickness = true;
@@ -277,7 +278,6 @@
             this.label1.Size = new System.Drawing.Size(209, 40);
             this.label1.TabIndex = 0;
             this.label1.Text = "Welcome Back";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // PageSignIn
             // 
@@ -386,7 +386,7 @@
             stateProperties6.IconRightImage = null;
             this.btnSignIn.OnPressedState = stateProperties6;
             this.btnSignIn.Size = new System.Drawing.Size(127, 41);
-            this.btnSignIn.TabIndex = 9;
+            this.btnSignIn.TabIndex = 3;
             this.btnSignIn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSignIn.TextMarginLeft = 0;
             this.btnSignIn.UseDefaultRadiusAndThickness = true;
@@ -445,7 +445,7 @@
             stateProperties10.ForeColor = System.Drawing.Color.Empty;
             stateProperties10.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtPassword.OnIdleState = stateProperties10;
-            this.txtPassword.PasswordChar = '\0';
+            this.txtPassword.PasswordChar = '*';
             this.txtPassword.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.txtPassword.PlaceholderText = "  Nhập mật khẩu";
             this.txtPassword.ReadOnly = false;
@@ -456,7 +456,7 @@
             this.txtPassword.ShortcutsEnabled = true;
             this.txtPassword.Size = new System.Drawing.Size(386, 39);
             this.txtPassword.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
-            this.txtPassword.TabIndex = 8;
+            this.txtPassword.TabIndex = 2;
             this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtPassword.TextMarginBottom = 0;
             this.txtPassword.TextMarginLeft = 5;
@@ -464,6 +464,7 @@
             this.txtPassword.TextPlaceholder = "  Nhập mật khẩu";
             this.txtPassword.UseSystemPasswordChar = false;
             this.txtPassword.WordWrap = true;
+            this.txtPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPassword_KeyDown);
             // 
             // bunifuSeparator3
             // 
@@ -553,7 +554,7 @@
             this.txtUsername.ShortcutsEnabled = true;
             this.txtUsername.Size = new System.Drawing.Size(386, 39);
             this.txtUsername.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
-            this.txtUsername.TabIndex = 5;
+            this.txtUsername.TabIndex = 1;
             this.txtUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtUsername.TextMarginBottom = 0;
             this.txtUsername.TextMarginLeft = 5;
@@ -895,6 +896,11 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
+            // time_Loading
+            // 
+            this.time_Loading.Interval = 3000;
+            this.time_Loading.Tick += new System.EventHandler(this.time_Loading_Tick);
+            // 
             // GUI_SignIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -906,6 +912,7 @@
             this.Controls.Add(this.bunifuGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "GUI_SignIn";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GUI_SignIn";
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
@@ -943,5 +950,6 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnDangNhap;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnDangKy;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Timer time_Loading;
     }
 }

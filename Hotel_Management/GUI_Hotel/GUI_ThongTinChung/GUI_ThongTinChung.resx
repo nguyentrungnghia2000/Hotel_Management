@@ -120,15 +120,15 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="bunifuImageButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAGgSURBVGhD7ZlLSsRAFEUz04GgCxBHoqKga1H3IM5ci2twKIo7EcEGXYP4H+hIvY904HE7TYV6
-        tyJKHTh0EHJelQQsO02lUhnEGryAD/C7sDbjEq5DCbb4J9g3rKSPcBWGsd9834AxPIdh3mBffAxfYBiO
-        lkY+Tx5MIJ8nDyaQz5MHE8jnyYMJ5PPkwQTyefJgggmUzvMxSTDBAjyFsnl+8ZIgsT39ZPbhc3sZo/QG
-        PuFJeznDzvQzROkNdF07cy3bD9T4xZtqfPse7kEpfoCphvsfcN4jlQUPUMP9zjO4BMNweCh8X453cBeG
-        4OhQ+L5c7ZE6gtlwcCh8X662gWOYDQeHwvfleAM3YQiOquF+px0nFmEYDqvhvv0ffAhl8AA1vn0NN6AU
-        P8BU03VljwzjF2+qsRPnQXs5w584zM07Tttxwk6qYUpvgFmB9t2obJ5fvCSY4BZK5/mYJJjgC0rn+Zgk
-        mKBugPExSTBB3QDjY5JgAvkG3qEPjukrDHMF++JjaH/QwmzB33jJZzNlJ9PuNesY78vssZG+Zq1U/i9N
-        8wObfCK+XIMmTQAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAaBJREFUaEPt
+        mUtKxEAURTPTgaALEEeioqBrUfcgzlyLa3AoijsRwQZdg/gf6Ei9j3TgcTtNhXq3IkodOHQQcl6VBCw7
+        TaVSGcQavIAP8LuwNuMSrkMJtvgn2DespI9wFYax33zfgDE8h2HeYF98DF9gGI6WRj5PHkwgnycPJpDP
+        kwcTyOfJgwnk8+TBBPJ58mCCCZTO8zFJMMECPIWyeX7xkiCxPf1k9uFzexmj9AY+4Ul7OcPO9DNE6Q10
+        XTtzLdsP1PjFm2p8+x7uQSl+gKmG+x9w3iOVBQ9Qw/3OM7gEw3B4KHxfjndwF4bg6FD4vlztkTqC2XBw
+        KHxfrraBY5gNB4fC9+V4AzdhCI6q4X6nHScWYRgOq+G+/R98CGXwADW+fQ03oBQ/wFTTdWWPDOMXb6qx
+        E+dBeznDnzjMzTtO23HCTqphSm+AWYH23ahsnl+8JJjgFkrn+ZgkmOALSuf5mCSYoG6A8TFJMEHdAONj
+        kmAC+QbeoQ+O6SsMcwX74mNof9DCbMHfeMlnM2Un0+416xjvy+yxkb5mrVT+L03zA5t8Ir5cgyZNAAAA
+        AElFTkSuQmCC
 </value>
   </data>
   <data name="bunifuButton4.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -440,4 +440,7 @@
         ITcYWCY/5AYDy+SH3GBgmfyQGwwsUwghhODk0KH/AcayoyeHGOYAAAAAAElFTkSuQmCC
 </value>
   </data>
+  <metadata name="RenderChar.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>

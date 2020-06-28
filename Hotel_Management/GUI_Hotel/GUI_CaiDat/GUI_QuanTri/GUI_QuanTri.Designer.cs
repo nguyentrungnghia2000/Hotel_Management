@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GUI_QuanTri));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
@@ -97,11 +98,12 @@
             this.btn_NhanSu = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnPhanQuyen = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bt_ThongTin = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel_Header = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.KeoTha = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.panel5.SuspendLayout();
             this.pageTTKS.SuspendLayout();
             this.pageQuanTri.SuspendLayout();
@@ -110,7 +112,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.panel6.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.panel_Header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panel1.SuspendLayout();
@@ -1162,17 +1164,17 @@
             this.bt_ThongTin.TextFont = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_ThongTin.Click += new System.EventHandler(this.bt_ThongTin_Click);
             // 
-            // panel2
+            // panel_Header
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(107)))), ((int)(((byte)(89)))));
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.pictureBox7);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1071, 44);
-            this.panel2.TabIndex = 1;
+            this.panel_Header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(107)))), ((int)(((byte)(89)))));
+            this.panel_Header.Controls.Add(this.label1);
+            this.panel_Header.Controls.Add(this.pictureBox1);
+            this.panel_Header.Controls.Add(this.pictureBox7);
+            this.panel_Header.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_Header.Location = new System.Drawing.Point(0, 0);
+            this.panel_Header.Name = "panel_Header";
+            this.panel_Header.Size = new System.Drawing.Size(1071, 44);
+            this.panel_Header.TabIndex = 1;
             // 
             // label1
             // 
@@ -1216,12 +1218,19 @@
             this.panel1.Controls.Add(this.pageQuanTri);
             this.panel1.Controls.Add(this.bunifuSeparator1);
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.panel_Header);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1073, 571);
             this.panel1.TabIndex = 3;
+            // 
+            // KeoTha
+            // 
+            this.KeoTha.Fixed = true;
+            this.KeoTha.Horizontal = true;
+            this.KeoTha.TargetControl = this.panel_Header;
+            this.KeoTha.Vertical = true;
             // 
             // GUI_QuanTri
             // 
@@ -1246,8 +1255,8 @@
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel3.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.panel_Header.ResumeLayout(false);
+            this.panel_Header.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -1288,7 +1297,7 @@
         private Bunifu.Framework.UI.BunifuFlatButton btn_NhanSu;
         private Bunifu.Framework.UI.BunifuFlatButton btnPhanQuyen;
         private Bunifu.Framework.UI.BunifuFlatButton bt_ThongTin;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel_Header;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox7;
@@ -1317,5 +1326,6 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_ThemNV;
+        private Bunifu.Framework.UI.BunifuDragControl KeoTha;
     }
 }

@@ -250,7 +250,7 @@
         cRzHcRzHcRzHcRzHcRzHcRzHKYEXvOD/AQ3Ye+msVsl2AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="btnThongKe.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="bt_ThongKe.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAU5JREFUSEvt
         krEuBGEUhSdUJItSodFQKVbibdhSq/ACXsEDaLwCne0U2McQolGQqBTGOb+Pu/w3DJnSl3zJzrln7mT+
@@ -416,6 +416,6 @@
     <value>17, 17</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>25</value>
+    <value>83</value>
   </metadata>
 </root>

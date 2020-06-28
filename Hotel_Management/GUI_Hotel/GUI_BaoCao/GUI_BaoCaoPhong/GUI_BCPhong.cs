@@ -7,31 +7,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Bunifu.DataViz;
 
-namespace Hotel_Management.GUI_ThongTinChung
+namespace Hotel_Management.GUI_BaoCao.GUI_BaoCaoPhong
 {
-    public partial class GUI_ThongTinChung : UserControl
+    public partial class GUI_BCPhong : UserControl
     {
-        public GUI_ThongTinChung()
+        public GUI_BCPhong()
         {
             InitializeComponent();
         }
 
-        private void GUI_ThongTinChung_Load(object sender, EventArgs e)
-        {
-          
-
-        }
-        private void RenderChar_Tick(object sender, EventArgs e)
+        private void RenderChart_Tick(object sender, EventArgs e)
         {
             RenderChar_TTC();
         }
+       
         void RenderChar_TTC()
         {
             var canvas = new Bunifu.DataViz.WinForms.Canvas();
             Bunifu.DataViz.WinForms.DataPoint values = new Bunifu.DataViz.WinForms.DataPoint(Bunifu.DataViz.WinForms.BunifuDataViz._type.Bunifu_line);
-            var r = new Random();
+          
 
             values.addLabely("SUN", "50");
 
@@ -53,9 +48,9 @@ namespace Hotel_Management.GUI_ThongTinChung
 
             //render canvas
 
-            Chart_ThongTinChung.Render(canvas);
+            Chart_BaoCao.Render(canvas);
         }
 
-      
+       
     }
 }
