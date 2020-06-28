@@ -60,7 +60,7 @@
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
             this.pageDichVu = new System.Windows.Forms.TabPage();
             this.btnAddDV = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.panelListDV = new System.Windows.Forms.Panel();
+            this.pnl_listdv = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -147,7 +147,7 @@
             this.pageLoaiPhong.Controls.Add(this.PanelSub);
             this.pageLoaiPhong.Location = new System.Drawing.Point(4, 4);
             this.pageLoaiPhong.Name = "pageLoaiPhong";
-            this.pageLoaiPhong.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.pageLoaiPhong.Padding = new System.Windows.Forms.Padding(3);
             this.pageLoaiPhong.Size = new System.Drawing.Size(915, 499);
             this.pageLoaiPhong.TabIndex = 0;
             this.pageLoaiPhong.Text = "tabPage1";
@@ -286,7 +286,7 @@
             this.pagePhong.Controls.Add(this.panel5);
             this.pagePhong.Location = new System.Drawing.Point(4, 4);
             this.pagePhong.Name = "pagePhong";
-            this.pagePhong.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.pagePhong.Padding = new System.Windows.Forms.Padding(3);
             this.pagePhong.Size = new System.Drawing.Size(915, 499);
             this.pagePhong.TabIndex = 1;
             this.pagePhong.Text = "tabPage2";
@@ -420,12 +420,12 @@
             // pageDichVu
             // 
             this.pageDichVu.Controls.Add(this.btnAddDV);
-            this.pageDichVu.Controls.Add(this.panelListDV);
+            this.pageDichVu.Controls.Add(this.pnl_listdv);
             this.pageDichVu.Controls.Add(this.panel6);
             this.pageDichVu.Controls.Add(this.label7);
             this.pageDichVu.Location = new System.Drawing.Point(4, 4);
             this.pageDichVu.Name = "pageDichVu";
-            this.pageDichVu.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.pageDichVu.Padding = new System.Windows.Forms.Padding(3);
             this.pageDichVu.Size = new System.Drawing.Size(915, 499);
             this.pageDichVu.TabIndex = 2;
             this.pageDichVu.Text = "tabPage3";
@@ -495,13 +495,13 @@
             this.btnAddDV.UseDefaultRadiusAndThickness = true;
             this.btnAddDV.Click += new System.EventHandler(this.btnAddDV_Click);
             // 
-            // panelListDV
+            // pnl_listdv
             // 
-            this.panelListDV.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelListDV.Location = new System.Drawing.Point(3, 95);
-            this.panelListDV.Name = "panelListDV";
-            this.panelListDV.Size = new System.Drawing.Size(909, 401);
-            this.panelListDV.TabIndex = 9;
+            this.pnl_listdv.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnl_listdv.Location = new System.Drawing.Point(3, 95);
+            this.pnl_listdv.Name = "pnl_listdv";
+            this.pnl_listdv.Size = new System.Drawing.Size(909, 401);
+            this.pnl_listdv.TabIndex = 9;
             // 
             // panel6
             // 
@@ -575,7 +575,7 @@
             this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
             this.bunifuSeparator1.LineThickness = 1;
             this.bunifuSeparator1.Location = new System.Drawing.Point(148, 1);
-            this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuSeparator1.Name = "bunifuSeparator1";
             this.bunifuSeparator1.Size = new System.Drawing.Size(10, 522);
             this.bunifuSeparator1.TabIndex = 3;
@@ -607,7 +607,7 @@
             this.btnDichVu.IconZoom = 35D;
             this.btnDichVu.IsTab = false;
             this.btnDichVu.Location = new System.Drawing.Point(0, 100);
-            this.btnDichVu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDichVu.Margin = new System.Windows.Forms.Padding(4);
             this.btnDichVu.Name = "btnDichVu";
             this.btnDichVu.Normalcolor = System.Drawing.SystemColors.MenuBar;
             this.btnDichVu.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
@@ -646,7 +646,7 @@
             this.btnPhong.IconZoom = 35D;
             this.btnPhong.IsTab = false;
             this.btnPhong.Location = new System.Drawing.Point(0, 50);
-            this.btnPhong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPhong.Margin = new System.Windows.Forms.Padding(4);
             this.btnPhong.Name = "btnPhong";
             this.btnPhong.Normalcolor = System.Drawing.SystemColors.MenuBar;
             this.btnPhong.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
@@ -685,7 +685,7 @@
             this.btnLoaiPhong.IconZoom = 35D;
             this.btnLoaiPhong.IsTab = false;
             this.btnLoaiPhong.Location = new System.Drawing.Point(0, 0);
-            this.btnLoaiPhong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLoaiPhong.Margin = new System.Windows.Forms.Padding(4);
             this.btnLoaiPhong.Name = "btnLoaiPhong";
             this.btnLoaiPhong.Normalcolor = System.Drawing.SystemColors.MenuBar;
             this.btnLoaiPhong.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
@@ -738,7 +738,7 @@
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
             this.pictureBox7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.pictureBox7.Location = new System.Drawing.Point(1036, 6);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(30, 32);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -809,7 +809,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Panel panelListLP;
-        private System.Windows.Forms.Panel panelListDV;
+        private System.Windows.Forms.Panel pnl_listdv;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;

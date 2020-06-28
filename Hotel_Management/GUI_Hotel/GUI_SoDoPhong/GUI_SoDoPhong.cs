@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DTO_Hotel;
-using DAL_Hotel;
 using BUS_Hotel;
 
 namespace Hotel_Management.GUI_SoDoPhong
@@ -42,11 +41,11 @@ namespace Hotel_Management.GUI_SoDoPhong
                 return;
             }
 
-            foreach (DTO_Phong item in lsobj)
-            {
-                SodophongChild sodophongChild = new SodophongChild(item.Sophong, item.Status, item.Malp);
-                this.flpnlSODOPHONG.Controls.Add(sodophongChild);
-            }
+            //foreach (DTO_Phong item in lsobj)
+            //{
+            //    SodophongChild sodophongChild = new SodophongChild(item.Sophong, item.Status, item.Malp);
+            //    this.flpnlSODOPHONG.Controls.Add(sodophongChild);
+            //}
 
 
             ///
