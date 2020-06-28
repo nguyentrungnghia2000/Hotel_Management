@@ -43,12 +43,13 @@
   <ItemGroup>
     <Compile Include="DTO_CTHD.cs" />
     <Compile Include="DTO_DichVu.cs" />
+    <Compile Include="DTO_HoaDon.cs" />
     <Compile Include="DTO_KhachHang.cs" />
     <Compile Include="DTO_LoaiNV.cs" />
     <Compile Include="DTO_LoaiPhong.cs" />
     <Compile Include="DTO_Phong.cs" />
     <Compile Include="DTO_SignIn.cs" />
-    <Compile Include="NhanVienDTO.cs" />
+    <Compile Include="DTO_NhanVien.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

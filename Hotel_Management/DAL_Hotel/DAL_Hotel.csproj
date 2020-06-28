@@ -42,12 +42,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL_CTHD.cs" />
     <Compile Include="DAL_DichVu.cs" />
+    <Compile Include="DAL_HoaDon.cs" />
     <Compile Include="DAL_KhachHang.cs" />
+    <Compile Include="DAL_LoaiNV.cs" />
+    <Compile Include="DAL_LoaiPhong.cs" />
     <Compile Include="DAL_Phong.cs" />
     <Compile Include="DAL_SignIn.cs" />
     <Compile Include="DBConnection.cs" />
-    <Compile Include="NhanVienDAL.cs" />
+    <Compile Include="DAL_NhanVien.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

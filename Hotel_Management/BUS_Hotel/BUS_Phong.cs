@@ -39,5 +39,10 @@ namespace BUS_Hotel
         {
             return dal.selectAll(lsObj);
         }
+
+        public string Search(string kq, List<DTO_Phong> lsobj)
+        {
+            return dal.search(kq, lsobj);
+        }
     }
 }

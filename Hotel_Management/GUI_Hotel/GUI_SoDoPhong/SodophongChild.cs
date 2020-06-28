@@ -15,7 +15,9 @@ namespace Hotel_Management.GUI_SoDoPhong
         public SodophongChild( string SOPHONG, string TINHTRANG, string MALP )
         {
             InitializeComponent();
-            this.btnsdp.Text = SOPHONG + " " + TINHTRANG + " " + MALP;
+            lb_sophong.Text = SOPHONG;
+            lb_status.Text = TINHTRANG;
+            lb_malp.Text = MALP;
             this.btnsdp.Click += Btnsdp_Click;
         }
 
