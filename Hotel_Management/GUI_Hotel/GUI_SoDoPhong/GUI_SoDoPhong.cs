@@ -21,8 +21,18 @@ namespace Hotel_Management.GUI_SoDoPhong
             InitializeComponent();
         }
 
+        private void GUI_SoDoPhong_Load(object sender, EventArgs e)
+        {
+            bus = new BUS_Phong();
+            LoadList();
+        }
+        private void bt_Search_Click(object sender, EventArgs e)
+        {
+            LoadList();
+        }
         private void LoadList()
         {
+            flpnlSODOPHONG.Controls.Clear();
             //List<DTO_Phong> roomlist = DAL_Phong.Instance.LoadListRoom();
 
             //foreach(DTO_Phong item in roomlist)
@@ -96,9 +106,11 @@ namespace Hotel_Management.GUI_SoDoPhong
             LoadList();
         }
 
-        private void GUI_SoDoPhong_Load(object sender, EventArgs e)
+        private void flpnlSODOPHONG_Paint(object sender, PaintEventArgs e)
         {
-            bus = new BUS_Phong();
+
         }
+
+      
     }
 }
