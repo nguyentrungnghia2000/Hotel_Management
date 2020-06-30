@@ -34,9 +34,10 @@
             // 
             // btn_load
             // 
-            this.btn_load.Location = new System.Drawing.Point(589, 20);
+            this.btn_load.Location = new System.Drawing.Point(913, 11);
+            this.btn_load.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_load.Name = "btn_load";
-            this.btn_load.Size = new System.Drawing.Size(150, 45);
+            this.btn_load.Size = new System.Drawing.Size(112, 37);
             this.btn_load.TabIndex = 1;
             this.btn_load.Text = "LOAD";
             this.btn_load.UseVisualStyleBackColor = true;
@@ -46,21 +47,21 @@
             // 
             this.flpnlSODOPHONG.AutoScroll = true;
             this.flpnlSODOPHONG.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.flpnlSODOPHONG.Location = new System.Drawing.Point(0, 126);
+            this.flpnlSODOPHONG.Location = new System.Drawing.Point(0, 63);
+            this.flpnlSODOPHONG.Margin = new System.Windows.Forms.Padding(2);
             this.flpnlSODOPHONG.Name = "flpnlSODOPHONG";
-            this.flpnlSODOPHONG.Size = new System.Drawing.Size(1384, 705);
+            this.flpnlSODOPHONG.Size = new System.Drawing.Size(1038, 612);
             this.flpnlSODOPHONG.TabIndex = 3;
             // 
             // GUI_SoDoPhong
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Controls.Add(this.flpnlSODOPHONG);
             this.Controls.Add(this.btn_load);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "GUI_SoDoPhong";
-            this.Size = new System.Drawing.Size(1384, 831);
+            this.Size = new System.Drawing.Size(1038, 675);
             this.Load += new System.EventHandler(this.GUI_SoDoPhong_Load);
             this.ResumeLayout(false);
 

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DTO_Hotel;
 using BUS_Hotel;
+using Bunifu.UI.WinForms.BunifuButton;
 
 namespace Hotel_Management.GUI_SoDoPhong
 {
@@ -34,12 +35,25 @@ namespace Hotel_Management.GUI_SoDoPhong
             //}
 
             List<DTO_Phong> lsobj = new List<DTO_Phong>();
+        
             string result = this.bus.SelectAll(lsobj);
-            if(result != "0")
+            if (result != "0")
             {
                 MessageBox.Show("Load list have been fail. \n" + result);
                 return;
             }
+
+
+            foreach (DTO_Phong item in lsobj)
+            {
+                
+                GUI_x1Phong gui_x1Phong = new GUI_x1Phong();
+                gui_x1Phong.lb_SoPhong.Text = item.Sophong;
+                gui_x1Phong.lb_TrangThai.Text = item.Status;
+                
+                this.flpnlSODOPHONG.Controls.Add(gui_x1Phong);
+            }
+        
 
             //foreach (DTO_Phong item in lsobj)
             //{

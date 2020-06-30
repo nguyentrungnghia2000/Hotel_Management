@@ -16,5 +16,15 @@ namespace Hotel_Management.GUI_SoDoPhong
         {
             InitializeComponent();
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void GUI_x1Phong_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

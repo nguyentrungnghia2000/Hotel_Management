@@ -62,7 +62,8 @@ namespace DAL_Hotel
         {
 
             string query = string.Empty;
-            query += " EXEC USP_GETROOM";
+            query += " SELECT [SOPHONG], [TINHTRANG], [MALP]";
+            query += " FROM [TBL_PHONG]";
 
             using (SqlConnection conn = new SqlConnection(connectionSTR))
             {
