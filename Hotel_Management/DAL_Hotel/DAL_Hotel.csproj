@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL_CTDV.cs" />
     <Compile Include="DAL_CTHD.cs" />
     <Compile Include="DAL_DichVu.cs" />
     <Compile Include="DAL_HoaDon.cs" />

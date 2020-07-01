@@ -40,7 +40,6 @@ namespace DAL_Hotel
                     comm.Parameters.AddWithValue("@SOPHONG", obj.Sophong);
                     comm.Parameters.AddWithValue("@TRATRUOC", obj.Tratruoc);
                     comm.Parameters.AddWithValue("@DONVI", obj.Donvi);
-                    comm.Parameters.AddWithValue("@MADV", obj.Madv);
 
                     try
                     {
@@ -112,7 +111,6 @@ namespace DAL_Hotel
                     comm.Parameters.AddWithValue("@SOPHONG", obj.Sophong);
                     comm.Parameters.AddWithValue("@TRATRUOC", obj.Tratruoc);
                     comm.Parameters.AddWithValue("@DONVI", obj.Donvi);
-                    comm.Parameters.AddWithValue("@MADV", obj.Madv);
 
                     try
                     {
@@ -164,7 +162,6 @@ namespace DAL_Hotel
                                 obj.Ngaydi = reader["NGAYDI"].ToString();
                                 obj.Sophong = reader["SOPHONG"].ToString();
                                 obj.Donvi = reader["DONVI"].ToString();
-                                obj.Madv = reader["MADV"].ToString();
                                 obj.Tratruoc = (int)Convert.ToInt32(reader["TRATRUOC"].ToString());
 
                                 lsObj.Add(obj);

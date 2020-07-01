@@ -408,6 +408,10 @@
       <Project>{f8ede780-eee9-4e41-8843-ca0d818d0c2a}</Project>
       <Name>BUS_Hotel</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DAL_Hotel\DAL_Hotel.csproj">
+      <Project>{c112b95e-7892-4e6b-a52f-a050b58170dd}</Project>
+      <Name>DAL_Hotel</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DTO_Hotel\DTO_Hotel.csproj">
       <Project>{291d8102-2d00-42ed-8bae-98d6ca4b86d4}</Project>
       <Name>DTO_Hotel</Name>

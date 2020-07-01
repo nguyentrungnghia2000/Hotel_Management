@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using DTO_Hotel;
 using DAL_Hotel;
 using BUS_Hotel;
+using System.Net.NetworkInformation;
+using Bunifu.UI.WinForms.BunifuButton;
 
 namespace Hotel_Management.GUI_SoDoPhong
 {
@@ -44,8 +46,14 @@ namespace Hotel_Management.GUI_SoDoPhong
 
             foreach (DTO_Phong item in lsobj)
             {
-                SodophongChild sodophongChild = new SodophongChild(item.Sophong, item.Status, item.Malp);
-                this.flpnlSODOPHONG.Controls.Add(sodophongChild);
+                
+                BunifuButton btn_phong = new BunifuButton();
+                btn_phong.BackColor = Color.Green;
+                btn_phong.Width = 200;
+                btn_phong.Height = 200;
+                btn_phong.TextAlign = ContentAlignment.MiddleCenter;
+                btn_phong.Text = item.Sophong +"\n"+ item.Status;
+                this.flpnlSODOPHONG.Controls.Add(btn_phong);
             }
 
             //dgv_load.Columns.Clear();

@@ -29,8 +29,7 @@ namespace DAL_Hotel
         public string Insert(DTO_Phong obj)
         {
             string query = string.Empty;
-            query += "INSERT INTO [TBL_PHONG] ( [SOPHONG], [TINHTRANG], [MALP] )";
-            query += "VALUES (@SOPHONG, @TINHTRANG, @MALP)";
+            query += "EXEC USP_INSERTROOM";
             using(SqlConnection conn = new SqlConnection(connectionSTR))
             {
                 using(SqlCommand comm = new SqlCommand())
@@ -150,10 +149,7 @@ namespace DAL_Hotel
         {
 
             string query = string.Empty;
-            query += " SELECT [MAKH], [TENKH], [DIACHI], [GIOITINH], [CMND], [QUOCTICH], [SDT] ";
-            query += " FROM [TBL_KHACHHANG]";
-            query += " WHERE ";
-            query += " [SOPHONG] LIKE @SOPHONG ";
+            query += " EXEC USP_GETROOMNUMBER ";
 
             using (SqlConnection conn = new SqlConnection(connectionSTR))
             {
@@ -196,9 +192,7 @@ namespace DAL_Hotel
         public string delete(DTO_Phong obj)
         {
             string query = string.Empty;
-            query += " DELETE FROM [TBL_PHONG] ";
-            query += " WHERE ";
-            query += " [SOPHONG] = @SOPHONG ";
+            query += " EXEC USP_DELETEROOM ";
 
             using (SqlConnection conn = new SqlConnection(connectionSTR))
             {
@@ -226,10 +220,7 @@ namespace DAL_Hotel
         public string update(DTO_Phong obj)
         {
             string query = string.Empty;
-            query += " UPDATE [TBL_PHONG] SET";
-            query += " [TINHTRANG] = @TINHTRANG";
-            query += " WHERE ";
-            query += " [SOPHONG] = @SOPHONG ";
+            query += " EXEC USP_UPDATEROOM ";
 
             using (SqlConnection conn = new SqlConnection(connectionSTR))
             {
