@@ -447,8 +447,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel PanelSub;
-        private System.Windows.Forms.Panel panelSubMenu;
+        public System.Windows.Forms.Panel PanelSub;
+        public System.Windows.Forms.Panel panelSubMenu;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.LinkLabel linkLabel1;

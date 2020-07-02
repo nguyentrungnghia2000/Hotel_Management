@@ -37,7 +37,6 @@ namespace DAL_Hotel
                     comm.Connection = conn;
                     comm.CommandType = CommandType.Text;
                     comm.CommandText = query;
-
                     comm.Parameters.AddWithValue("@SOPHONG", obj.Sophong);
                     comm.Parameters.AddWithValue("@TINHTRANG", obj.Status);
                     comm.Parameters.AddWithValue("@MALP", obj.Malp);

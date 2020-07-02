@@ -364,7 +364,7 @@
         SUVORK5CYII=
 </value>
   </data>
-  <data name="bunifuTextBox8.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="txb_SDT.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgMAAAAwCAYAAACMqnl9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAEFSURBVHhe7dZBDQMxEATB5Y/KJ8MIjADIyZI/wdBV0nyW
@@ -375,7 +375,7 @@
         SUVORK5CYII=
 </value>
   </data>
-  <data name="bunifuTextBox8.IconLeft" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="txb_SDT.IconLeft" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAWtJREFUSEvt
         lb1KA1EUhLcXC0EsFBF9D8Va7LTQ59BaxffYYv+yjSIovkQawV6REAu7IKmNc2SETbxjyN2jVT6YYmfn
@@ -387,7 +387,7 @@
         k81mfwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="bunifuButton6.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btn_DangKy.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAKkAAAAyCAYAAAAndPuvAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAALCSURBVHhe7d0tk9NQFIfxSiQSicQlgWEGRyUSuXIlEonk
@@ -405,7 +405,7 @@
         oReLnDyYFDVOTSZ/ARdtnQZkybLzAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="bunifuTextBox9.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="txb_Email.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgMAAAAwCAYAAACMqnl9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAEFSURBVHhe7dZBDQMxEATB5Y/KJ8MIjADIyZI/wdBV0nyW
@@ -416,7 +416,7 @@
         SUVORK5CYII=
 </value>
   </data>
-  <data name="bunifuTextBox9.IconLeft" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="txb_Email.IconLeft" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAUVJREFUWEft
         kjtOw0AYhA09lIBEgSioOAkUcAJc5hSAfAnoLL8tRdDRINFwFaiDoAxFZGaiWQkcDBtng4i0nzRK9t/5
@@ -427,7 +427,7 @@
         wBZfwBfoVWBJWoECHs/fEgQf03TGz1tS/osAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="bunifuTextBox10.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="txb_HoTen.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgMAAAAwCAYAAACMqnl9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAEMSURBVHhe7dbBCQJBEEXBDknwaJiLYAh6MKINwwCUgbkY
@@ -438,7 +438,7 @@
         4NM3AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="bunifuTextBox10.IconLeft" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="txb_HoTen.IconLeft" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAZ9JREFUSEu1
         lElKA0EYhXuhrnQheAhxAAVRD6EbwaXgLQRxWLoQYkRFGw1kXvQFHDa5gpLECyiKuHHCLIzD9+svxEoq

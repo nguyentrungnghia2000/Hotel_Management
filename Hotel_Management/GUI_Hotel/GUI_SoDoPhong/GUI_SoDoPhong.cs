@@ -8,11 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DTO_Hotel;
-using DAL_Hotel;
 using BUS_Hotel;
-using System.Net.NetworkInformation;
 using Bunifu.UI.WinForms.BunifuButton;
-using Hotel_Management.GUI_CaiDat;
 
 namespace Hotel_Management.GUI_SoDoPhong
 {
@@ -22,12 +19,20 @@ namespace Hotel_Management.GUI_SoDoPhong
         public GUI_SoDoPhong()
         {
             InitializeComponent();
-           // LoadList();
         }
-
+        
+        private void GUI_SoDoPhong_Load(object sender, EventArgs e)
+        {
+            bus = new BUS_Phong();
+            LoadList();
+        }
+        private void bt_Search_Click(object sender, EventArgs e)
+        {
+            LoadList();
+        }
         private void LoadList()
         {
-            //flpnl_sodophong.Controls.Clear();
+            flpnlSODOPHONG.Controls.Clear();
             //List<DTO_Phong> roomlist = DAL_Phong.Instance.LoadListRoom();
 
             //foreach(DTO_Phong item in roomlist)
@@ -40,28 +45,31 @@ namespace Hotel_Management.GUI_SoDoPhong
             //}
 
             List<DTO_Phong> lsobj = new List<DTO_Phong>();
+        
             string result = this.bus.SelectAll(lsobj);
-            if(result != "0")
+            if (result != "0")
             {
                 MessageBox.Show("Load list have been fail. \n" + result);
                 return;
             }
 
+
             foreach (DTO_Phong item in lsobj)
             {
-
-                //BunifuButton btn_phong = new BunifuButton();
-                //btn_phong.BackColor = Color.Green;
-                //btn_phong.Width = 200;
-                //btn_phong.Height = 200;
-                //btn_phong.TextAlign = ContentAlignment.MiddleCenter;
-                //btn_phong.Text = item.Sophong +"\n"+ item.Status;
-                GUI_ListPhong phong = new GUI_ListPhong();
-                phong.txb_sophong.Text = item.Sophong;
-                phong.txb_loaiphong.Text = item.Malp;
-                phong.txb_tinhtrang.Text = item.Status;
-                this.flpnl_sodophong.Controls.Add(phong);
+                
+                GUI_x1Phong gui_x1Phong = new GUI_x1Phong();
+                gui_x1Phong.lb_SoPhong.Text = item.Sophong;
+                gui_x1Phong.lb_TrangThai.Text = item.Status;
+                
+                this.flpnlSODOPHONG.Controls.Add(gui_x1Phong);
             }
+        
+
+            //foreach (DTO_Phong item in lsobj)
+            //{
+            //    SodophongChild sodophongChild = new SodophongChild(item.Sophong, item.Status, item.Malp);
+            //    this.flpnlSODOPHONG.Controls.Add(sodophongChild);
+            //}
 
             //dgv_load.Columns.Clear();
             //dgv_load.DataSource = null;
@@ -98,14 +106,11 @@ namespace Hotel_Management.GUI_SoDoPhong
             LoadList();
         }
 
-        private void GUI_SoDoPhong_Load(object sender, EventArgs e)
+        private void flpnlSODOPHONG_Paint(object sender, PaintEventArgs e)
         {
-            bus = new BUS_Phong();
+
         }
 
-        private void bt_Search_Click(object sender, EventArgs e)
-        {
-            LoadList();
-        }
+      
     }
 }
