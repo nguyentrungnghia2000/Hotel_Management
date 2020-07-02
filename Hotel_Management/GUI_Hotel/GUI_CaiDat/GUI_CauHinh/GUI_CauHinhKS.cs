@@ -23,12 +23,8 @@ namespace Hotel_Management.GUI_CaiDat
 
         private BUS_Phong bus = new BUS_Phong();
 
-        //private GUI_CaiDat.GUI_ListLoaiPhong guiListLP = new GUI_CaiDat.GUI_ListLoaiPhong();
-        //private GUI_CaiDat.GUI_ListDichVu guiListDV = new GUI_CaiDat.GUI_ListDichVu();
-        //private GUI_CaiDat.GUI_ListPhong guiListPhong = new GUI_CaiDat.GUI_ListPhong();
         private void GUI_CauHinhKS_Load(object sender, EventArgs e)
         {
-          
             //Thread newThread = new Thread(() =>
             //{
             //    Invoke(new Action(() =>
