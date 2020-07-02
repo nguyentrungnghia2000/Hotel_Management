@@ -4,7 +4,6 @@ D:\Hotel_Management\DTO_Hotel\obj\Debug\DTO_Hotel.dll
 D:\Hotel_Management\DTO_Hotel\obj\Debug\DTO_Hotel.pdb
 D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\DTO_Hotel\bin\Debug\DTO_Hotel.dll
 D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\DTO_Hotel\bin\Debug\DTO_Hotel.pdb
-D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\DTO_Hotel\obj\Debug\DTO_Hotel.csprojAssemblyReference.cache
 D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\DTO_Hotel\obj\Debug\DTO_Hotel.csproj.CoreCompileInputs.cache
 D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\DTO_Hotel\obj\Debug\DTO_Hotel.dll
 D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\DTO_Hotel\obj\Debug\DTO_Hotel.pdb
@@ -17,3 +16,4 @@ C:\Users\Admin\Desktop\Hotel_Management\Hotel_Management\DTO_Hotel\bin\Debug\DTO
 C:\Users\Admin\Desktop\Hotel_Management\Hotel_Management\DTO_Hotel\bin\Debug\DTO_Hotel.pdb
 C:\Users\Admin\Desktop\Hotel_Management\Hotel_Management\DTO_Hotel\obj\Debug\DTO_Hotel.dll
 C:\Users\Admin\Desktop\Hotel_Management\Hotel_Management\DTO_Hotel\obj\Debug\DTO_Hotel.pdb
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\DTO_Hotel\obj\Debug\DTO_Hotel.csprojAssemblyReference.cache

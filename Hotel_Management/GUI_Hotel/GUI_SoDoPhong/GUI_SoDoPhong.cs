@@ -12,6 +12,7 @@ using DAL_Hotel;
 using BUS_Hotel;
 using System.Net.NetworkInformation;
 using Bunifu.UI.WinForms.BunifuButton;
+using Hotel_Management.GUI_CaiDat;
 
 namespace Hotel_Management.GUI_SoDoPhong
 {
@@ -21,10 +22,12 @@ namespace Hotel_Management.GUI_SoDoPhong
         public GUI_SoDoPhong()
         {
             InitializeComponent();
+           // LoadList();
         }
 
         private void LoadList()
         {
+            //flpnl_sodophong.Controls.Clear();
             //List<DTO_Phong> roomlist = DAL_Phong.Instance.LoadListRoom();
 
             //foreach(DTO_Phong item in roomlist)
@@ -46,14 +49,18 @@ namespace Hotel_Management.GUI_SoDoPhong
 
             foreach (DTO_Phong item in lsobj)
             {
-                
-                BunifuButton btn_phong = new BunifuButton();
-                btn_phong.BackColor = Color.Green;
-                btn_phong.Width = 200;
-                btn_phong.Height = 200;
-                btn_phong.TextAlign = ContentAlignment.MiddleCenter;
-                btn_phong.Text = item.Sophong +"\n"+ item.Status;
-                this.flpnlSODOPHONG.Controls.Add(btn_phong);
+
+                //BunifuButton btn_phong = new BunifuButton();
+                //btn_phong.BackColor = Color.Green;
+                //btn_phong.Width = 200;
+                //btn_phong.Height = 200;
+                //btn_phong.TextAlign = ContentAlignment.MiddleCenter;
+                //btn_phong.Text = item.Sophong +"\n"+ item.Status;
+                GUI_ListPhong phong = new GUI_ListPhong();
+                phong.txb_sophong.Text = item.Sophong;
+                phong.txb_loaiphong.Text = item.Malp;
+                phong.txb_tinhtrang.Text = item.Status;
+                this.flpnl_sodophong.Controls.Add(phong);
             }
 
             //dgv_load.Columns.Clear();
@@ -94,6 +101,11 @@ namespace Hotel_Management.GUI_SoDoPhong
         private void GUI_SoDoPhong_Load(object sender, EventArgs e)
         {
             bus = new BUS_Phong();
+        }
+
+        private void bt_Search_Click(object sender, EventArgs e)
+        {
+            LoadList();
         }
     }
 }
