@@ -20,7 +20,7 @@ namespace Hotel_Management.GUI_SoDoPhong
         {
             InitializeComponent();
         }
-
+        
         private void GUI_SoDoPhong_Load(object sender, EventArgs e)
         {
             bus = new BUS_Phong();

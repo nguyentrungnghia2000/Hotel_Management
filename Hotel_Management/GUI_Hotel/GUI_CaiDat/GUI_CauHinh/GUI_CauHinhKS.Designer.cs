@@ -51,9 +51,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.pagePhong = new System.Windows.Forms.TabPage();
+            this.panelListPhong = new System.Windows.Forms.FlowLayoutPanel();
             this.label8 = new System.Windows.Forms.Label();
             this.btnAddPhong = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.panelListPhong = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -113,10 +113,10 @@
             this.pageCauHinh.Location = new System.Drawing.Point(148, 45);
             this.pageCauHinh.Multiline = true;
             this.pageCauHinh.Name = "pageCauHinh";
-            this.pageCauHinh.Page = this.pageDichVu;
-            this.pageCauHinh.PageIndex = 2;
-            this.pageCauHinh.PageName = "pageDichVu";
-            this.pageCauHinh.PageTitle = "tabPage3";
+            this.pageCauHinh.Page = this.pagePhong;
+            this.pageCauHinh.PageIndex = 1;
+            this.pageCauHinh.PageName = "pagePhong";
+            this.pageCauHinh.PageTitle = "tabPage2";
             this.pageCauHinh.SelectedIndex = 0;
             this.pageCauHinh.Size = new System.Drawing.Size(923, 525);
             this.pageCauHinh.TabIndex = 3;
@@ -280,9 +280,9 @@
             // 
             // pagePhong
             // 
+            this.pagePhong.Controls.Add(this.panelListPhong);
             this.pagePhong.Controls.Add(this.label8);
             this.pagePhong.Controls.Add(this.btnAddPhong);
-            this.pagePhong.Controls.Add(this.panelListPhong);
             this.pagePhong.Controls.Add(this.panel5);
             this.pagePhong.Location = new System.Drawing.Point(4, 4);
             this.pagePhong.Name = "pagePhong";
@@ -291,6 +291,15 @@
             this.pagePhong.TabIndex = 1;
             this.pagePhong.Text = "tabPage2";
             this.pagePhong.UseVisualStyleBackColor = true;
+            // 
+            // panelListPhong
+            // 
+            this.panelListPhong.AutoScroll = true;
+            this.panelListPhong.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelListPhong.Location = new System.Drawing.Point(3, 95);
+            this.panelListPhong.Name = "panelListPhong";
+            this.panelListPhong.Size = new System.Drawing.Size(909, 401);
+            this.panelListPhong.TabIndex = 16;
             // 
             // label8
             // 
@@ -365,14 +374,6 @@
             this.btnAddPhong.TextMarginLeft = 0;
             this.btnAddPhong.UseDefaultRadiusAndThickness = true;
             this.btnAddPhong.Click += new System.EventHandler(this.btnAddPhong_Click);
-            // 
-            // panelListPhong
-            // 
-            this.panelListPhong.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelListPhong.Location = new System.Drawing.Point(3, 95);
-            this.panelListPhong.Name = "panelListPhong";
-            this.panelListPhong.Size = new System.Drawing.Size(909, 401);
-            this.panelListPhong.TabIndex = 13;
             // 
             // panel5
             // 
@@ -821,10 +822,10 @@
         private Bunifu.Framework.UI.BunifuDragControl KeoTha;
         private System.Windows.Forms.Label label8;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnAddPhong;
-        private System.Windows.Forms.Panel panelListPhong;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.LinkLabel linkLabel3;
+        private System.Windows.Forms.FlowLayoutPanel panelListPhong;
     }
 }

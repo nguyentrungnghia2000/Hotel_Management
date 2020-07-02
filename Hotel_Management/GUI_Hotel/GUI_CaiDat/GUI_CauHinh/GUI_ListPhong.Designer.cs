@@ -521,10 +521,10 @@
         private System.Windows.Forms.Panel panelSubMenu;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox txb_giaphong;
-        private System.Windows.Forms.TextBox txb_tinhtrang;
-        private System.Windows.Forms.TextBox txb_loaiphong;
-        private System.Windows.Forms.TextBox txb_sophong;
+        public System.Windows.Forms.TextBox txb_giaphong;
+        public System.Windows.Forms.TextBox txb_tinhtrang;
+        public System.Windows.Forms.TextBox txb_loaiphong;
+        public System.Windows.Forms.TextBox txb_sophong;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_luu;
     }
 }

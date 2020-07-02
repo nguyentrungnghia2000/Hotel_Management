@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
 using DTO_Hotel;
-
+using BUS_Hotel;
 namespace Hotel_Management.GUI_CaiDat
 {
     public partial class GUI_CauHinhKS : Form
@@ -18,7 +18,7 @@ namespace Hotel_Management.GUI_CaiDat
         {
             InitializeComponent();
         }
-
+        BUS_Phong bus = new BUS_Phong();
         
         private GUI_CaiDat.GUI_ListLoaiPhong guiListLP = new GUI_CaiDat.GUI_ListLoaiPhong();
         private GUI_CaiDat.GUI_ListDichVu guiListDV = new GUI_CaiDat.GUI_ListDichVu();
@@ -40,6 +40,76 @@ namespace Hotel_Management.GUI_CaiDat
                 }));
             });
             newThread.Start();
+        }
+        private void LoadList()
+        {
+            panelListPhong.Controls.Clear();
+            //List<DTO_Phong> roomlist = DAL_Phong.Instance.LoadListRoom();
+
+            //foreach(DTO_Phong item in roomlist)
+            //{
+            //    Button btn = new Button();
+            //    btn.Width = 100;
+            //    btn.Height = 100;
+
+            //    flp_phong.Controls.Add(btn); 
+            //}
+
+            List<DTO_Phong> lsobj = new List<DTO_Phong>();
+
+            string result = this.bus.SelectAll(lsobj);
+            if (result != "0")
+            {
+                MessageBox.Show("Load list have been fail. \n" + result);
+                return;
+            }
+
+
+            foreach (DTO_Phong item in lsobj)
+            {
+
+                GUI_ListPhong gui_x1Phong = new GUI_ListPhong();
+                gui_x1Phong.txb_sophong.Text = item.Sophong;
+              
+
+                this.panelListPhong.Controls.Add(gui_x1Phong);
+            }
+
+
+            //foreach (DTO_Phong item in lsobj)
+            //{
+            //    SodophongChild sodophongChild = new SodophongChild(item.Sophong, item.Status, item.Malp);
+            //    this.flpnlSODOPHONG.Controls.Add(sodophongChild);
+            //}
+
+            //dgv_load.Columns.Clear();
+            //dgv_load.DataSource = null;
+
+            //dgv_load.AutoGenerateColumns = false;
+            //dgv_load.AllowUserToAddRows = false;
+            //dgv_load.DataSource = lsobj;
+
+            //DataGridViewTextBoxColumn cSophong = new DataGridViewTextBoxColumn();
+            //cSophong.Name = "Sophong";
+            //cSophong.HeaderText = "Số phòng";
+            //cSophong.DataPropertyName = "Sophong";
+
+            //DataGridViewTextBoxColumn cStatus = new DataGridViewTextBoxColumn();
+            //cStatus.Name = "Status";
+            //cStatus.HeaderText = "Trạng thái";
+            //cStatus.DataPropertyName = "Status";
+
+            //DataGridViewTextBoxColumn cMalp = new DataGridViewTextBoxColumn();
+            //cMalp.Name = "Malp";
+            //cMalp.HeaderText = "Mã loại phòng";
+            //cMalp.DataPropertyName = "Malp";
+
+
+
+            //dgv_load.Columns.AddRange(new DataGridViewTextBoxColumn[] { cSophong, cStatus,cMalp });
+            //CurrencyManager myCurrenManager = (CurrencyManager)this.BindingContext[dgv_load.DataSource];
+            //myCurrenManager.Refresh();
+            //dgv_load.Refresh();
         }
 
 
@@ -72,9 +142,11 @@ namespace Hotel_Management.GUI_CaiDat
 
         private void btnAddPhong_Click(object sender, EventArgs e)
         {
-            GUI_CaiDat.GUI_ListPhong guiListPhong = new GUI_CaiDat.GUI_ListPhong();
-            panelListPhong.Controls.Add(guiListPhong);
-            guiListPhong.Dock = DockStyle.Top;
+            //GUI_CaiDat.GUI_ListPhong guiListPhong = new GUI_CaiDat.GUI_ListPhong();
+            //panelListPhong.Controls.Add(guiListPhong);
+            //guiListPhong.Dock = DockStyle.Top;
+            LoadList();
+
         }
 
         private void btnAddDV_Click(object sender, EventArgs e)

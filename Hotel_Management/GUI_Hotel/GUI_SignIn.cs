@@ -79,5 +79,15 @@ namespace Hotel_Management
             frmload.Hide();
             time_Loading.Stop();
         }
+
+        private void bunifuTextBox9_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_DangKy_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
