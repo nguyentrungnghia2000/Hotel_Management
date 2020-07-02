@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTO_CTDV.cs" />
     <Compile Include="DTO_CTHD.cs" />
     <Compile Include="DTO_DichVu.cs" />
     <Compile Include="DTO_HoaDon.cs" />

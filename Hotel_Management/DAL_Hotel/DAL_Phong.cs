@@ -29,8 +29,7 @@ namespace DAL_Hotel
         public string Insert(DTO_Phong obj)
         {
             string query = string.Empty;
-            query += "INSERT INTO [TBL_PHONG] ( [SOPHONG], [TINHTRANG], [MALP] )";
-            query += "VALUES (@SOPHONG, @TINHTRANG, @MALP)";
+            query += "EXEC USP_INSERTROOM";
             using(SqlConnection conn = new SqlConnection(connectionSTR))
             {
                 using(SqlCommand comm = new SqlCommand())
@@ -59,10 +58,8 @@ namespace DAL_Hotel
 
         public string selectAll(List<DTO_Phong> lsObj)
         {
-
             string query = string.Empty;
-            query += " SELECT [SOPHONG], [TINHTRANG], [MALP]";
-            query += " FROM [TBL_PHONG]";
+            query += " EXEC USP_GETROOM";
 
             using (SqlConnection conn = new SqlConnection(connectionSTR))
             {
@@ -86,6 +83,48 @@ namespace DAL_Hotel
                                 obj.Sophong = reader["SOPHONG"].ToString();
                                 obj.Status = reader["TINHTRANG"].ToString();
                                 obj.Malp = reader["MALP"].ToString();
+                                lsObj.Add(obj);
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        conn.Close();
+                        return "Selecting fails\n" + ex.Message + "\n" + ex.StackTrace;
+                    }
+                }
+            }
+            return "0";
+        }
+
+        public string selectAllwithCost(List<DTO_Phong> lsObj)
+        {
+            string query = string.Empty;
+            query += " EXEC USP_GETCOSTROOM";
+
+            using (SqlConnection conn = new SqlConnection(connectionSTR))
+            {
+                using (SqlCommand comm = new SqlCommand())
+                {
+                    comm.Connection = conn;
+                    comm.CommandType = CommandType.Text;
+                    comm.CommandText = query;
+
+                    try
+                    {
+                        conn.Open();
+
+                        SqlDataReader reader = comm.ExecuteReader();
+                        if (reader.HasRows == true)
+                        {
+                            lsObj.Clear();
+                            while (reader.Read())
+                            {
+                                DTO_Phong obj = new DTO_Phong();
+                                obj.Sophong = reader["SOPHONG"].ToString();
+                                obj.Status = reader["TINHTRANG"].ToString();
+                                obj.Malp = reader["MALP"].ToString();
+                                obj.Gia = reader["GIA"].ToString();
                                 lsObj.Add(obj);
                             }
                         }
@@ -150,10 +189,7 @@ namespace DAL_Hotel
         {
 
             string query = string.Empty;
-            query += " SELECT [MAKH], [TENKH], [DIACHI], [GIOITINH], [CMND], [QUOCTICH], [SDT] ";
-            query += " FROM [TBL_KHACHHANG]";
-            query += " WHERE ";
-            query += " [SOPHONG] LIKE @SOPHONG ";
+            query += " EXEC USP_GETROOMNUMBER ";
 
             using (SqlConnection conn = new SqlConnection(connectionSTR))
             {
@@ -196,9 +232,7 @@ namespace DAL_Hotel
         public string delete(DTO_Phong obj)
         {
             string query = string.Empty;
-            query += " DELETE FROM [TBL_PHONG] ";
-            query += " WHERE ";
-            query += " [SOPHONG] = @SOPHONG ";
+            query += " EXEC USP_DELETEROOM ";
 
             using (SqlConnection conn = new SqlConnection(connectionSTR))
             {
@@ -226,10 +260,7 @@ namespace DAL_Hotel
         public string update(DTO_Phong obj)
         {
             string query = string.Empty;
-            query += " UPDATE [TBL_PHONG] SET";
-            query += " [TINHTRANG] = @TINHTRANG";
-            query += " WHERE ";
-            query += " [SOPHONG] = @SOPHONG ";
+            query += " EXEC USP_UPDATEROOM ";
 
             using (SqlConnection conn = new SqlConnection(connectionSTR))
             {

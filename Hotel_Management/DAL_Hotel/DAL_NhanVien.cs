@@ -22,8 +22,7 @@ namespace DAL_Hotel
         public string Insert(DTO_NhanVien obj)
         {
             string query = string.Empty;
-            query += "INSERT INTO [TBL_NHANVIEN] ( [MANV], [TENNV], [MALNV], [NGSINH], [GIOITINH], [SDT], [DIACHI] )";
-            query += "VALUES (@MANV, @TENNV, @MALNV, @NGSINH, @GIOITINH, @SDT, @DIACHI)";
+            query += " EXEC USP_INSERTNHANVIEN ";
             using (SqlConnection conn = new SqlConnection(connectionSTR))
             {
                 using (SqlCommand comm = new SqlCommand())
@@ -59,8 +58,7 @@ namespace DAL_Hotel
         {
 
             string query = string.Empty;
-            query += " SELECT [MANV], [TENNV], [MALNV], [NGSINH], [GIOITINH], [SDT], [DIACHI]";
-            query += " FROM [TBL_NHANVIEN]";
+            query += " EXEC USP_GETNHANVIEN ";
 
             using (SqlConnection conn = new SqlConnection(connectionSTR))
             {
@@ -156,10 +154,7 @@ namespace DAL_Hotel
         {
 
             string query = string.Empty;
-            query += " SELECT [MANV], [TENNV], [MALNV], [NGSINH], [GIOITINH], [SDT], [DIACHI]";
-            query += " FROM [TBL_NHANVIEN]";
-            query += " WHERE";
-            query += " [MANV] = @MANV ";
+            query += " EXEC USP_GETNHANVIENBYMANV";
 
             using (SqlConnection conn = new SqlConnection(connectionSTR))
             {
@@ -206,9 +201,7 @@ namespace DAL_Hotel
         public string Delete(DTO_NhanVien obj)
         {
             string query = string.Empty;
-            query += " DELETE FROM [TBL_NHANVIEN] ";
-            query += " WHERE ";
-            query += " [MANV] = @MANV ";
+            query += " EXEC USP_DELETENHANVIEN ";
 
             using (SqlConnection conn = new SqlConnection(connectionSTR))
             {
@@ -236,15 +229,7 @@ namespace DAL_Hotel
         public string Update(DTO_NhanVien obj)
         {
             string query = string.Empty;
-            query += " UPDATE [TBL_NHANVIEN] SET";
-            query += " [TENNV] = @TENNV";
-            query += " [MALNV] = @MALNV";
-            query += " [NGSINH] = @NGSINH";
-            query += " [GIOITINH] = @GIOITINH";
-            query += " [SDT] = @SDT";
-            query += " [DIACHI] = @DIACHI";
-            query += " WHERE ";
-            query += " [MADV] = @MADV ";
+            query += " EXEC USP_UPDATENHANVIEN";
 
             using (SqlConnection conn = new SqlConnection(connectionSTR))
             {

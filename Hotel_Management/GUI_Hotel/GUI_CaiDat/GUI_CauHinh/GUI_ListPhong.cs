@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DTO_Hotel;
+using Bunifu.UI.WinForms.BunifuButton;
 
 namespace Hotel_Management.GUI_CaiDat
 {
@@ -16,6 +18,7 @@ namespace Hotel_Management.GUI_CaiDat
         {
             InitializeComponent();
         }
+
         private void ShowPanel()
         {
             

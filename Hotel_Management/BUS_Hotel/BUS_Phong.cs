@@ -18,10 +18,6 @@ namespace BUS_Hotel
 
         public string Insert(DTO_Phong obj)
         {
-            //if (obj.Sophong == null)
-            //{
-            //    return "Information has missed";
-            //}
             return dal.Insert(obj);
         }
 
@@ -43,6 +39,11 @@ namespace BUS_Hotel
         public string Search(string kq, List<DTO_Phong> lsobj)
         {
             return dal.search(kq, lsobj);
+        }
+
+        public string SelectWithCost(List<DTO_Phong> lsObj)
+        {
+            return dal.selectAllwithCost(lsObj);
         }
     }
 }
