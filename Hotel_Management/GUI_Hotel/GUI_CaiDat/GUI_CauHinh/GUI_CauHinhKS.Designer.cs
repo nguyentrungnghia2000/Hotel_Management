@@ -51,7 +51,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.pagePhong = new System.Windows.Forms.TabPage();
-            this.panelListPhong = new System.Windows.Forms.FlowLayoutPanel();
+            this.flp_lsphong = new System.Windows.Forms.FlowLayoutPanel();
             this.label8 = new System.Windows.Forms.Label();
             this.btnAddPhong = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -280,7 +280,7 @@
             // 
             // pagePhong
             // 
-            this.pagePhong.Controls.Add(this.panelListPhong);
+            this.pagePhong.Controls.Add(this.flp_lsphong);
             this.pagePhong.Controls.Add(this.label8);
             this.pagePhong.Controls.Add(this.btnAddPhong);
             this.pagePhong.Controls.Add(this.panel5);
@@ -292,14 +292,14 @@
             this.pagePhong.Text = "tabPage2";
             this.pagePhong.UseVisualStyleBackColor = true;
             // 
-            // panelListPhong
+            // flp_lsphong
             // 
-            this.panelListPhong.AutoScroll = true;
-            this.panelListPhong.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelListPhong.Location = new System.Drawing.Point(3, 95);
-            this.panelListPhong.Name = "panelListPhong";
-            this.panelListPhong.Size = new System.Drawing.Size(909, 401);
-            this.panelListPhong.TabIndex = 16;
+            this.flp_lsphong.AutoScroll = true;
+            this.flp_lsphong.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.flp_lsphong.Location = new System.Drawing.Point(3, 95);
+            this.flp_lsphong.Name = "flp_lsphong";
+            this.flp_lsphong.Size = new System.Drawing.Size(909, 401);
+            this.flp_lsphong.TabIndex = 16;
             // 
             // label8
             // 
@@ -826,6 +826,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.LinkLabel linkLabel3;
-        private System.Windows.Forms.FlowLayoutPanel panelListPhong;
+        private System.Windows.Forms.FlowLayoutPanel flp_lsphong;
     }
 }

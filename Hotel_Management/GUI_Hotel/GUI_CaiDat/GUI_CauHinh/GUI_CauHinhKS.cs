@@ -107,10 +107,7 @@ namespace Hotel_Management.GUI_CaiDat
             guiListDV.Dock = DockStyle.Top;
         }
 
-        private void btn_LoadListPhong_Click(object sender, EventArgs e)
-        {
-            LoadListPhong();
-        }
+        
     }       
     
 }

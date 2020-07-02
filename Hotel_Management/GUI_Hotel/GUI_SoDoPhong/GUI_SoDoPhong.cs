@@ -32,7 +32,7 @@ namespace Hotel_Management.GUI_SoDoPhong
         }
         private void LoadList()
         {
-            flpnlSODOPHONG.Controls.Clear();
+            flpnl_sodophong.Controls.Clear();
             //List<DTO_Phong> roomlist = DAL_Phong.Instance.LoadListRoom();
 
             //foreach(DTO_Phong item in roomlist)
@@ -61,7 +61,7 @@ namespace Hotel_Management.GUI_SoDoPhong
                 gui_x1Phong.lb_SoPhong.Text = item.Sophong;
                 gui_x1Phong.lb_TrangThai.Text = item.Status;
                 
-                this.flpnlSODOPHONG.Controls.Add(gui_x1Phong);
+                this.flpnl_sodophong.Controls.Add(gui_x1Phong);
             }
         
 
