@@ -12,13 +12,13 @@ namespace DTO_Hotel
         private string malp;
         private string tenlp;
         private string trangthietbi;
-        private string gia;
+        private int gia;
         private string donvi;
 
         public string Malp { get => malp; set => malp = value; }
         public string Tenlp { get => tenlp; set => tenlp = value; }
         public string Trangthietbi { get => trangthietbi; set => trangthietbi = value; }
-        public string Gia { get => gia; set => gia = value; }
+        public int Gia { get => gia; set => gia = value; }
         public string Donvi { get => donvi; set => donvi = value; }
     }
 }

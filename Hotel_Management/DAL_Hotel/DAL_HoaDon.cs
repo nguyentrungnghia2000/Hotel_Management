@@ -19,49 +19,6 @@ namespace DAL_Hotel
             connectionSTR = ConfigurationManager.AppSettings["ConnectionSTR"];
         }
 
-        public string selectAll(List<DTO_HoaDon> lsObj)
-        {
-
-            string query = string.Empty;
-            query += " EXEC USP_GETLOAIPHONG";
-
-            using (SqlConnection conn = new SqlConnection(connectionSTR))
-            {
-                using (SqlCommand comm = new SqlCommand())
-                {
-                    comm.Connection = conn;
-                    comm.CommandType = CommandType.Text;
-                    comm.CommandText = query;
-
-                    try
-                    {
-                        conn.Open();
-
-                        SqlDataReader reader = comm.ExecuteReader();
-                        if (reader.HasRows == true)
-                        {
-                            lsObj.Clear();
-                            while (reader.Read())
-                            {
-                                DTO_HoaDon obj = new DTO_HoaDon();
-                                obj.Mahd = reader["MAHD"].ToString();
-                                obj.Ngaythanhtoan = reader["NGAYTHANHTOAN"].ToString();
-                                obj.Tratruoc = (int)Convert.ToInt32(reader["TRATRUOC"].ToString());
-                                obj.Mavn = reader["MANV"].ToString();
-                                lsObj.Add(obj);
-                            }
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                        conn.Close();
-                        return "Selecting fails\n" + ex.Message + "\n" + ex.StackTrace;
-                    }
-                }
-            }
-            return "0";
-        }
-
         public string Insert(DTO_HoaDon obj)
         {
             string query = string.Empty;

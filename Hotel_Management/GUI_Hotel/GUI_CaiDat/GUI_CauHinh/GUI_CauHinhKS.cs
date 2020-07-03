@@ -22,10 +22,26 @@ namespace Hotel_Management.GUI_CaiDat
         }
 
         private BUS_Phong bus = new BUS_Phong();
-        private BUS_LoaiPhong bus_lp = new BUS_LoaiPhong();
 
         private void GUI_CauHinhKS_Load(object sender, EventArgs e)
-        { 
+        {
+            //Thread newThread = new Thread(() =>
+            //{
+            //    Invoke(new Action(() =>
+            //    {
+
+            //        panelListLP.Controls.Add(guiListLP);
+            //        guiListLP.Dock = DockStyle.Top;
+            //        pnl_listdv.Controls.Add(guiListDV);
+            //        guiListDV.Dock = DockStyle.Top;
+            //        flp_lsphong.Controls.Add(guiListPhong);
+            //        guiListPhong.Dock = DockStyle.Top;
+                   
+            //    }));
+            //});
+
+            //newThread.Start();
+            
         }
 
         private void LoadListPhong()
@@ -48,30 +64,6 @@ namespace Hotel_Management.GUI_CaiDat
                 phong.lb_status.Text = item.Status;
                 this.flp_lsphong.Controls.Add(phong);
                 phong.Dock = DockStyle.Top;
-            }
-        }
-
-        private void LoadListLoaiPhong()
-        {
-            List<DTO_LoaiPhong> lsobj_lp = new List<DTO_LoaiPhong>();
-            string result = this.bus_lp.SelectAll(lsobj_lp);
-            if (result != "0")
-            {
-                MessageBox.Show("Load list have been fail. \n" + result);
-                return;
-            }
-            foreach (DTO_LoaiPhong item in lsobj_lp)
-            {
-                GUI_ListLoaiPhong loaiphong = new GUI_ListLoaiPhong();
-                loaiphong.txb_tenloaiphong.Text = item.Tenlp;
-                loaiphong.txb_malp.Text = item.Malp;
-                loaiphong.txb_giaphong.Text = item.Gia;
-                loaiphong.txb_trangthietbi.Text = item.Trangthietbi;
-                loaiphong.txb_donvi.Text = item.Donvi;
-                loaiphong.lb_ten.Text = item.Tenlp;
-                loaiphong.lb_gia.Text = item.Gia.ToString();
-                this.flp_lsphong.Controls.Add(loaiphong);
-                loaiphong.Dock = DockStyle.Top;
             }
         }
         private void pictureBox7_Click_1(object sender, EventArgs e)
@@ -115,20 +107,7 @@ namespace Hotel_Management.GUI_CaiDat
             guiListDV.Dock = DockStyle.Top;
         }
 
-        private void btn_LoadListPhong_Click(object sender, EventArgs e)
-        {
-           // LoadListPhong();
-        }
-
-        private void btn_LoadListPhong_Click_1(object sender, EventArgs e)
-        {
-            LoadListPhong();
-        }
-
-        private void btn_LoadListLP_Click(object sender, EventArgs e)
-        {
-            LoadListLoaiPhong();
-        }
+        
     }       
     
 }
