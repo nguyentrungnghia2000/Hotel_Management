@@ -31,10 +31,10 @@ namespace BUS_Hotel
             return dal.Update(obj);
         }
 
-        //public string SelectAll(List<DTO_LoaiPhong> lsObj)
-        //{
-        // //   return dal.SelectAll(lsObj);
-        //}
+        public string SelectAll(List<DTO_LoaiPhong> lsObj)
+        {
+              return dal.selectAll(lsObj);
+        }
 
         public string Search(string kq, List<DTO_LoaiPhong> lsobj)
         {

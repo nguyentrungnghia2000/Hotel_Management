@@ -19,6 +19,47 @@ namespace DAL_Hotel
             connectionSTR = ConfigurationManager.AppSettings["ConnectionSTR"];
         }
 
+        public string selectAll(List<DTO_LoaiNV> lsObj)
+        {
+
+            string query = string.Empty;
+            query += " EXEC USP_GETLOAIPHONG";
+
+            using (SqlConnection conn = new SqlConnection(connectionSTR))
+            {
+                using (SqlCommand comm = new SqlCommand())
+                {
+                    comm.Connection = conn;
+                    comm.CommandType = CommandType.Text;
+                    comm.CommandText = query;
+
+                    try
+                    {
+                        conn.Open();
+
+                        SqlDataReader reader = comm.ExecuteReader();
+                        if (reader.HasRows == true)
+                        {
+                            lsObj.Clear();
+                            while (reader.Read())
+                            {
+                                DTO_LoaiNV obj = new DTO_LoaiNV();
+                                obj.Malnv = reader["MALNV"].ToString();
+                                obj.Tenlnv = reader["TENLNV"].ToString();
+                                lsObj.Add(obj);
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        conn.Close();
+                        return "Selecting fails\n" + ex.Message + "\n" + ex.StackTrace;
+                    }
+                }
+            }
+            return "0";
+        }
+
         public string Insert(DTO_LoaiNV obj)
         {
             string query = string.Empty;

@@ -45,9 +45,9 @@ namespace DAL_Hotel
                             {
                                 DTO_LoaiPhong obj = new DTO_LoaiPhong();
                                 obj.Malp = reader["MALP"].ToString();
-                                obj.Tenlp = reader["TENLOAIPHONG"].ToString();
+                                obj.Tenlp = reader["TENLP"].ToString();
                                 obj.Trangthietbi = reader["TRANGTHIETBI"].ToString();
-                                obj.Gia = (int)Convert.ToInt32(reader["GIA"].ToString());
+                                obj.Gia = reader["GIA"].ToString();
                                 obj.Donvi = reader["DONVI"].ToString();
                                 lsObj.Add(obj);
                             }
@@ -199,7 +199,7 @@ namespace DAL_Hotel
                                 obj.Malp = reader["MALP"].ToString();
                                 obj.Tenlp = reader["TENLP"].ToString();
                                 obj.Trangthietbi = reader["TRANGTHIETBI"].ToString();
-                                obj.Gia = (int)Convert.ToInt32(reader["GIA"].ToString());
+                                obj.Gia = reader["GIA"].ToString();
                                 obj.Donvi = reader["DONVI"].ToString();
 
                                 lsObj.Add(obj);
