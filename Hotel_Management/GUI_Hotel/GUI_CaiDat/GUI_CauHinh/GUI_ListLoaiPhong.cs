@@ -38,5 +38,20 @@ namespace Hotel_Management.GUI_CaiDat
         {
             ShowPanel();  
         }
+
+        private void btn_luu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSignIn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuButton1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -36,21 +36,19 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             this.panelSubMenu = new System.Windows.Forms.Panel();
+            this.txb_giadv = new System.Windows.Forms.TextBox();
+            this.txb_tendv = new System.Windows.Forms.TextBox();
+            this.txb_madv = new System.Windows.Forms.TextBox();
             this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnSignIn = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.label8 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.PanelSub = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lb_gia = new System.Windows.Forms.Label();
+            this.lb_ten = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.panelSubMenu.SuspendLayout();
             this.PanelSub.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -58,22 +56,41 @@
             // 
             // panelSubMenu
             // 
-            this.panelSubMenu.Controls.Add(this.textBox4);
-            this.panelSubMenu.Controls.Add(this.textBox3);
-            this.panelSubMenu.Controls.Add(this.textBox2);
-            this.panelSubMenu.Controls.Add(this.textBox1);
+            this.panelSubMenu.Controls.Add(this.txb_giadv);
+            this.panelSubMenu.Controls.Add(this.txb_tendv);
+            this.panelSubMenu.Controls.Add(this.txb_madv);
             this.panelSubMenu.Controls.Add(this.bunifuButton1);
             this.panelSubMenu.Controls.Add(this.btnSignIn);
-            this.panelSubMenu.Controls.Add(this.label8);
             this.panelSubMenu.Controls.Add(this.label12);
             this.panelSubMenu.Controls.Add(this.label6);
             this.panelSubMenu.Controls.Add(this.label3);
             this.panelSubMenu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelSubMenu.Location = new System.Drawing.Point(0, 55);
-            this.panelSubMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelSubMenu.Margin = new System.Windows.Forms.Padding(4);
             this.panelSubMenu.Name = "panelSubMenu";
             this.panelSubMenu.Size = new System.Drawing.Size(1213, 178);
             this.panelSubMenu.TabIndex = 3;
+            // 
+            // txb_giadv
+            // 
+            this.txb_giadv.Location = new System.Drawing.Point(1013, 35);
+            this.txb_giadv.Name = "txb_giadv";
+            this.txb_giadv.Size = new System.Drawing.Size(184, 22);
+            this.txb_giadv.TabIndex = 20;
+            // 
+            // txb_tendv
+            // 
+            this.txb_tendv.Location = new System.Drawing.Point(562, 35);
+            this.txb_tendv.Name = "txb_tendv";
+            this.txb_tendv.Size = new System.Drawing.Size(207, 22);
+            this.txb_tendv.TabIndex = 19;
+            // 
+            // txb_madv
+            // 
+            this.txb_madv.Location = new System.Drawing.Point(136, 35);
+            this.txb_madv.Name = "txb_madv";
+            this.txb_madv.Size = new System.Drawing.Size(207, 22);
+            this.txb_madv.TabIndex = 17;
             // 
             // bunifuButton1
             // 
@@ -113,7 +130,7 @@
             this.bunifuButton1.IdleIconRightImage = null;
             this.bunifuButton1.IndicateFocus = false;
             this.bunifuButton1.Location = new System.Drawing.Point(1064, 130);
-            this.bunifuButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuButton1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuButton1.Name = "bunifuButton1";
             stateProperties1.BorderColor = System.Drawing.Color.WhiteSmoke;
             stateProperties1.BorderRadius = 30;
@@ -177,7 +194,7 @@
             this.btnSignIn.IdleIconRightImage = null;
             this.btnSignIn.IndicateFocus = false;
             this.btnSignIn.Location = new System.Drawing.Point(911, 130);
-            this.btnSignIn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSignIn.Margin = new System.Windows.Forms.Padding(4);
             this.btnSignIn.Name = "btnSignIn";
             stateProperties3.BorderColor = System.Drawing.Color.WhiteSmoke;
             stateProperties3.BorderRadius = 30;
@@ -202,17 +219,6 @@
             this.btnSignIn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSignIn.TextMarginLeft = 0;
             this.btnSignIn.UseDefaultRadiusAndThickness = true;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(19, 96);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(65, 23);
-            this.label8.TabIndex = 13;
-            this.label8.Text = "Mô tả: ";
             // 
             // label12
             // 
@@ -250,38 +256,38 @@
             // PanelSub
             // 
             this.PanelSub.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.PanelSub.Controls.Add(this.label2);
-            this.PanelSub.Controls.Add(this.label1);
+            this.PanelSub.Controls.Add(this.lb_gia);
+            this.PanelSub.Controls.Add(this.lb_ten);
             this.PanelSub.Controls.Add(this.linkLabel1);
             this.PanelSub.Controls.Add(this.pictureBox1);
             this.PanelSub.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelSub.Location = new System.Drawing.Point(0, 0);
-            this.PanelSub.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PanelSub.Margin = new System.Windows.Forms.Padding(4);
             this.PanelSub.Name = "PanelSub";
             this.PanelSub.Size = new System.Drawing.Size(1213, 55);
             this.PanelSub.TabIndex = 2;
             // 
-            // label2
+            // lb_gia
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(499, 18);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(107, 25);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Giá dịch vụ";
+            this.lb_gia.AutoSize = true;
+            this.lb_gia.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_gia.Location = new System.Drawing.Point(499, 18);
+            this.lb_gia.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lb_gia.Name = "lb_gia";
+            this.lb_gia.Size = new System.Drawing.Size(107, 25);
+            this.lb_gia.TabIndex = 3;
+            this.lb_gia.Text = "Giá dịch vụ";
             // 
-            // label1
+            // lb_ten
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(139, 18);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 25);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Tên dịch vụ";
+            this.lb_ten.AutoSize = true;
+            this.lb_ten.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_ten.Location = new System.Drawing.Point(139, 18);
+            this.lb_ten.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lb_ten.Name = "lb_ten";
+            this.lb_ten.Size = new System.Drawing.Size(108, 25);
+            this.lb_ten.TabIndex = 2;
+            this.lb_ten.Text = "Tên dịch vụ";
             // 
             // linkLabel1
             // 
@@ -300,7 +306,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(1160, 11);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(49, 32);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -308,41 +314,13 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(136, 35);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(207, 22);
-            this.textBox1.TabIndex = 17;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(136, 96);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(207, 22);
-            this.textBox2.TabIndex = 18;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(562, 35);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(207, 22);
-            this.textBox3.TabIndex = 19;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(1013, 35);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(184, 22);
-            this.textBox4.TabIndex = 20;
-            // 
             // GUI_ListDichVu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panelSubMenu);
             this.Controls.Add(this.PanelSub);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "GUI_ListDichVu";
             this.Size = new System.Drawing.Size(1213, 233);
             this.panelSubMenu.ResumeLayout(false);
@@ -361,16 +339,14 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel PanelSub;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Label lb_gia;
+        public System.Windows.Forms.Label lb_ten;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label8;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnSignIn;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.TextBox txb_giadv;
+        public System.Windows.Forms.TextBox txb_tendv;
+        public System.Windows.Forms.TextBox txb_madv;
     }
 }

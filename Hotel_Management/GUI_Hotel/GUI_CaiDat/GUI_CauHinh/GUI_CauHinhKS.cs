@@ -23,6 +23,7 @@ namespace Hotel_Management.GUI_CaiDat
 
         private BUS_Phong bus = new BUS_Phong();
         private BUS_LoaiPhong bus_lp = new BUS_LoaiPhong();
+        private BUS_DichVu bus_dv = new BUS_DichVu();
 
         private void GUI_CauHinhKS_Load(object sender, EventArgs e)
         { 
@@ -30,14 +31,14 @@ namespace Hotel_Management.GUI_CaiDat
 
         private void LoadListPhong()
         {
-            List<DTO_Phong> lsobj = new List<DTO_Phong>();
-            string result = this.bus.SelectWithCost(lsobj);
+            List<DTO_Phong> lsPhong = new List<DTO_Phong>();
+            string result = this.bus.SelectWithCost(lsPhong);
             if (result != "0")
             {
                 MessageBox.Show("Load list have been fail. \n" + result);
                 return;
             }
-            foreach (DTO_Phong item in lsobj)
+            foreach (DTO_Phong item in lsPhong)
             {
                 GUI_ListPhong phong = new GUI_ListPhong();
                 phong.txb_sophong.Text = item.Sophong;
@@ -53,14 +54,14 @@ namespace Hotel_Management.GUI_CaiDat
 
         private void LoadListLoaiPhong()
         {
-            List<DTO_LoaiPhong> lsobj_lp = new List<DTO_LoaiPhong>();
-            string result = this.bus_lp.SelectAll(lsobj_lp);
+            List<DTO_LoaiPhong> lsLoaiPhong = new List<DTO_LoaiPhong>();
+            string result = this.bus_lp.SelectAll(lsLoaiPhong);
             if (result != "0")
             {
                 MessageBox.Show("Load list have been fail. \n" + result);
                 return;
             }
-            foreach (DTO_LoaiPhong item in lsobj_lp)
+            foreach (DTO_LoaiPhong item in lsLoaiPhong)
             {
                 GUI_ListLoaiPhong loaiphong = new GUI_ListLoaiPhong();
                 loaiphong.txb_tenloaiphong.Text = item.Tenlp;
@@ -70,10 +71,33 @@ namespace Hotel_Management.GUI_CaiDat
                 loaiphong.txb_donvi.Text = item.Donvi;
                 loaiphong.lb_ten.Text = item.Tenlp;
                 loaiphong.lb_gia.Text = item.Gia.ToString();
-                this.flp_lsphong.Controls.Add(loaiphong);
+                this.flp_lsLP.Controls.Add(loaiphong);
                 loaiphong.Dock = DockStyle.Top;
             }
         }
+
+        private void LoadListDichVu()
+        {
+            List<DTO_DichVu> lsDichVu = new List<DTO_DichVu>();
+            string result = this.bus_dv.LoadDichVu(lsDichVu);
+            if (result != "0")
+            {
+                MessageBox.Show("Load list have been fail. \n" + result);
+                return;
+            }
+            foreach (DTO_DichVu item in lsDichVu)
+            {
+                GUI_ListDichVu dichvu = new GUI_ListDichVu();
+                dichvu.txb_tendv.Text = item.Tendv;
+                dichvu.txb_madv.Text = item.Madv;
+                dichvu.txb_giadv.Text = item.Giadv.ToString();
+                dichvu.lb_ten.Text = item.Tendv;
+                dichvu.lb_gia.Text = item.Giadv.ToString();
+                this.flp_lsDichVu.Controls.Add(dichvu);
+                dichvu.Dock = DockStyle.Top;
+            }
+        }
+
         private void pictureBox7_Click_1(object sender, EventArgs e)
         {
             this.Close();
@@ -97,7 +121,7 @@ namespace Hotel_Management.GUI_CaiDat
         private void btnAddLoaiPhong_Click(object sender, EventArgs e)
         {
             GUI_CaiDat.GUI_ListLoaiPhong guiListLP1 = new GUI_CaiDat.GUI_ListLoaiPhong();
-            panelListLP.Controls.Add(guiListLP1);
+            flp_lsLP.Controls.Add(guiListLP1);
             guiListLP1.Dock = DockStyle.Top;
         }
 
@@ -111,7 +135,7 @@ namespace Hotel_Management.GUI_CaiDat
         private void btnAddDV_Click(object sender, EventArgs e)
         {
             GUI_CaiDat.GUI_ListDichVu guiListDV = new GUI_CaiDat.GUI_ListDichVu();
-            pnl_listdv.Controls.Add(guiListDV);
+            flp_lsDichVu.Controls.Add(guiListDV);
             guiListDV.Dock = DockStyle.Top;
         }
 
@@ -128,6 +152,11 @@ namespace Hotel_Management.GUI_CaiDat
         private void btn_LoadListLP_Click(object sender, EventArgs e)
         {
             LoadListLoaiPhong();
+        }
+
+        private void btn_load_Click(object sender, EventArgs e)
+        {
+            LoadListDichVu();
         }
     }       
     

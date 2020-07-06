@@ -59,8 +59,7 @@ namespace DAL_Hotel
         {
 
             string query = string.Empty;
-            query += " SELECT [MADV], [TENDV], [GIADV]";
-            query += " FROM [TBL_DICHVU]";
+            query += " EXEC USP_GETDICHVU";
 
             using (SqlConnection conn = new SqlConnection(connectionSTR))
             {
@@ -83,7 +82,7 @@ namespace DAL_Hotel
                                 DTO_DichVu obj = new DTO_DichVu();
                                 obj.Madv = reader["MADV"].ToString();
                                 obj.Tendv = reader["TENDV"].ToString();
-                                obj.Giadv = (int)Convert.ToInt32(reader["GIADV"].ToString());
+                                obj.Giadv = reader["GIADV"].ToString();
                                 lsObj.Add(obj);
                             }
                         }
@@ -129,7 +128,7 @@ namespace DAL_Hotel
                                 DTO_DichVu obj = new DTO_DichVu();
                                 obj.Madv = reader["MADV"].ToString();
                                 obj.Tendv = reader["TENDV"].ToString();
-                                obj.Giadv = (int)Convert.ToInt32(reader["GIADV"].ToString());
+                                obj.Giadv = reader["GIADV"].ToString();
                                 lsObj.Add(obj);
                             }
                         }
@@ -176,7 +175,7 @@ namespace DAL_Hotel
                                 DTO_DichVu obj = new DTO_DichVu();
                                 obj.Madv = reader["MADV"].ToString();
                                 obj.Tendv = reader["TENDV"].ToString();
-                                obj.Giadv = (int)Convert.ToInt32(reader["GIADV"].ToString());
+                                obj.Giadv = reader["GIADV"].ToString();
                                 lsObj.Add(obj);
                             }
                         }
