@@ -89,5 +89,10 @@ namespace Hotel_Management
         {
 
         }
+
+        private void GUI_SignIn_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

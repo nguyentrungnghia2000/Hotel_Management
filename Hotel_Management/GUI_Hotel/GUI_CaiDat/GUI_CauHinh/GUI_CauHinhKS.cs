@@ -25,6 +25,10 @@ namespace Hotel_Management.GUI_CaiDat
         private BUS_LoaiPhong bus_lp = new BUS_LoaiPhong();
         private BUS_DichVu bus_dv = new BUS_DichVu();
 
+        bool flagLP = true;
+        bool flagP = true;
+        bool flagDV = true;
+
         private void GUI_CauHinhKS_Load(object sender, EventArgs e)
         { 
         }
@@ -146,17 +150,32 @@ namespace Hotel_Management.GUI_CaiDat
 
         private void btn_LoadListPhong_Click_1(object sender, EventArgs e)
         {
-            LoadListPhong();
+            
+            if (flagP == true)
+            {
+                LoadListPhong();
+                flagP = false;
+            }
         }
 
         private void btn_LoadListLP_Click(object sender, EventArgs e)
         {
-            LoadListLoaiPhong();
+            if (flagLP == true)
+            {
+                LoadListLoaiPhong();
+                flagLP = false;
+            }
+            
         }
 
         private void btn_load_Click(object sender, EventArgs e)
         {
-            LoadListDichVu();
+            if (flagDV == true)
+            {
+                LoadListDichVu();
+                flagDV = false;
+            }
+            
         }
     }       
     

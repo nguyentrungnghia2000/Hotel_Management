@@ -109,9 +109,10 @@
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(193)))), ((int)(((byte)(149)))));
             this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(337, 450);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(449, 554);
             this.bunifuGradientPanel1.TabIndex = 0;
             // 
             // btnDangKy
@@ -151,7 +152,8 @@
             this.btnDangKy.IdleIconLeftImage = null;
             this.btnDangKy.IdleIconRightImage = null;
             this.btnDangKy.IndicateFocus = false;
-            this.btnDangKy.Location = new System.Drawing.Point(191, 315);
+            this.btnDangKy.Location = new System.Drawing.Point(255, 388);
+            this.btnDangKy.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDangKy.Name = "btnDangKy";
             stateProperties1.BorderColor = System.Drawing.Color.WhiteSmoke;
             stateProperties1.BorderRadius = 30;
@@ -171,7 +173,7 @@
             stateProperties2.IconLeftImage = null;
             stateProperties2.IconRightImage = null;
             this.btnDangKy.OnPressedState = stateProperties2;
-            this.btnDangKy.Size = new System.Drawing.Size(127, 41);
+            this.btnDangKy.Size = new System.Drawing.Size(169, 50);
             this.btnDangKy.TabIndex = 5;
             this.btnDangKy.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnDangKy.TextMarginLeft = 0;
@@ -215,7 +217,8 @@
             this.btnDangNhap.IdleIconLeftImage = null;
             this.btnDangNhap.IdleIconRightImage = null;
             this.btnDangNhap.IndicateFocus = false;
-            this.btnDangNhap.Location = new System.Drawing.Point(43, 315);
+            this.btnDangNhap.Location = new System.Drawing.Point(57, 388);
+            this.btnDangNhap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDangNhap.Name = "btnDangNhap";
             stateProperties3.BorderColor = System.Drawing.Color.WhiteSmoke;
             stateProperties3.BorderRadius = 30;
@@ -235,7 +238,7 @@
             stateProperties4.IconLeftImage = null;
             stateProperties4.IconRightImage = null;
             this.btnDangNhap.OnPressedState = stateProperties4;
-            this.btnDangNhap.Size = new System.Drawing.Size(127, 41);
+            this.btnDangNhap.Size = new System.Drawing.Size(169, 50);
             this.btnDangNhap.TabIndex = 4;
             this.btnDangNhap.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnDangNhap.TextMarginLeft = 0;
@@ -246,9 +249,10 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(91, 44);
+            this.pictureBox1.Location = new System.Drawing.Point(121, 54);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(157, 98);
+            this.pictureBox1.Size = new System.Drawing.Size(209, 121);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
@@ -259,9 +263,10 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label2.Location = new System.Drawing.Point(37, 205);
+            this.label2.Location = new System.Drawing.Point(49, 252);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(285, 87);
+            this.label2.Size = new System.Drawing.Size(380, 107);
             this.label2.TabIndex = 1;
             this.label2.Text = "Chào mừng bạn quay trở lại với phần mềm Hotel PNN - giải pháp tổng thể cho việc q" +
     "uản lý trong lĩnh vực khách sạn.\r\n";
@@ -273,9 +278,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(73, 167);
+            this.label1.Location = new System.Drawing.Point(97, 206);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(209, 40);
+            this.label1.Size = new System.Drawing.Size(266, 50);
             this.label1.TabIndex = 0;
             this.label1.Text = "Welcome Back";
             // 
@@ -285,7 +291,8 @@
             this.PageSignIn.AllowTransitions = true;
             this.PageSignIn.Controls.Add(this.DangNhap);
             this.PageSignIn.Controls.Add(this.DangKy);
-            this.PageSignIn.Location = new System.Drawing.Point(343, 31);
+            this.PageSignIn.Location = new System.Drawing.Point(457, 38);
+            this.PageSignIn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PageSignIn.Multiline = true;
             this.PageSignIn.Name = "PageSignIn";
             this.PageSignIn.Page = this.DangNhap;
@@ -293,7 +300,7 @@
             this.PageSignIn.PageName = "DangNhap";
             this.PageSignIn.PageTitle = "tabPage3";
             this.PageSignIn.SelectedIndex = 0;
-            this.PageSignIn.Size = new System.Drawing.Size(499, 419);
+            this.PageSignIn.Size = new System.Drawing.Size(665, 516);
             this.PageSignIn.TabIndex = 2;
             animation1.AnimateOnlyDifferences = false;
             animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
@@ -321,9 +328,10 @@
             this.DangNhap.Controls.Add(this.label5);
             this.DangNhap.Controls.Add(this.txtUsername);
             this.DangNhap.Location = new System.Drawing.Point(4, 4);
+            this.DangNhap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DangNhap.Name = "DangNhap";
-            this.DangNhap.Padding = new System.Windows.Forms.Padding(3);
-            this.DangNhap.Size = new System.Drawing.Size(491, 393);
+            this.DangNhap.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DangNhap.Size = new System.Drawing.Size(657, 487);
             this.DangNhap.TabIndex = 0;
             this.DangNhap.Text = "tabPage3";
             this.DangNhap.UseVisualStyleBackColor = true;
@@ -365,7 +373,8 @@
             this.btnSignIn.IdleIconLeftImage = null;
             this.btnSignIn.IdleIconRightImage = null;
             this.btnSignIn.IndicateFocus = false;
-            this.btnSignIn.Location = new System.Drawing.Point(316, 258);
+            this.btnSignIn.Location = new System.Drawing.Point(421, 318);
+            this.btnSignIn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSignIn.Name = "btnSignIn";
             stateProperties5.BorderColor = System.Drawing.Color.WhiteSmoke;
             stateProperties5.BorderRadius = 30;
@@ -385,7 +394,7 @@
             stateProperties6.IconLeftImage = null;
             stateProperties6.IconRightImage = null;
             this.btnSignIn.OnPressedState = stateProperties6;
-            this.btnSignIn.Size = new System.Drawing.Size(127, 41);
+            this.btnSignIn.Size = new System.Drawing.Size(169, 50);
             this.btnSignIn.TabIndex = 3;
             this.btnSignIn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSignIn.TextMarginLeft = 0;
@@ -420,9 +429,10 @@
             this.txtPassword.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPassword.Lines = new string[] {
         "admin"};
-            this.txtPassword.Location = new System.Drawing.Point(57, 199);
+            this.txtPassword.Location = new System.Drawing.Point(76, 245);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPassword.MaxLength = 32767;
-            this.txtPassword.MinimumSize = new System.Drawing.Size(100, 35);
+            this.txtPassword.MinimumSize = new System.Drawing.Size(133, 43);
             this.txtPassword.Modified = false;
             this.txtPassword.Multiline = false;
             this.txtPassword.Name = "txtPassword";
@@ -455,7 +465,7 @@
             this.txtPassword.SelectionLength = 0;
             this.txtPassword.SelectionStart = 5;
             this.txtPassword.ShortcutsEnabled = true;
-            this.txtPassword.Size = new System.Drawing.Size(386, 39);
+            this.txtPassword.Size = new System.Drawing.Size(515, 48);
             this.txtPassword.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txtPassword.TabIndex = 2;
             this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -472,9 +482,10 @@
             this.bunifuSeparator3.BackColor = System.Drawing.Color.Transparent;
             this.bunifuSeparator3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.bunifuSeparator3.LineThickness = 1;
-            this.bunifuSeparator3.Location = new System.Drawing.Point(150, 92);
+            this.bunifuSeparator3.Location = new System.Drawing.Point(200, 113);
+            this.bunifuSeparator3.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuSeparator3.Name = "bunifuSeparator3";
-            this.bunifuSeparator3.Size = new System.Drawing.Size(200, 19);
+            this.bunifuSeparator3.Size = new System.Drawing.Size(267, 23);
             this.bunifuSeparator3.TabIndex = 7;
             this.bunifuSeparator3.Transparency = 255;
             this.bunifuSeparator3.Vertical = false;
@@ -484,9 +495,10 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(168)))), ((int)(((byte)(147)))));
-            this.label5.Location = new System.Drawing.Point(167, 50);
+            this.label5.Location = new System.Drawing.Point(223, 62);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(161, 40);
+            this.label5.Size = new System.Drawing.Size(207, 50);
             this.label5.TabIndex = 6;
             this.label5.Text = "Đăng nhập";
             // 
@@ -519,9 +531,10 @@
             this.txtUsername.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtUsername.Lines = new string[] {
         "admin"};
-            this.txtUsername.Location = new System.Drawing.Point(57, 140);
+            this.txtUsername.Location = new System.Drawing.Point(76, 172);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtUsername.MaxLength = 32767;
-            this.txtUsername.MinimumSize = new System.Drawing.Size(100, 35);
+            this.txtUsername.MinimumSize = new System.Drawing.Size(133, 43);
             this.txtUsername.Modified = false;
             this.txtUsername.Multiline = false;
             this.txtUsername.Name = "txtUsername";
@@ -554,7 +567,7 @@
             this.txtUsername.SelectionLength = 0;
             this.txtUsername.SelectionStart = 0;
             this.txtUsername.ShortcutsEnabled = true;
-            this.txtUsername.Size = new System.Drawing.Size(386, 39);
+            this.txtUsername.Size = new System.Drawing.Size(515, 48);
             this.txtUsername.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txtUsername.TabIndex = 1;
             this.txtUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -574,9 +587,10 @@
             this.DangKy.Controls.Add(this.label6);
             this.DangKy.Controls.Add(this.txb_HoTen);
             this.DangKy.Location = new System.Drawing.Point(4, 4);
+            this.DangKy.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DangKy.Name = "DangKy";
-            this.DangKy.Padding = new System.Windows.Forms.Padding(3);
-            this.DangKy.Size = new System.Drawing.Size(491, 393);
+            this.DangKy.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DangKy.Size = new System.Drawing.Size(657, 487);
             this.DangKy.TabIndex = 1;
             this.DangKy.Text = "tabPage4";
             this.DangKy.UseVisualStyleBackColor = true;
@@ -608,9 +622,10 @@
             this.txb_SDT.IconRight = null;
             this.txb_SDT.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txb_SDT.Lines = new string[0];
-            this.txb_SDT.Location = new System.Drawing.Point(57, 258);
+            this.txb_SDT.Location = new System.Drawing.Point(76, 318);
+            this.txb_SDT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txb_SDT.MaxLength = 32767;
-            this.txb_SDT.MinimumSize = new System.Drawing.Size(100, 35);
+            this.txb_SDT.MinimumSize = new System.Drawing.Size(133, 43);
             this.txb_SDT.Modified = false;
             this.txb_SDT.Multiline = false;
             this.txb_SDT.Name = "txb_SDT";
@@ -643,7 +658,7 @@
             this.txb_SDT.SelectionLength = 0;
             this.txb_SDT.SelectionStart = 0;
             this.txb_SDT.ShortcutsEnabled = true;
-            this.txb_SDT.Size = new System.Drawing.Size(386, 39);
+            this.txb_SDT.Size = new System.Drawing.Size(515, 48);
             this.txb_SDT.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txb_SDT.TabIndex = 16;
             this.txb_SDT.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -691,7 +706,8 @@
             this.btn_DangKy.IdleIconLeftImage = null;
             this.btn_DangKy.IdleIconRightImage = null;
             this.btn_DangKy.IndicateFocus = false;
-            this.btn_DangKy.Location = new System.Drawing.Point(316, 312);
+            this.btn_DangKy.Location = new System.Drawing.Point(421, 384);
+            this.btn_DangKy.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_DangKy.Name = "btn_DangKy";
             stateProperties19.BorderColor = System.Drawing.Color.WhiteSmoke;
             stateProperties19.BorderRadius = 30;
@@ -711,7 +727,7 @@
             stateProperties20.IconLeftImage = null;
             stateProperties20.IconRightImage = null;
             this.btn_DangKy.OnPressedState = stateProperties20;
-            this.btn_DangKy.Size = new System.Drawing.Size(127, 41);
+            this.btn_DangKy.Size = new System.Drawing.Size(169, 50);
             this.btn_DangKy.TabIndex = 15;
             this.btn_DangKy.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_DangKy.TextMarginLeft = 0;
@@ -745,9 +761,10 @@
             this.txb_Email.IconRight = null;
             this.txb_Email.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txb_Email.Lines = new string[0];
-            this.txb_Email.Location = new System.Drawing.Point(57, 199);
+            this.txb_Email.Location = new System.Drawing.Point(76, 245);
+            this.txb_Email.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txb_Email.MaxLength = 32767;
-            this.txb_Email.MinimumSize = new System.Drawing.Size(100, 35);
+            this.txb_Email.MinimumSize = new System.Drawing.Size(133, 43);
             this.txb_Email.Modified = false;
             this.txb_Email.Multiline = false;
             this.txb_Email.Name = "txb_Email";
@@ -780,7 +797,7 @@
             this.txb_Email.SelectionLength = 0;
             this.txb_Email.SelectionStart = 0;
             this.txb_Email.ShortcutsEnabled = true;
-            this.txb_Email.Size = new System.Drawing.Size(386, 39);
+            this.txb_Email.Size = new System.Drawing.Size(515, 48);
             this.txb_Email.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txb_Email.TabIndex = 14;
             this.txb_Email.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -797,9 +814,10 @@
             this.bunifuSeparator4.BackColor = System.Drawing.Color.Transparent;
             this.bunifuSeparator4.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.bunifuSeparator4.LineThickness = 1;
-            this.bunifuSeparator4.Location = new System.Drawing.Point(150, 92);
+            this.bunifuSeparator4.Location = new System.Drawing.Point(200, 113);
+            this.bunifuSeparator4.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuSeparator4.Name = "bunifuSeparator4";
-            this.bunifuSeparator4.Size = new System.Drawing.Size(200, 19);
+            this.bunifuSeparator4.Size = new System.Drawing.Size(267, 23);
             this.bunifuSeparator4.TabIndex = 13;
             this.bunifuSeparator4.Transparency = 255;
             this.bunifuSeparator4.Vertical = false;
@@ -809,9 +827,10 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(168)))), ((int)(((byte)(147)))));
-            this.label6.Location = new System.Drawing.Point(167, 50);
+            this.label6.Location = new System.Drawing.Point(223, 62);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(125, 40);
+            this.label6.Size = new System.Drawing.Size(160, 50);
             this.label6.TabIndex = 12;
             this.label6.Text = "Đăng ký";
             // 
@@ -843,9 +862,10 @@
             this.txb_HoTen.IconRight = null;
             this.txb_HoTen.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txb_HoTen.Lines = new string[0];
-            this.txb_HoTen.Location = new System.Drawing.Point(57, 140);
+            this.txb_HoTen.Location = new System.Drawing.Point(76, 172);
+            this.txb_HoTen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txb_HoTen.MaxLength = 32767;
-            this.txb_HoTen.MinimumSize = new System.Drawing.Size(100, 35);
+            this.txb_HoTen.MinimumSize = new System.Drawing.Size(133, 43);
             this.txb_HoTen.Modified = false;
             this.txb_HoTen.Multiline = false;
             this.txb_HoTen.Name = "txb_HoTen";
@@ -878,7 +898,7 @@
             this.txb_HoTen.SelectionLength = 0;
             this.txb_HoTen.SelectionStart = 0;
             this.txb_HoTen.ShortcutsEnabled = true;
-            this.txb_HoTen.Size = new System.Drawing.Size(386, 39);
+            this.txb_HoTen.Size = new System.Drawing.Size(515, 48);
             this.txb_HoTen.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
             this.txb_HoTen.TabIndex = 11;
             this.txb_HoTen.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -892,9 +912,10 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(813, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(1084, 5);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(30, 29);
+            this.pictureBox2.Size = new System.Drawing.Size(40, 36);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
@@ -907,17 +928,19 @@
             // 
             // GUI_SignIn
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(845, 450);
+            this.ClientSize = new System.Drawing.Size(1127, 554);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.PageSignIn);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "GUI_SignIn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GUI_SignIn";
+            this.Load += new System.EventHandler(this.GUI_SignIn_Load);
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

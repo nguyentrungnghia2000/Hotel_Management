@@ -101,10 +101,7 @@ namespace DAL_Hotel
         {
 
             string query = string.Empty;
-            query += " SELECT [MADV], [TENDV], [GIADV]";
-            query += " FROM [TBL_DICHVU]";
-            query += " WHERE ";
-            query += " [MADV] = @MADV ";
+            query += " EXEC USP_GETBYMADV";
 
             using (SqlConnection conn = new SqlConnection(connectionSTR))
             {

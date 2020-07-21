@@ -36,6 +36,11 @@ namespace BUS_Hotel
               return dal.selectAll(lsObj);
         }
 
+        public string SelectByID(List<DTO_LoaiPhong> lsobj, string malp)
+        {
+            return dal.SelectAllByMaLP(lsobj, malp);
+        }
+
         public string Search(string kq, List<DTO_LoaiPhong> lsobj)
         {
             return dal.Search(kq, lsobj);

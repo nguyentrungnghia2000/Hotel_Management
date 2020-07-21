@@ -19,6 +19,52 @@ namespace DAL_Hotel
             connectionSTR = ConfigurationManager.AppSettings["ConnectionSTR"];
         }
 
+        public string SelectAllByMaLP(List<DTO_LoaiPhong> lsObj, string malp)
+        {
+
+            string query = string.Empty;
+            query += " EXEC USP_GETBYMALP @MALP = ";
+            query += malp;
+
+            using (SqlConnection conn = new SqlConnection(connectionSTR))
+            {
+                using (SqlCommand comm = new SqlCommand())
+                {
+                    comm.Connection = conn;
+                    comm.CommandType = CommandType.Text;
+                    comm.CommandText = query;
+                    comm.Parameters.AddWithValue("@MALP", malp);
+
+                    try
+                    {
+                        conn.Open();
+
+                        SqlDataReader reader = comm.ExecuteReader();
+                        if (reader.HasRows == true)
+                        {
+                            lsObj.Clear();
+                            while (reader.Read())
+                            {
+                                DTO_LoaiPhong obj = new DTO_LoaiPhong();
+                                obj.Malp = reader["MALP"].ToString();
+                                obj.Tenlp = reader["TENLP"].ToString();
+                                obj.Gia = reader["GIA"].ToString();
+                                obj.Trangthietbi = reader["TRANGTHIETBI"].ToString();
+                                obj.Donvi = reader["DONVI"].ToString();
+                                lsObj.Add(obj);
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        conn.Close();
+                        return "Selecting fails\n" + ex.Message + "\n" + ex.StackTrace;
+                    }
+                }
+            }
+            return "0";
+        }
+
         public string selectAll(List<DTO_LoaiPhong> lsObj)
         {
 
@@ -130,13 +176,11 @@ namespace DAL_Hotel
         public string Update(DTO_LoaiPhong obj)
         {
             string query = string.Empty;
-            query += " UPDATE [TBL_LOAIPHONG] SET";
-            query += " [TENLP] = @TENLP";
-            query += " [TRANGTHIETBI] = @TRANGTHIETBI";
-            query += " [GIA] = @GIA";
-            query += " [DONVI] = @DONVI";
-            query += " WHERE ";
-            query += " [MALP] = @MALP ";
+            query += " EXEC USP_UPDATELOAIPHONG";
+            query += ", @TENLP = " + obj.Tenlp;
+            query += ", @TRANGTHIETBI = " + obj.Trangthietbi;
+            query += ", @GIA = " + obj.Gia;
+            query += ", @DONVI = " + obj.Donvi;
 
             using (SqlConnection conn = new SqlConnection(connectionSTR))
             {
