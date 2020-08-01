@@ -17,7 +17,7 @@ namespace BUS_Hotel
             dal = new DAL_HoaDon();
         }
 
-        public string LoadDichVu(List<DTO_HoaDon> lsobj)
+        public string LoadHoaDon(List<DTO_HoaDon> lsobj)
         {
             return dal.selectAll(lsobj);
         }
@@ -40,6 +40,16 @@ namespace BUS_Hotel
         public string Search(string kq, List<DTO_HoaDon> lsobj)
         {
             return dal.Search(kq, lsobj);
+        }
+
+        public string ThanhToan(string mahd, string sophong)
+        {
+            return dal.ThanhToan(mahd, sophong);
+        }
+
+        public string TaoMaHD()
+        {
+            return dal.TaoMa();
         }
     }
 }

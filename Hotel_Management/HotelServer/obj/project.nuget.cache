@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ufjcW+y0eIQxMbEHVYmhTB2tzyJqPyc0q9Je556O3oahKeBHxlGsSqiKLi4EvYyGLyazDyyHlnblZvNXc+t+ew==",
+  "success": true,
+  "projectFilePath": "D:\\UIT\\Nhập môn công nghệ phần mềm - SE104\\DoAn\\Hotel_Management\\Hotel_Management\\HotelServer\\HotelServer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\84919\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

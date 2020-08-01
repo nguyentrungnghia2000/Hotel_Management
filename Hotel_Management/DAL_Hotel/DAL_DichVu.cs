@@ -27,7 +27,7 @@ namespace DAL_Hotel
         {
             string query = string.Empty;
             query += "INSERT INTO [TBL_DICHVU] ( [MADV], [TENDV], [GIADV] )";
-            query += "VALUES (@MADV, @TENDV, @GIADV)";
+            query += " VALUES (@MADV, @TENDV, @GIADV)";
             using (SqlConnection conn = new SqlConnection(connectionSTR))
             {
                 using (SqlCommand comm = new SqlCommand())
@@ -222,7 +222,7 @@ namespace DAL_Hotel
             string query = string.Empty;
             query += " UPDATE [TBL_DICHVU] SET";
             query += " [TENDV] = @TENDV";
-            query += " [GIADV] = @GIADV";
+            query += ", [GIADV] = @GIADV";
             query += " WHERE ";
             query += " [MADV] = @MADV ";
 
@@ -250,6 +250,47 @@ namespace DAL_Hotel
                 }
             }
             return "0";
+        }
+
+        public string TaoMa() // hàm tự tạo mã dịch vụ
+        {
+            string Madv = null;
+            string query = string.Empty;
+            query += "AUTO_IDDV";
+            using (SqlConnection conn = new SqlConnection(connectionSTR))
+            {
+                using (SqlCommand comm = new SqlCommand())
+                {
+                    comm.Connection = conn;
+                    comm.CommandType = CommandType.StoredProcedure;
+                    comm.CommandText = query;
+                    SqlParameter resultParam = new SqlParameter("@Result", SqlDbType.VarChar);
+
+                    //  
+                    resultParam.Direction = ParameterDirection.ReturnValue;
+
+                    comm.Parameters.Add(resultParam);
+
+                    try
+                    {
+                        conn.Open();
+                        comm.ExecuteNonQuery();
+
+                        if (resultParam.Value != DBNull.Value)
+                        {
+                            Madv = (string)resultParam.Value;
+                        }
+
+                    }
+                    catch (Exception ex)
+                    {
+                        conn.Close();
+                        //' Cập nhật that bai!!!
+                        return "Tạo mã thất bại" + ex.Message + "\n" + ex.StackTrace;
+                    }
+                }
+                return Madv;
+            }
         }
     }
 }

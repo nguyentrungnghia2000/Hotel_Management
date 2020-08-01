@@ -29,10 +29,10 @@ namespace DAL_Hotel
         public string Insert(DTO_Phong obj)
         {
             string query = string.Empty;
-            query += "EXEC USP_INSERTROOM";
-            using(SqlConnection conn = new SqlConnection(connectionSTR))
+            query += "EXEC USP_INSERTROOM @SOPHONG, @TINHTRANG, @MALP";
+            using (SqlConnection conn = new SqlConnection(connectionSTR))
             {
-                using(SqlCommand comm = new SqlCommand())
+                using (SqlCommand comm = new SqlCommand())
                 {
                     comm.Connection = conn;
                     comm.CommandType = CommandType.Text;
@@ -46,7 +46,7 @@ namespace DAL_Hotel
                         conn.Open();
                         comm.ExecuteNonQuery();
                     }
-                    catch(Exception ex)
+                    catch (Exception ex)
                     {
                         conn.Close();
                         return "Adding fails\n" + ex.Message + "\n" + ex.StackTrace;
@@ -189,7 +189,7 @@ namespace DAL_Hotel
         {
 
             string query = string.Empty;
-            query += " EXEC USP_GETROOMNUMBER ";
+            query += " EXEC USP_GETROOMNUMBER @MAKH";
 
             using (SqlConnection conn = new SqlConnection(connectionSTR))
             {
@@ -199,7 +199,7 @@ namespace DAL_Hotel
                     comm.CommandType = CommandType.Text;
                     comm.CommandText = query;
                     comm.Parameters.AddWithValue("@MAKH", "%" + kq.ToString() + "%");
-                    comm.Parameters.AddWithValue("@TENKH", "%" + kq.ToString() + "%");
+                    //comm.Parameters.AddWithValue("@TENKH", "%" + kq.ToString() + "%");
 
                     try
                     {
@@ -232,7 +232,7 @@ namespace DAL_Hotel
         public string delete(DTO_Phong obj)
         {
             string query = string.Empty;
-            query += " EXEC USP_DELETEROOM ";
+            query += " EXEC USP_DELETEROOM @SOPHONG";
 
             using (SqlConnection conn = new SqlConnection(connectionSTR))
             {
@@ -260,7 +260,7 @@ namespace DAL_Hotel
         public string update(DTO_Phong obj)
         {
             string query = string.Empty;
-            query += " EXEC USP_UPDATEROOM ";
+            query += " EXEC USP_UPDATEROOM @SOPHONG, @TINHTRANG, @MALP ";
 
             using (SqlConnection conn = new SqlConnection(connectionSTR))
             {
@@ -271,6 +271,7 @@ namespace DAL_Hotel
                     comm.CommandText = query;
                     comm.Parameters.AddWithValue("@SOPHONG", obj.Sophong);
                     comm.Parameters.AddWithValue("@TINHTRANG", obj.Status);
+                    comm.Parameters.AddWithValue("@MALP", obj.Malp);
                     try
                     {
                         conn.Open();
@@ -287,17 +288,45 @@ namespace DAL_Hotel
             return "0";
         }
 
-        //public List<DTO_Phong> LoadListRoom()
-        //{
+        public string TaoMa() // hàm tự tăng số phòng
+        {
+            string Makh = null;
+            string query = string.Empty;
+            query += "AUTO_IDPHONG";
+            using (SqlConnection conn = new SqlConnection(connectionSTR))
+            {
+                using (SqlCommand comm = new SqlCommand())
+                {
+                    comm.Connection = conn;
+                    comm.CommandType = CommandType.StoredProcedure;
+                    comm.CommandText = query;
+                    SqlParameter resultParam = new SqlParameter("@Result", SqlDbType.VarChar);
 
-        //    List<DTO_Phong> roomlist = new List<DTO_Phong>();
-        //    DataTable data = DBConnection.Instance.ExecuteQuery("EXECUTE USP_GETROOM");
-        //    foreach (DataRow item in data.Rows)
-        //    {
-        //        DTO_Phong phong = new DTO_Phong(item);
-        //        roomlist.Add(phong);
-        //    }
-        //    return roomlist;
-        //}
+                    //  
+                    resultParam.Direction = ParameterDirection.ReturnValue;
+
+                    comm.Parameters.Add(resultParam);
+
+                    try
+                    {
+                        conn.Open();
+                        comm.ExecuteNonQuery();
+
+                        if (resultParam.Value != DBNull.Value)
+                        {
+                            Makh = (string)resultParam.Value;
+                        }
+
+                    }
+                    catch (Exception ex)
+                    {
+                        conn.Close();
+                        //' Cập nhật that bai!!!
+                        return "Tạo mã thất bại" + ex.Message + "\n" + ex.StackTrace;
+                    }
+                }
+                return Makh;
+            }
+        }
     }
 }

@@ -1,0 +1,9 @@
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\HotelServer\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\HotelServer\bin\Debug\netcoreapp3.1\appsettings.json
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\HotelServer\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\HotelServer\bin\Debug\netcoreapp3.1\HotelServer.exe
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\HotelServer\obj\Debug\netcoreapp3.1\HotelServer.AssemblyInfoInputs.cache
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\HotelServer\obj\Debug\netcoreapp3.1\HotelServer.AssemblyInfo.cs
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\HotelServer\obj\Debug\netcoreapp3.1\HotelServer.RazorTargetAssemblyInfo.cache
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\HotelServer\obj\Debug\netcoreapp3.1\staticwebassets\HotelServer.StaticWebAssets.Manifest.cache
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\HotelServer\obj\Debug\netcoreapp3.1\staticwebassets\HotelServer.StaticWebAssets.xml

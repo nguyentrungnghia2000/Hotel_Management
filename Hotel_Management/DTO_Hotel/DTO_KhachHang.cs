@@ -13,9 +13,10 @@ namespace DTO_Hotel
         private string tenkh;
         private string diachi;
         private string gioitinh;
-        private int cmnd;
+        private string cmnd;
         private string quoctich;
         private string sdt;
+        private string ngaysinh;
 
         //public DTO_KhachHang(string makh, string tenkh, string diachi, string sex, string cmnd, string quoctich, string sdt)
         //{
@@ -43,8 +44,9 @@ namespace DTO_Hotel
         public string Tenkh { get => tenkh; set => tenkh = value; }
         public string Diachi { get => diachi; set => diachi = value; }
         public string Gioitinh { get => gioitinh; set => gioitinh = value; }
-        public int Cmnd { get => cmnd; set => cmnd = value; }
+        public string Cmnd { get => cmnd; set => cmnd = value; }
         public string Quoctich { get => quoctich; set => quoctich = value; }
         public string Sdt { get => sdt; set => sdt = value; }
+        public string Ngaysinh { get => ngaysinh; set => ngaysinh = value; }
     }
 }

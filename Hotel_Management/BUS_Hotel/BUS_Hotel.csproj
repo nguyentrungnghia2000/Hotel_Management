@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BUS_CTDV.cs" />
     <Compile Include="BUS_CTHD.cs" />
     <Compile Include="BUS_DichVu.cs" />
     <Compile Include="BUS_HoaDon.cs" />
@@ -54,6 +55,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ConnectAPI\ConnectAPI.csproj">
+      <Project>{c2bad806-e4a9-48a4-b38a-ee6bb1c21d06}</Project>
+      <Name>ConnectAPI</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DAL_Hotel\DAL_Hotel.csproj">
       <Project>{c112b95e-7892-4e6b-a52f-a050b58170dd}</Project>
       <Name>DAL_Hotel</Name>

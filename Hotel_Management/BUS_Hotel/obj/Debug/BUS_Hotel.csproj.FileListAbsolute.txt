@@ -9,3 +9,5 @@ D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel
 D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\BUS_Hotel\obj\Debug\BUS_Hotel.csproj.CopyComplete
 D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\BUS_Hotel\obj\Debug\BUS_Hotel.dll
 D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\BUS_Hotel\obj\Debug\BUS_Hotel.pdb
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\BUS_Hotel\bin\Debug\ConnectAPI.dll
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\BUS_Hotel\bin\Debug\ConnectAPI.pdb

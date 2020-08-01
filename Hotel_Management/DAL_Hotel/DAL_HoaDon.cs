@@ -23,7 +23,7 @@ namespace DAL_Hotel
         {
 
             string query = string.Empty;
-            query += " EXEC USP_GETLOAIPHONG";
+            query += " SELECT * FROM TBL_HOADON ";
 
             using (SqlConnection conn = new SqlConnection(connectionSTR))
             {
@@ -45,9 +45,10 @@ namespace DAL_Hotel
                             {
                                 DTO_HoaDon obj = new DTO_HoaDon();
                                 obj.Mahd = reader["MAHD"].ToString();
-                                obj.Ngaythanhtoan = reader["NGAYTHANHTOAN"].ToString();
-                                obj.Tratruoc = (int)Convert.ToInt32(reader["TRATRUOC"].ToString());
-                                obj.Mavn = reader["MANV"].ToString();
+                                obj.Manv = reader["MANV"].ToString();
+                                obj.MaCTHD = reader["MADDP"].ToString();
+                                obj.Thanhtien = reader["THANHTIEN"].ToString();
+                                obj.Trangthai = reader["TRANGTHAITHANHTOAN"].ToString();
                                 lsObj.Add(obj);
                             }
                         }
@@ -65,8 +66,8 @@ namespace DAL_Hotel
         public string Insert(DTO_HoaDon obj)
         {
             string query = string.Empty;
-            query += "INSERT INTO [TBL_HOADON] ( [MAHD], [NGAYTHANHTOAN], [TRATRUOC], [MANV] )";
-            query += "VALUES (@MALP, @NGAYTHANHTOAN, @TRATRUOC, @MANV)";
+            string conno = "DEBT";
+            query += "EXEC USP_INSERTHOADON @MAHD, @MANV, @MADDP, @THANHTIEN, @TRANGTHAITHANHTOAN ";
             using (SqlConnection conn = new SqlConnection(connectionSTR))
             {
                 using (SqlCommand comm = new SqlCommand())
@@ -76,9 +77,10 @@ namespace DAL_Hotel
                     comm.CommandText = query;
 
                     comm.Parameters.AddWithValue("@MAHD", obj.Mahd);
-                    comm.Parameters.AddWithValue("@NGAYTHANHTOAN", obj.Ngaythanhtoan);
-                    comm.Parameters.AddWithValue("@TRATRUOC", obj.Tratruoc);
-                    comm.Parameters.AddWithValue("@MANV", obj.Mavn);
+                    comm.Parameters.AddWithValue("@MANV", obj.Manv);
+                    comm.Parameters.AddWithValue("@MADDP", obj.MaCTHD);
+                    comm.Parameters.AddWithValue("@THANHTIEN", obj.Thanhtien);
+                    comm.Parameters.AddWithValue("@TRANGTHAITHANHTOAN", conno);
 
                     try
                     {
@@ -129,9 +131,10 @@ namespace DAL_Hotel
         {
             string query = string.Empty;
             query += " UPDATE [TBL_HOADON] SET";
-            query += " [NGAYTHANHTOAN] = @NGAYTHANHTOAN";
-            query += " [TRATRUOC] = @TRATRUOC";
             query += " [MANV] = @MANV";
+            query += " [MADDP] = @MADDP";
+            query += " [THANHTIEN] = @THANHTIEN";
+            query += " [TRANGTHAITHANHTOAN] = 'PAYED'";
             query += " WHERE ";
             query += " [MAHD] = @MAHD ";
 
@@ -143,9 +146,9 @@ namespace DAL_Hotel
                     comm.CommandType = CommandType.Text;
                     comm.CommandText = query;
                     comm.Parameters.AddWithValue("@MAHD", obj.Mahd);
-                    comm.Parameters.AddWithValue("@NGAYTHANHTOAN", obj.Ngaythanhtoan);
-                    comm.Parameters.AddWithValue("@TRATRUOC", obj.Tratruoc);
-                    comm.Parameters.AddWithValue("@MANV", obj.Mavn);
+                    comm.Parameters.AddWithValue("@MANV", obj.Manv);
+                    comm.Parameters.AddWithValue("@MADDP", obj.MaCTHD);
+                    //comm.Parameters.AddWithValue("@TRANGTHAITHANHTOAN", obj.Trangthai);
 
                     try
                     {
@@ -192,9 +195,10 @@ namespace DAL_Hotel
                             {
                                 DTO_HoaDon obj = new DTO_HoaDon();
                                 obj.Mahd = reader["MAHD"].ToString();
-                                obj.Ngaythanhtoan = reader["NGAYTHANHTOAN"].ToString();
-                                obj.Mavn = reader["MANV"].ToString();
-                                obj.Tratruoc = (int)Convert.ToInt32(reader["TRATRUOC"].ToString());
+                                obj.Manv = reader["MANV"].ToString();
+                                obj.MaCTHD = reader["MANV"].ToString();
+                                obj.Thanhtien = reader["MANV"].ToString();
+                                obj.Trangthai = reader["MANV"].ToString();
 
                                 lsObj.Add(obj);
                             }
@@ -208,6 +212,78 @@ namespace DAL_Hotel
                 }
             }
             return "0";
+        }
+
+        public string ThanhToan(string mahd, string sophong)
+        {
+            string query = string.Empty;
+            query += " EXEC USP_THANHTOAN @MAHD, @SOPHONG";
+
+            using (SqlConnection conn = new SqlConnection(connectionSTR))
+            {
+                using (SqlCommand comm = new SqlCommand())
+                {
+                    comm.Connection = conn;
+                    comm.CommandType = CommandType.Text;
+                    comm.CommandText = query;
+                    comm.Parameters.AddWithValue("@MAHD", mahd);
+                    comm.Parameters.AddWithValue("@SOPHONG", sophong);
+                    //comm.Parameters.AddWithValue("@TRANGTHAITHANHTOAN", obj.Trangthai);
+
+                    try
+                    {
+                        conn.Open();
+                        comm.ExecuteNonQuery();
+                    }
+                    catch (Exception ex)
+                    {
+                        conn.Close();
+                        return "Updating fails\n" + ex.Message + "\n" + ex.StackTrace;
+                    }
+                }
+            }
+            return "0";
+        }
+
+        public string TaoMa()
+        {
+            string Ma = null;
+            string query = string.Empty;
+            query += "AUTO_IDHD";
+            using (SqlConnection conn = new SqlConnection(connectionSTR))
+            {
+                using (SqlCommand comm = new SqlCommand())
+                {
+                    comm.Connection = conn;
+                    comm.CommandType = CommandType.StoredProcedure;
+                    comm.CommandText = query;
+                    SqlParameter resultParam = new SqlParameter("@Result", SqlDbType.VarChar);
+
+                    //  
+                    resultParam.Direction = ParameterDirection.ReturnValue;
+
+                    comm.Parameters.Add(resultParam);
+
+                    try
+                    {
+                        conn.Open();
+                        comm.ExecuteNonQuery();
+
+                        if (resultParam.Value != DBNull.Value)
+                        {
+                            Ma = (string)resultParam.Value;
+                        }
+
+                    }
+                    catch (Exception ex)
+                    {
+                        conn.Close();
+                        //' Cập nhật that bai!!!
+                        return "Tạo mã thất bại" + ex.Message + "\n" + ex.StackTrace;
+                    }
+                }
+                return Ma;
+            }
         }
     }
 }

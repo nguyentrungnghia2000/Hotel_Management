@@ -8,10 +8,12 @@ namespace DTO_Hotel
 {
     public class DTO_CTDV
     {
+        private string mactdv;
         private string macthd;
         private string madv;
 
         public string Macthd { get => macthd; set => macthd = value; }
         public string Madv { get => madv; set => madv = value; }
+        public string Mactdv { get => mactdv; set => mactdv = value; }
     }
 }

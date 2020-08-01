@@ -1,0 +1,176 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Newtonsoft.Json/12.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "BUS_Hotel/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "DAL_Hotel": "1.0.0",
+          "DTO_Hotel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BUS_Hotel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BUS_Hotel.dll": {}
+        }
+      },
+      "DAL_Hotel/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "DTO_Hotel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DAL_Hotel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DAL_Hotel.dll": {}
+        }
+      },
+      "DTO_Hotel/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/DTO_Hotel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DTO_Hotel.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Newtonsoft.Json/12.0.3": {
+      "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "type": "package",
+      "path": "newtonsoft.json/12.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.12.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "BUS_Hotel/1.0.0": {
+      "type": "project",
+      "path": "../BUS_Hotel/BUS_Hotel.csproj",
+      "msbuildProject": "../BUS_Hotel/BUS_Hotel.csproj"
+    },
+    "DAL_Hotel/1.0.0": {
+      "type": "project",
+      "path": "../DAL_Hotel/DAL_Hotel.csproj",
+      "msbuildProject": "../DAL_Hotel/DAL_Hotel.csproj"
+    },
+    "DTO_Hotel/1.0.0": {
+      "type": "project",
+      "path": "../DTO_Hotel/DTO_Hotel.csproj",
+      "msbuildProject": "../DTO_Hotel/DTO_Hotel.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "BUS_Hotel >= 1.0.0",
+      "DTO_Hotel >= 1.0.0",
+      "Newtonsoft.Json >= 12.0.3"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\84919\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\UIT\\Nhập môn công nghệ phần mềm - SE104\\DoAn\\Hotel_Management\\Hotel_Management\\HotelServer\\HotelServer.csproj",
+      "projectName": "HotelServer",
+      "projectPath": "D:\\UIT\\Nhập môn công nghệ phần mềm - SE104\\DoAn\\Hotel_Management\\Hotel_Management\\HotelServer\\HotelServer.csproj",
+      "packagesPath": "C:\\Users\\84919\\.nuget\\packages\\",
+      "outputPath": "D:\\UIT\\Nhập môn công nghệ phần mềm - SE104\\DoAn\\Hotel_Management\\Hotel_Management\\HotelServer\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\84919\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {
+            "D:\\UIT\\Nhập môn công nghệ phần mềm - SE104\\DoAn\\Hotel_Management\\Hotel_Management\\BUS_Hotel\\BUS_Hotel.csproj": {
+              "projectPath": "D:\\UIT\\Nhập môn công nghệ phần mềm - SE104\\DoAn\\Hotel_Management\\Hotel_Management\\BUS_Hotel\\BUS_Hotel.csproj"
+            },
+            "D:\\UIT\\Nhập môn công nghệ phần mềm - SE104\\DoAn\\Hotel_Management\\Hotel_Management\\DTO_Hotel\\DTO_Hotel.csproj": {
+              "projectPath": "D:\\UIT\\Nhập môn công nghệ phần mềm - SE104\\DoAn\\Hotel_Management\\Hotel_Management\\DTO_Hotel\\DTO_Hotel.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "dependencies": {
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[12.0.3, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

@@ -45,5 +45,10 @@ namespace BUS_Hotel
         {
             return dal.selectAllwithCost(lsObj);
         }
+
+        public string TaoMa()
+        {
+            return dal.TaoMa();
+        }
     }
 }

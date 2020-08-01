@@ -70,9 +70,9 @@
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(645, 18);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 20);
+            this.label4.Size = new System.Drawing.Size(78, 20);
             this.label4.TabIndex = 5;
-            this.label4.Text = "Dịch vụ";
+            this.label4.Text = "Trạng thái";
             // 
             // label3
             // 
@@ -80,9 +80,9 @@
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(476, 18);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 20);
+            this.label3.Size = new System.Drawing.Size(57, 20);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Ngày đi";
+            this.label3.Text = "Chi phí";
             // 
             // label2
             // 
@@ -90,19 +90,19 @@
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(309, 18);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 20);
+            this.label2.Size = new System.Drawing.Size(70, 20);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Ngày đến";
+            this.label2.Text = "Trả trước";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(119, 18);
+            this.label1.Location = new System.Drawing.Point(144, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(117, 20);
+            this.label1.Size = new System.Drawing.Size(75, 20);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Tên khách hàng";
+            this.label1.Text = "Số phòng";
             // 
             // label6
             // 

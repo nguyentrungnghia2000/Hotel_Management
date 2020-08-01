@@ -808,9 +808,9 @@
             // 
             this.panelChinh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelChinh.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelChinh.Location = new System.Drawing.Point(238, 86);
+            this.panelChinh.Location = new System.Drawing.Point(238, 87);
             this.panelChinh.Name = "panelChinh";
-            this.panelChinh.Size = new System.Drawing.Size(1038, 675);
+            this.panelChinh.Size = new System.Drawing.Size(1038, 674);
             this.panelChinh.TabIndex = 12;
             // 
             // panelCaiDat
@@ -1015,7 +1015,7 @@
         private System.Windows.Forms.Panel panelChinh;
         private System.Windows.Forms.Panel panelCaiDat;
         private Bunifu.Framework.UI.BunifuFlatButton btnTaiKhoan;
-        private Bunifu.Framework.UI.BunifuFlatButton btnCauHinh;
-        private Bunifu.Framework.UI.BunifuFlatButton btnQuanTri;
+        public Bunifu.Framework.UI.BunifuFlatButton btnCauHinh;
+        public Bunifu.Framework.UI.BunifuFlatButton btnQuanTri;
     }
 }

@@ -32,40 +32,35 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lb_hoadon = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.bt_ThanhToan = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.bt_DatCoc = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.lb_trangthai = new System.Windows.Forms.Label();
+            this.lb_chiphi = new System.Windows.Forms.Label();
+            this.lb_sophong = new System.Windows.Forms.Label();
+            this.lb_makh = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label2
+            // lb_hoadon
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(309, 18);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 20);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Ngày đến";
+            this.lb_hoadon.AutoSize = true;
+            this.lb_hoadon.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_hoadon.Location = new System.Drawing.Point(309, 18);
+            this.lb_hoadon.Name = "lb_hoadon";
+            this.lb_hoadon.Size = new System.Drawing.Size(68, 20);
+            this.lb_hoadon.TabIndex = 4;
+            this.lb_hoadon.Text = "Hóa đơn";
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.MenuBar;
             this.panel2.Controls.Add(this.bt_ThanhToan);
-            this.panel2.Controls.Add(this.bt_DatCoc);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.lb_trangthai);
+            this.panel2.Controls.Add(this.lb_chiphi);
+            this.panel2.Controls.Add(this.lb_hoadon);
+            this.panel2.Controls.Add(this.lb_sophong);
+            this.panel2.Controls.Add(this.lb_makh);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
@@ -109,7 +104,7 @@
             this.bt_ThanhToan.IdleIconLeftImage = null;
             this.bt_ThanhToan.IdleIconRightImage = null;
             this.bt_ThanhToan.IndicateFocus = false;
-            this.bt_ThanhToan.Location = new System.Drawing.Point(795, 10);
+            this.bt_ThanhToan.Location = new System.Drawing.Point(860, 11);
             this.bt_ThanhToan.Name = "bt_ThanhToan";
             stateProperties1.BorderColor = System.Drawing.Color.WhiteSmoke;
             stateProperties1.BorderRadius = 30;
@@ -134,110 +129,47 @@
             this.bt_ThanhToan.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bt_ThanhToan.TextMarginLeft = 0;
             this.bt_ThanhToan.UseDefaultRadiusAndThickness = true;
+            this.bt_ThanhToan.Click += new System.EventHandler(this.bt_ThanhToan_Click);
             // 
-            // label4
+            // lb_trangthai
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(645, 18);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 20);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Dịch vụ";
+            this.lb_trangthai.AutoSize = true;
+            this.lb_trangthai.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_trangthai.Location = new System.Drawing.Point(645, 18);
+            this.lb_trangthai.Name = "lb_trangthai";
+            this.lb_trangthai.Size = new System.Drawing.Size(78, 20);
+            this.lb_trangthai.TabIndex = 5;
+            this.lb_trangthai.Text = "Trạng thái";
             // 
-            // label3
+            // lb_chiphi
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(476, 18);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 20);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Ngày đi";
+            this.lb_chiphi.AutoSize = true;
+            this.lb_chiphi.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_chiphi.Location = new System.Drawing.Point(476, 18);
+            this.lb_chiphi.Name = "lb_chiphi";
+            this.lb_chiphi.Size = new System.Drawing.Size(57, 20);
+            this.lb_chiphi.TabIndex = 4;
+            this.lb_chiphi.Text = "Chi phí";
             // 
-            // label1
+            // lb_sophong
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(119, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(117, 20);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Tên khách hàng";
+            this.lb_sophong.AutoSize = true;
+            this.lb_sophong.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_sophong.Location = new System.Drawing.Point(144, 18);
+            this.lb_sophong.Name = "lb_sophong";
+            this.lb_sophong.Size = new System.Drawing.Size(75, 20);
+            this.lb_sophong.TabIndex = 4;
+            this.lb_sophong.Text = "Số phòng";
             // 
-            // label6
+            // lb_makh
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(12, 18);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(55, 20);
-            this.label6.TabIndex = 3;
-            this.label6.Text = "Mã KH";
-            // 
-            // bt_DatCoc
-            // 
-            this.bt_DatCoc.AllowToggling = false;
-            this.bt_DatCoc.AnimationSpeed = 200;
-            this.bt_DatCoc.AutoGenerateColors = false;
-            this.bt_DatCoc.BackColor = System.Drawing.Color.Transparent;
-            this.bt_DatCoc.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.bt_DatCoc.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bt_DatCoc.BackgroundImage")));
-            this.bt_DatCoc.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.bt_DatCoc.ButtonText = "Đặt cọc";
-            this.bt_DatCoc.ButtonTextMarginLeft = 0;
-            this.bt_DatCoc.ColorContrastOnClick = 45;
-            this.bt_DatCoc.ColorContrastOnHover = 45;
-            this.bt_DatCoc.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.bt_DatCoc.CustomizableEdges = borderEdges2;
-            this.bt_DatCoc.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.bt_DatCoc.DisabledBorderColor = System.Drawing.Color.Empty;
-            this.bt_DatCoc.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.bt_DatCoc.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.bt_DatCoc.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.bt_DatCoc.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.bt_DatCoc.ForeColor = System.Drawing.Color.White;
-            this.bt_DatCoc.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_DatCoc.IconMarginLeft = 11;
-            this.bt_DatCoc.IconPadding = 10;
-            this.bt_DatCoc.IconRightCursor = System.Windows.Forms.Cursors.Hand;
-            this.bt_DatCoc.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.bt_DatCoc.IdleBorderRadius = 30;
-            this.bt_DatCoc.IdleBorderThickness = 2;
-            this.bt_DatCoc.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.bt_DatCoc.IdleIconLeftImage = null;
-            this.bt_DatCoc.IdleIconRightImage = null;
-            this.bt_DatCoc.IndicateFocus = false;
-            this.bt_DatCoc.Location = new System.Drawing.Point(910, 10);
-            this.bt_DatCoc.Name = "bt_DatCoc";
-            stateProperties3.BorderColor = System.Drawing.Color.WhiteSmoke;
-            stateProperties3.BorderRadius = 30;
-            stateProperties3.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties3.BorderThickness = 2;
-            stateProperties3.FillColor = System.Drawing.Color.WhiteSmoke;
-            stateProperties3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(182)))), ((int)(((byte)(148)))));
-            stateProperties3.IconLeftImage = null;
-            stateProperties3.IconRightImage = null;
-            this.bt_DatCoc.onHoverState = stateProperties3;
-            stateProperties4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(168)))), ((int)(((byte)(147)))));
-            stateProperties4.BorderRadius = 30;
-            stateProperties4.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            stateProperties4.BorderThickness = 2;
-            stateProperties4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(168)))), ((int)(((byte)(147)))));
-            stateProperties4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            stateProperties4.IconLeftImage = null;
-            stateProperties4.IconRightImage = null;
-            this.bt_DatCoc.OnPressedState = stateProperties4;
-            this.bt_DatCoc.Size = new System.Drawing.Size(107, 35);
-            this.bt_DatCoc.TabIndex = 19;
-            this.bt_DatCoc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bt_DatCoc.TextMarginLeft = 0;
-            this.bt_DatCoc.UseDefaultRadiusAndThickness = true;
-            this.bt_DatCoc.Click += new System.EventHandler(this.bt_DatCoc_Click);
+            this.lb_makh.AutoSize = true;
+            this.lb_makh.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_makh.Location = new System.Drawing.Point(12, 18);
+            this.lb_makh.Name = "lb_makh";
+            this.lb_makh.Size = new System.Drawing.Size(55, 20);
+            this.lb_makh.TabIndex = 3;
+            this.lb_makh.Text = "Mã KH";
             // 
             // x1HoaDon
             // 
@@ -254,13 +186,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label2;
+        public System.Windows.Forms.Label lb_hoadon;
         private System.Windows.Forms.Panel panel2;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton bt_ThanhToan;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label6;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton bt_DatCoc;
+        public Bunifu.UI.WinForms.BunifuButton.BunifuButton bt_ThanhToan;
+        public System.Windows.Forms.Label lb_trangthai;
+        public System.Windows.Forms.Label lb_chiphi;
+        public System.Windows.Forms.Label lb_sophong;
+        public System.Windows.Forms.Label lb_makh;
     }
 }

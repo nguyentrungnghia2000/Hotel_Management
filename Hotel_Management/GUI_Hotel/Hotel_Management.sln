@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL_Hotel", "..\DAL_Hotel\D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO_Hotel", "..\DTO_Hotel\DTO_Hotel.csproj", "{291D8102-2D00-42ED-8BAE-98D6CA4B86D4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectAPI", "..\ConnectAPI\ConnectAPI.csproj", "{C2BAD806-E4A9-48A4-B38A-EE6BB1C21D06}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{291D8102-2D00-42ED-8BAE-98D6CA4B86D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{291D8102-2D00-42ED-8BAE-98D6CA4B86D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{291D8102-2D00-42ED-8BAE-98D6CA4B86D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2BAD806-E4A9-48A4-B38A-EE6BB1C21D06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2BAD806-E4A9-48A4-B38A-EE6BB1C21D06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2BAD806-E4A9-48A4-B38A-EE6BB1C21D06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2BAD806-E4A9-48A4-B38A-EE6BB1C21D06}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

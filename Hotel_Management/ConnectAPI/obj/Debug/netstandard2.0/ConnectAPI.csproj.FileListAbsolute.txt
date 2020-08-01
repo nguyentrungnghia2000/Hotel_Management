@@ -1,0 +1,12 @@
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\ConnectAPI\bin\Debug\netstandard2.0\ConnectAPI.deps.json
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\ConnectAPI\bin\Debug\netstandard2.0\ConnectAPI.dll
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\ConnectAPI\bin\Debug\netstandard2.0\DTO_Hotel.dll
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\ConnectAPI\bin\Debug\netstandard2.0\DTO_Hotel.pdb
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\ConnectAPI\obj\Debug\netstandard2.0\ConnectAPI.AssemblyInfoInputs.cache
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\ConnectAPI\obj\Debug\netstandard2.0\ConnectAPI.AssemblyInfo.cs
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\ConnectAPI\obj\Debug\netstandard2.0\ConnectAPI.csproj.CopyComplete
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\ConnectAPI\bin\Debug\netstandard2.0\ConnectAPI.pdb
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\ConnectAPI\obj\Debug\netstandard2.0\ConnectAPI.dll
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\ConnectAPI\obj\Debug\netstandard2.0\ConnectAPI.pdb
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\ConnectAPI\obj\Debug\netstandard2.0\ConnectAPI.csproj.CoreCompileInputs.cache
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\ConnectAPI\obj\Debug\netstandard2.0\ConnectAPI.csprojAssemblyReference.cache

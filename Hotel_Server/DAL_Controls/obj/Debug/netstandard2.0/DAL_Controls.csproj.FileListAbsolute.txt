@@ -1,0 +1,12 @@
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Server\DAL_Controls\bin\Debug\netstandard2.0\DAL_Controls.deps.json
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Server\DAL_Controls\bin\Debug\netstandard2.0\DAL_Controls.dll
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Server\DAL_Controls\bin\Debug\netstandard2.0\DTO_Hotel.dll
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Server\DAL_Controls\bin\Debug\netstandard2.0\DTO_Hotel.pdb
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Server\DAL_Controls\obj\Debug\netstandard2.0\DAL_Controls.csprojAssemblyReference.cache
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Server\DAL_Controls\obj\Debug\netstandard2.0\DAL_Controls.AssemblyInfoInputs.cache
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Server\DAL_Controls\obj\Debug\netstandard2.0\DAL_Controls.AssemblyInfo.cs
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Server\DAL_Controls\obj\Debug\netstandard2.0\DAL_Controls.csproj.CopyComplete
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Server\DAL_Controls\bin\Debug\netstandard2.0\DAL_Controls.pdb
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Server\DAL_Controls\obj\Debug\netstandard2.0\DAL_Controls.csproj.CoreCompileInputs.cache
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Server\DAL_Controls\obj\Debug\netstandard2.0\DAL_Controls.dll
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Server\DAL_Controls\obj\Debug\netstandard2.0\DAL_Controls.pdb

@@ -81,9 +81,9 @@
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(645, 18);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 20);
+            this.label4.Size = new System.Drawing.Size(70, 20);
             this.label4.TabIndex = 5;
-            this.label4.Text = "Dịch vụ";
+            this.label4.Text = "Trả trước";
             // 
             // label3
             // 

@@ -7,6 +7,7 @@ using System.Data.SqlClient;
 using DTO_Hotel;
 
 using System.Configuration;
+using System.Data;
 
 namespace DAL_Hotel
 {
@@ -17,7 +18,7 @@ namespace DAL_Hotel
 
         public DAL_SignIn()
         {
-            connectionSTR = ConfigurationManager.AppSettings["ConnectionSTR"];
+            connectionSTR =@"Data Source=.\SQLEXPRESS;Initial Catalog=QLKS_NEW;Integrated Security=True";
         }
 
         public string SignIn(DTO_SignIn account)
@@ -41,9 +42,9 @@ namespace DAL_Hotel
                             return "0";
                         }
                     }
-                    catch
+                    catch(Exception e)
                     {
-
+                        System.Diagnostics.Debug.WriteLine(e.Message);
                     }
                     finally
                     {
@@ -68,41 +69,49 @@ namespace DAL_Hotel
             }
             return "0";
         }
-    }
-
-
-    namespace DAL_Hotel
-    {
-        public class DAL_SignIn : DBConnection
+        public string SelectAll(string x)
         {
-            public string SignIn(DTO_SignIn account)
+            string query = string.Empty;
+            query += "SELECT MANV FROM TBL_TAIKHOAN WHERE TAIKHOAN = '" + x + "'";
+            string Makh = null;
+            using (SqlConnection conn = new SqlConnection(connectionSTR))
             {
-                try
+                using (SqlCommand comm = new SqlCommand())
                 {
-                    conn.Open();
-                    string sql = string.Format("SELECT CHUCVU FROM TBL_TAIKHOAN WHERE TAIKHOAN = '" + account.user + "' and MATKHAU = '" + account.pass + "'");
-                    SqlCommand cmd = new SqlCommand(sql, conn);
-                    SqlDataReader dta = cmd.ExecuteReader();
-                    if (dta.Read() == true)
-                    {
-                        return dta["CHUCVU"].ToString();
-                    }
-                    else
-                    {
-                        return "0";
-                    }
-                }
-                catch
-                {
+                    comm.Connection = conn;
+                    comm.CommandType = CommandType.Text;
+                    comm.CommandText = query;
 
+                    try
+                    {
+                        conn.Open();
+
+                        SqlDataReader reader = comm.ExecuteReader();
+                        if (reader.HasRows == true)
+                        {
+                            while (reader.Read())
+                            {
+                                Makh = reader["MANV"].ToString();
+                            }
+                        }
+
+                    }
+
+                    catch (Exception ex)
+                    {
+                        conn.Close();
+                        return "Selecting fails\n" + ex.Message + "\n" + ex.StackTrace;
+                    }
                 }
-                finally
-                {
-                    conn.Close();
-                }
-                return "0";
+
             }
+            return Makh;
         }
+
+
     }
+
+
+   
 
 }

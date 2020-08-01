@@ -39,14 +39,14 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             this.btn_xoa = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.btn_sua = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.bt_Sua = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lb_status = new System.Windows.Forms.Label();
             this.lb_ten = new System.Windows.Forms.Label();
             this.PanelSub = new System.Windows.Forms.Panel();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.lb_stt = new System.Windows.Forms.LinkLabel();
             this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -54,10 +54,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panelSubMenu = new System.Windows.Forms.Panel();
-            this.btn_luu = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.combobox_lp = new System.Windows.Forms.ComboBox();
+            this.bt_Luu = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.txb_giaphong = new System.Windows.Forms.TextBox();
             this.txb_tinhtrang = new System.Windows.Forms.TextBox();
-            this.txb_loaiphong = new System.Windows.Forms.TextBox();
             this.txb_sophong = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -128,46 +128,47 @@
             this.btn_xoa.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_xoa.TextMarginLeft = 0;
             this.btn_xoa.UseDefaultRadiusAndThickness = true;
+            this.btn_xoa.Click += new System.EventHandler(this.btn_xoa_Click);
             // 
-            // btn_sua
+            // bt_Sua
             // 
-            this.btn_sua.AllowToggling = false;
-            this.btn_sua.AnimationSpeed = 200;
-            this.btn_sua.AutoGenerateColors = false;
-            this.btn_sua.BackColor = System.Drawing.Color.Transparent;
-            this.btn_sua.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btn_sua.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_sua.BackgroundImage")));
-            this.btn_sua.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btn_sua.ButtonText = "Sửa";
-            this.btn_sua.ButtonTextMarginLeft = 0;
-            this.btn_sua.ColorContrastOnClick = 45;
-            this.btn_sua.ColorContrastOnHover = 45;
-            this.btn_sua.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_Sua.AllowToggling = false;
+            this.bt_Sua.AnimationSpeed = 200;
+            this.bt_Sua.AutoGenerateColors = false;
+            this.bt_Sua.BackColor = System.Drawing.Color.Transparent;
+            this.bt_Sua.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bt_Sua.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bt_Sua.BackgroundImage")));
+            this.bt_Sua.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bt_Sua.ButtonText = "Sửa";
+            this.bt_Sua.ButtonTextMarginLeft = 0;
+            this.bt_Sua.ColorContrastOnClick = 45;
+            this.bt_Sua.ColorContrastOnHover = 45;
+            this.bt_Sua.Cursor = System.Windows.Forms.Cursors.Hand;
             borderEdges2.BottomLeft = true;
             borderEdges2.BottomRight = true;
             borderEdges2.TopLeft = true;
             borderEdges2.TopRight = true;
-            this.btn_sua.CustomizableEdges = borderEdges2;
-            this.btn_sua.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btn_sua.DisabledBorderColor = System.Drawing.Color.Empty;
-            this.btn_sua.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btn_sua.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btn_sua.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btn_sua.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.btn_sua.ForeColor = System.Drawing.Color.White;
-            this.btn_sua.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_sua.IconMarginLeft = 11;
-            this.btn_sua.IconPadding = 10;
-            this.btn_sua.IconRightCursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_sua.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btn_sua.IdleBorderRadius = 30;
-            this.btn_sua.IdleBorderThickness = 2;
-            this.btn_sua.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btn_sua.IdleIconLeftImage = null;
-            this.btn_sua.IdleIconRightImage = null;
-            this.btn_sua.IndicateFocus = false;
-            this.btn_sua.Location = new System.Drawing.Point(673, 173);
-            this.btn_sua.Name = "btn_sua";
+            this.bt_Sua.CustomizableEdges = borderEdges2;
+            this.bt_Sua.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.bt_Sua.DisabledBorderColor = System.Drawing.Color.Empty;
+            this.bt_Sua.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.bt_Sua.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.bt_Sua.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.bt_Sua.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            this.bt_Sua.ForeColor = System.Drawing.Color.White;
+            this.bt_Sua.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_Sua.IconMarginLeft = 11;
+            this.bt_Sua.IconPadding = 10;
+            this.bt_Sua.IconRightCursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_Sua.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bt_Sua.IdleBorderRadius = 30;
+            this.bt_Sua.IdleBorderThickness = 2;
+            this.bt_Sua.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.bt_Sua.IdleIconLeftImage = null;
+            this.bt_Sua.IdleIconRightImage = null;
+            this.bt_Sua.IndicateFocus = false;
+            this.bt_Sua.Location = new System.Drawing.Point(673, 173);
+            this.bt_Sua.Name = "bt_Sua";
             stateProperties3.BorderColor = System.Drawing.Color.WhiteSmoke;
             stateProperties3.BorderRadius = 30;
             stateProperties3.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
@@ -176,7 +177,7 @@
             stateProperties3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(182)))), ((int)(((byte)(148)))));
             stateProperties3.IconLeftImage = null;
             stateProperties3.IconRightImage = null;
-            this.btn_sua.onHoverState = stateProperties3;
+            this.bt_Sua.onHoverState = stateProperties3;
             stateProperties4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(168)))), ((int)(((byte)(147)))));
             stateProperties4.BorderRadius = 30;
             stateProperties4.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
@@ -185,12 +186,13 @@
             stateProperties4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             stateProperties4.IconLeftImage = null;
             stateProperties4.IconRightImage = null;
-            this.btn_sua.OnPressedState = stateProperties4;
-            this.btn_sua.Size = new System.Drawing.Size(109, 35);
-            this.btn_sua.TabIndex = 17;
-            this.btn_sua.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_sua.TextMarginLeft = 0;
-            this.btn_sua.UseDefaultRadiusAndThickness = true;
+            this.bt_Sua.OnPressedState = stateProperties4;
+            this.bt_Sua.Size = new System.Drawing.Size(109, 35);
+            this.bt_Sua.TabIndex = 17;
+            this.bt_Sua.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bt_Sua.TextMarginLeft = 0;
+            this.bt_Sua.UseDefaultRadiusAndThickness = true;
+            this.bt_Sua.Click += new System.EventHandler(this.bt_Sua_Click);
             // 
             // label11
             // 
@@ -248,7 +250,7 @@
             this.PanelSub.BackColor = System.Drawing.SystemColors.MenuBar;
             this.PanelSub.Controls.Add(this.lb_status);
             this.PanelSub.Controls.Add(this.lb_ten);
-            this.PanelSub.Controls.Add(this.linkLabel1);
+            this.PanelSub.Controls.Add(this.lb_stt);
             this.PanelSub.Controls.Add(this.pictureBox1);
             this.PanelSub.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelSub.Location = new System.Drawing.Point(0, 0);
@@ -256,17 +258,17 @@
             this.PanelSub.Size = new System.Drawing.Size(910, 45);
             this.PanelSub.TabIndex = 2;
             // 
-            // linkLabel1
+            // lb_stt
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.linkLabel1.Location = new System.Drawing.Point(12, 8);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(22, 27);
-            this.linkLabel1.TabIndex = 1;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "1";
+            this.lb_stt.AutoSize = true;
+            this.lb_stt.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_stt.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.lb_stt.Location = new System.Drawing.Point(12, 8);
+            this.lb_stt.Name = "lb_stt";
+            this.lb_stt.Size = new System.Drawing.Size(22, 27);
+            this.lb_stt.TabIndex = 1;
+            this.lb_stt.TabStop = true;
+            this.lb_stt.Text = "1";
             // 
             // label10
             // 
@@ -330,15 +332,15 @@
             // 
             // panelSubMenu
             // 
-            this.panelSubMenu.Controls.Add(this.btn_luu);
+            this.panelSubMenu.Controls.Add(this.combobox_lp);
+            this.panelSubMenu.Controls.Add(this.bt_Luu);
             this.panelSubMenu.Controls.Add(this.txb_giaphong);
             this.panelSubMenu.Controls.Add(this.txb_tinhtrang);
-            this.panelSubMenu.Controls.Add(this.txb_loaiphong);
             this.panelSubMenu.Controls.Add(this.txb_sophong);
             this.panelSubMenu.Controls.Add(this.label16);
             this.panelSubMenu.Controls.Add(this.label14);
             this.panelSubMenu.Controls.Add(this.btn_xoa);
-            this.panelSubMenu.Controls.Add(this.btn_sua);
+            this.panelSubMenu.Controls.Add(this.bt_Sua);
             this.panelSubMenu.Controls.Add(this.label11);
             this.panelSubMenu.Controls.Add(this.label12);
             this.panelSubMenu.Controls.Add(this.label10);
@@ -353,45 +355,54 @@
             this.panelSubMenu.Size = new System.Drawing.Size(910, 219);
             this.panelSubMenu.TabIndex = 3;
             // 
-            // btn_luu
+            // combobox_lp
             // 
-            this.btn_luu.AllowToggling = false;
-            this.btn_luu.AnimationSpeed = 200;
-            this.btn_luu.AutoGenerateColors = false;
-            this.btn_luu.BackColor = System.Drawing.Color.Transparent;
-            this.btn_luu.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btn_luu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_luu.BackgroundImage")));
-            this.btn_luu.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btn_luu.ButtonText = "Lưu";
-            this.btn_luu.ButtonTextMarginLeft = 0;
-            this.btn_luu.ColorContrastOnClick = 45;
-            this.btn_luu.ColorContrastOnHover = 45;
-            this.btn_luu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.combobox_lp.BackColor = System.Drawing.SystemColors.Control;
+            this.combobox_lp.FormattingEnabled = true;
+            this.combobox_lp.Location = new System.Drawing.Point(92, 140);
+            this.combobox_lp.Name = "combobox_lp";
+            this.combobox_lp.Size = new System.Drawing.Size(168, 21);
+            this.combobox_lp.TabIndex = 26;
+            // 
+            // bt_Luu
+            // 
+            this.bt_Luu.AllowToggling = false;
+            this.bt_Luu.AnimationSpeed = 200;
+            this.bt_Luu.AutoGenerateColors = false;
+            this.bt_Luu.BackColor = System.Drawing.Color.Transparent;
+            this.bt_Luu.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.bt_Luu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bt_Luu.BackgroundImage")));
+            this.bt_Luu.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.bt_Luu.ButtonText = "Lưu";
+            this.bt_Luu.ButtonTextMarginLeft = 0;
+            this.bt_Luu.ColorContrastOnClick = 45;
+            this.bt_Luu.ColorContrastOnHover = 45;
+            this.bt_Luu.Cursor = System.Windows.Forms.Cursors.Hand;
             borderEdges3.BottomLeft = true;
             borderEdges3.BottomRight = true;
             borderEdges3.TopLeft = true;
             borderEdges3.TopRight = true;
-            this.btn_luu.CustomizableEdges = borderEdges3;
-            this.btn_luu.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btn_luu.DisabledBorderColor = System.Drawing.Color.Empty;
-            this.btn_luu.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btn_luu.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btn_luu.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btn_luu.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.btn_luu.ForeColor = System.Drawing.Color.White;
-            this.btn_luu.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_luu.IconMarginLeft = 11;
-            this.btn_luu.IconPadding = 10;
-            this.btn_luu.IconRightCursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_luu.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btn_luu.IdleBorderRadius = 30;
-            this.btn_luu.IdleBorderThickness = 2;
-            this.btn_luu.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btn_luu.IdleIconLeftImage = null;
-            this.btn_luu.IdleIconRightImage = null;
-            this.btn_luu.IndicateFocus = false;
-            this.btn_luu.Location = new System.Drawing.Point(558, 173);
-            this.btn_luu.Name = "btn_luu";
+            this.bt_Luu.CustomizableEdges = borderEdges3;
+            this.bt_Luu.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.bt_Luu.DisabledBorderColor = System.Drawing.Color.Empty;
+            this.bt_Luu.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.bt_Luu.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.bt_Luu.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.bt_Luu.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            this.bt_Luu.ForeColor = System.Drawing.Color.White;
+            this.bt_Luu.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_Luu.IconMarginLeft = 11;
+            this.bt_Luu.IconPadding = 10;
+            this.bt_Luu.IconRightCursor = System.Windows.Forms.Cursors.Hand;
+            this.bt_Luu.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.bt_Luu.IdleBorderRadius = 30;
+            this.bt_Luu.IdleBorderThickness = 2;
+            this.bt_Luu.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.bt_Luu.IdleIconLeftImage = null;
+            this.bt_Luu.IdleIconRightImage = null;
+            this.bt_Luu.IndicateFocus = false;
+            this.bt_Luu.Location = new System.Drawing.Point(558, 173);
+            this.bt_Luu.Name = "bt_Luu";
             stateProperties5.BorderColor = System.Drawing.Color.WhiteSmoke;
             stateProperties5.BorderRadius = 30;
             stateProperties5.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
@@ -400,7 +411,7 @@
             stateProperties5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(182)))), ((int)(((byte)(148)))));
             stateProperties5.IconLeftImage = null;
             stateProperties5.IconRightImage = null;
-            this.btn_luu.onHoverState = stateProperties5;
+            this.bt_Luu.onHoverState = stateProperties5;
             stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(168)))), ((int)(((byte)(147)))));
             stateProperties6.BorderRadius = 30;
             stateProperties6.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
@@ -409,42 +420,41 @@
             stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             stateProperties6.IconLeftImage = null;
             stateProperties6.IconRightImage = null;
-            this.btn_luu.OnPressedState = stateProperties6;
-            this.btn_luu.Size = new System.Drawing.Size(109, 35);
-            this.btn_luu.TabIndex = 25;
-            this.btn_luu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_luu.TextMarginLeft = 0;
-            this.btn_luu.UseDefaultRadiusAndThickness = true;
+            this.bt_Luu.OnPressedState = stateProperties6;
+            this.bt_Luu.Size = new System.Drawing.Size(109, 35);
+            this.bt_Luu.TabIndex = 25;
+            this.bt_Luu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bt_Luu.TextMarginLeft = 0;
+            this.bt_Luu.UseDefaultRadiusAndThickness = true;
+            this.bt_Luu.Visible = false;
+            this.bt_Luu.Click += new System.EventHandler(this.bt_Luu_Click);
             // 
             // txb_giaphong
             // 
             this.txb_giaphong.Location = new System.Drawing.Point(776, 86);
-            this.txb_giaphong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txb_giaphong.Margin = new System.Windows.Forms.Padding(2);
             this.txb_giaphong.Name = "txb_giaphong";
+            this.txb_giaphong.ReadOnly = true;
             this.txb_giaphong.Size = new System.Drawing.Size(122, 20);
             this.txb_giaphong.TabIndex = 25;
+            this.txb_giaphong.Leave += new System.EventHandler(this.txb_giaphong_Leave);
             // 
             // txb_tinhtrang
             // 
             this.txb_tinhtrang.Location = new System.Drawing.Point(465, 87);
-            this.txb_tinhtrang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txb_tinhtrang.Margin = new System.Windows.Forms.Padding(2);
             this.txb_tinhtrang.Name = "txb_tinhtrang";
+            this.txb_tinhtrang.ReadOnly = true;
             this.txb_tinhtrang.Size = new System.Drawing.Size(168, 20);
             this.txb_tinhtrang.TabIndex = 24;
-            // 
-            // txb_loaiphong
-            // 
-            this.txb_loaiphong.Location = new System.Drawing.Point(92, 145);
-            this.txb_loaiphong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txb_loaiphong.Name = "txb_loaiphong";
-            this.txb_loaiphong.Size = new System.Drawing.Size(168, 20);
-            this.txb_loaiphong.TabIndex = 23;
+            this.txb_tinhtrang.Text = "EMPTY";
             // 
             // txb_sophong
             // 
             this.txb_sophong.Location = new System.Drawing.Point(92, 87);
-            this.txb_sophong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txb_sophong.Margin = new System.Windows.Forms.Padding(2);
             this.txb_sophong.Name = "txb_sophong";
+            this.txb_sophong.ReadOnly = true;
             this.txb_sophong.Size = new System.Drawing.Size(168, 20);
             this.txb_sophong.TabIndex = 22;
             // 
@@ -476,6 +486,7 @@
             this.Controls.Add(this.panelSubMenu);
             this.Name = "GUI_ListPhong";
             this.Size = new System.Drawing.Size(910, 219);
+            this.Load += new System.EventHandler(this.GUI_ListPhong_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.PanelSub.ResumeLayout(false);
             this.PanelSub.PerformLayout();
@@ -488,14 +499,14 @@
         #endregion
 
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_xoa;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_sua;
+        public Bunifu.UI.WinForms.BunifuButton.BunifuButton bt_Sua;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.PictureBox pictureBox1;
         public System.Windows.Forms.Label lb_status;
         public System.Windows.Forms.Label lb_ten;
         private System.Windows.Forms.Panel PanelSub;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        public System.Windows.Forms.LinkLabel lb_stt;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label5;
@@ -507,8 +518,8 @@
         private System.Windows.Forms.Label label16;
         public System.Windows.Forms.TextBox txb_giaphong;
         public System.Windows.Forms.TextBox txb_tinhtrang;
-        public System.Windows.Forms.TextBox txb_loaiphong;
         public System.Windows.Forms.TextBox txb_sophong;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btn_luu;
+        public Bunifu.UI.WinForms.BunifuButton.BunifuButton bt_Luu;
+        public System.Windows.Forms.ComboBox combobox_lp;
     }
 }

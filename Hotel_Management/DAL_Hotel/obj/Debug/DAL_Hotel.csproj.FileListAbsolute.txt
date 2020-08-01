@@ -7,3 +7,5 @@ D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel
 D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\DAL_Hotel\obj\Debug\DAL_Hotel.csproj.CopyComplete
 D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\DAL_Hotel\obj\Debug\DAL_Hotel.dll
 D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\DAL_Hotel\obj\Debug\DAL_Hotel.pdb
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\DAL_Hotel\bin\Debug\System.Data.SqlClient.dll
+D:\UIT\Nhập môn công nghệ phần mềm - SE104\DoAn\Hotel_Management\Hotel_Management\DAL_Hotel\bin\Debug\System.Data.SqlClient.xml

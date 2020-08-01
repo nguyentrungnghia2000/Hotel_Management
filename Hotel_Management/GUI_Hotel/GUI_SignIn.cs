@@ -39,17 +39,34 @@ namespace Hotel_Management
             PageSignIn.SetPage(1);
         }
         
-        private void KiemTraDangNhap()
+        private async void KiemTraDangNhap()
         {
+            string Manv;
             if ((txtUsername.Text != "") && (txtPassword.Text != ""))
             {
                 DTO_SignIn account = new DTO_SignIn(txtUsername.Text, txtPassword.Text);
-                if ((busSignIn.SignIn(account) == "1"))
+
+                string result = await busSignIn.SignIn(account);
+                if (result.ToString().Equals("0"))
                 {
+                    string ma = await busSignIn.GetManvByAcc(txtUsername.Text);
+                    Manv = ma;
+                    this.Hide();
+                    frm.Message = Manv;
+                    frm.btnCauHinh.Visible = false;
+                    frm.Show();
+                    return; 
+                }
+                if (result.ToString().Equals("1"))
+                {
+                    string ma = await busSignIn.GetManvByAcc(txtUsername.Text);
+                    Manv = ma;
+                    this.Hide();
+                    frm.Message = Manv;
                     frmload.Show();
                     time_Loading.Enabled = true;
                     time_Loading.Start();
-                }
+                }                
                 else
                 {
                     MessageBox.Show("Sai Mat Khau, Nhap Lai");

@@ -8,19 +8,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using Hotel_Management.GUI_NghiepVuPhong;
+using Hotel_Management.GUI_DanhSach;
 
 namespace Hotel_Management
 {
     public partial class FrmMain : Form
     {
 
+        private string _message;
+
         private
-        GUI_NghiepVuPhong.GUI_DatPhong gui_DP = new GUI_NghiepVuPhong.GUI_DatPhong();
-        GUI_NghiepVuPhong.GUI_ChuyenPhong gui_CP = new GUI_NghiepVuPhong.GUI_ChuyenPhong();
-        GUI_NghiepVuPhong.GUI_GiaHanPhong gui_GHP = new GUI_NghiepVuPhong.GUI_GiaHanPhong();
-        GUI_NghiepVuPhong.GUI_HuyPhong gui_HP = new GUI_NghiepVuPhong.GUI_HuyPhong();
-        GUI_DanhSach.GUI_DSDonDatPhong gui_DDP = new GUI_DanhSach.GUI_DSDonDatPhong();
-        GUI_DanhSach.GUI_DSHoaDon gui_HD = new GUI_DanhSach.GUI_DSHoaDon();
+        GUI_DatPhong gui_DP = new GUI_DatPhong();
+        GUI_ChuyenPhong gui_CP = new GUI_ChuyenPhong();
+        GUI_GiaHanPhong gui_GHP = new GUI_GiaHanPhong();
+        GUI_HuyPhong gui_HP = new GUI_HuyPhong();
+        GUI_DSDonDatPhong gui_DDP = new GUI_DSDonDatPhong();
+        GUI_DSHoaDon gui_HD = new GUI_DSHoaDon();
         GUI_ThongTinChung.GUI_ThongTinChung gui_TTC = new GUI_ThongTinChung.GUI_ThongTinChung();
         GUI_SoDoPhong.GUI_SoDoPhong gui_SDP = new GUI_SoDoPhong.GUI_SoDoPhong();
         GUI_BaoCao.GUI_BaoCaoDoanhThu.GUI_BCDoanhThu gui_BCDT = new GUI_BaoCao.GUI_BaoCaoDoanhThu.GUI_BCDoanhThu();
@@ -29,31 +33,31 @@ namespace Hotel_Management
         public FrmMain()
         {
             InitializeComponent();
+            Loadpanel();
+        }
+        public void Loadpanel()
+        {
+            panelChinh.Controls.Add(gui_TTC);
+            panelChinh.Controls.Add(gui_SDP);
+            panelChinh.Controls.Add(gui_TK);
+            panelChinh.Controls.Add(gui_DP);
+            panelChinh.Controls.Add(gui_CP);
+            panelChinh.Controls.Add(gui_GHP);
+            panelChinh.Controls.Add(gui_HP);
+            panelChinh.Controls.Add(gui_BCDT);
+            panelChinh.Controls.Add(gui_BCP);
+            panelChinh.Controls.Add(gui_DDP);
+            panelChinh.Controls.Add(gui_HD);
         }
         private void FrmMain_Load(object sender, EventArgs e)
         {
             HidePanel();
-            Thread newThread = new Thread(() =>
-            {
-                Invoke(new Action(() =>
-                {
-                    panelChinh.Controls.Add(gui_TTC);
-                    panelChinh.Controls.Add(gui_SDP);
-                    panelChinh.Controls.Add(gui_DP);
-                    panelChinh.Controls.Add(gui_CP);
-                    panelChinh.Controls.Add(gui_GHP);
-                    panelChinh.Controls.Add(gui_HP);
-                    panelChinh.Controls.Add(gui_HD);
-                    panelChinh.Controls.Add(gui_DDP);
-                    panelChinh.Controls.Add(gui_BCDT);
-                    panelChinh.Controls.Add(gui_BCP);
-                    panelChinh.Controls.Add(gui_TK);
-                   
-                }));
-            });
-            newThread.Start();
         }
-        
+        public string Message
+        {
+            get { return _message; }
+            set { _message = value; }
+        }
         private void HidePanel()
         {
             panelSubMenuNVP.Visible = false;
@@ -91,13 +95,13 @@ namespace Hotel_Management
             SidePanel.Height = btnNghiepVu.Height;
             SidePanel.Top = btnNghiepVu.Top;
             ShowPanel(panelSubMenuNVP);
-            
         }
 
         private void btnDatPhong_Click(object sender, EventArgs e)
         {
             gui_DP.BringToFront();
             gui_DP.Dock = DockStyle.Fill;
+            gui_DP.Message = Message;
         }
 
         private void btnChuyenPhong_Click(object sender, EventArgs e)
